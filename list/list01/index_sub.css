@@ -1,0 +1,573 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/*리셋*/
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Noto Sans KR;}
+ol,ul { list-style: none;}
+a { text-decoration: none; color: #333;}
+img {border: 0;}
+/** { border: 1px solid black;}*/
+
+body {
+    width: 100%;
+}
+
+/*전체*/
+
+#wrap {
+    width: 1600px;
+    margin: auto;
+}
+
+/*헤더*/
+
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.sub_nav1 {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 12px;
+}
+
+.Language {
+    float: right;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.sub_nav2 {
+    float: right;
+}
+
+.sub_nav2 li {
+    float: left;
+}
+
+.sub_nav2 li::after {
+    content: "|";
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.sub_nav2 li:last-child::after {
+    content: "";
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*메뉴*/
+
+.menu {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 50px;
+    z-index: 9;
+    background: rgba(237,243,248,1);
+    visibility: hidden;
+}
+
+.main_menu {
+    position: absolute;
+    z-index: 10;
+}
+
+.main_menu>li {
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+}
+
+.sub_menu {
+    font-size: 15px;
+    line-height: 30px;
+    display: none;
+    transition: 0.8s;
+}
+
+
+.sub_menu a:hover {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.main_menu li:hover .big_menu {
+    color: dodgerblue;
+}
+
+.menu:hover .sub_menu, .main_menu li:hover .sub_menu  {
+    display: block;
+    animation: ani2 0.2s;
+}
+
+.menu:hover .bg {
+    width: 100%;
+    height: 250px;/*
+    border: 1px solid red;*/
+    position: absolute;
+    top: 50px;
+    background: rgba(237,243,248,1) !important;
+    display: block;
+    visibility: visible;
+    animation: ani 0.8s;
+}
+
+@keyframes ani {
+    0% {height: 0;}
+    100% {height: 250px;}
+}
+
+@keyframes ani2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*서브경로부분*/
+
+.sm_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    margin-top: 50px;
+}
+
+.sm_nav ul {
+    float: right;
+}
+
+.sm_nav li {
+    float: left;
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.sm_nav a {
+}
+
+.sm_nav li:nth-child(3) {
+    font-size: 15px;
+}
+
+
+.sm_nav li::after {
+    content: ">";
+    margin-left: 20px;
+}
+
+.sm_nav li:last-child::after {
+    content: " ";
+}
+
+/*서브제목부분*/
+
+.sub_title {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.sub_title h1 {
+    width: 250px;
+    height: 120px;
+    height: 120px;
+    margin: auto;
+    border-bottom: 3px solid dodgerblue;
+    
+}
+
+/*년도 버튼*/
+
+.year {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.btnFrame {
+    width:220px;
+    height: 80px;
+    margin: auto;
+}
+
+.btnFrame button {
+     display: block;
+    width: 80px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btnFrame h3 {
+    width: 50px;
+    height: 80px;
+    float: left;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.btnFrame::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*이미지리스트부분*/
+
+/*1번*/
+
+.img_list1 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.img_list1 li {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.img_list1 img {
+    border-radius: 
+}
+
+.img_list1 li:nth-child(1) {
+    left: 30px;
+}
+
+.img_list1 li:nth-child(2) {
+    left: 420px;
+}
+
+.img_list1 li:nth-child(3) {
+    right: 430px;
+}
+
+.img_list1 li:nth-child(4) {
+    right: 30px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text p {
+    margin-top: 10px;
+}
+
+.img_list1 li:hover {
+    transform: scale(1.1);
+}
+
+
+/*2번*/
+
+.img_list2 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.img_list2 li {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.img_list2 li:nth-child(1) {
+    left: 30px;
+}
+
+.img_list2 li:nth-child(2) {
+    left: 420px;
+}
+
+.img_list2 li:nth-child(3) {
+    right: 430px;
+}
+
+.img_list2 li:nth-child(4) {
+    right: 30px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text p {
+    margin-top: 10px;
+}
+
+.img_list2 li:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*3번*/
+
+.img_list3 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.img_list3 li {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.img_list3 li:nth-child(1) {
+    left: 30px;
+}
+
+.img_list3 li:nth-child(2) {
+    left: 420px;
+}
+
+.img_list3 li:nth-child(3) {
+    right: 430px;
+}
+
+.img_list3 li:nth-child(4) {
+    right: 30px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text p {
+    margin-top: 10px;
+}
+
+.img_list3 li:hover {
+    transform: scale(1.1);
+}
+
+
+/*숫자목록 부분*/
+
+.numberlist {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.numberlistbox {
+    position: absolute;
+    width: 200px;
+    left: 43%;
+}
+
+.numberlist button {
+    display: block;
+    float: left;
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.numberlist li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 0 5px;
+    color: #999;
+    font-size: 15px;
+}
+
+
+
+/*하단부분*/
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 80px;
+}
+
+footer img {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    
+}
+
+.ft_nav {
+    position: absolute;
+    top: 25px;
+    left: 500px;
+    font-size: 12px;
+}
+
+.ft_nav li {
+    float: left;
+}
+
+.ft_nav li::after {
+    content: "|";
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.ft_nav li:nth-child(3) {
+    color: black;
+    font-weight: bold;
+}
+
+.ft_nav li:last-child::after {
+    content: "";
+}
+
+.ft_nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer p {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.ft_icon {
+    position: absolute;
+    top: 45px;
+    right: 200px;
+    font-size: 30px;
+}
+
+.ft_icon i {
+    margin: 0 10px 0 10px;
+    transition: 0.5s;
+}
+
+.ft_icon i:hover {
+    transform: scale(1.5);
+}
+
+
+/*팝업부분*/
+
+
+.popBox {
+    width: 800px;
+    height: 700px;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    border: 1px solid #666;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.popBox img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 100px;
+}
+
+.popBox .textBox {
+    width: 530px;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.textBox h3 {
+    margin-bottom: 50px;
+}
+
+.close {
+    position: absolute;
+    bottom: 20px;
+     left: 50%;
+    transform: translate(-50%,0%);
+    font-size: 15px;
+    width: 50px;
+    background-color: deepskyblue;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+

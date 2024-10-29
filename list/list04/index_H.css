@@ -1,0 +1,997 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/*리셋*/
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Noto Sans KR;}
+ol,ul { list-style: none;}
+a { text-decoration: none; color: #333;}
+img {border: 0;}
+button {outline: none; border: none;}
+/** { border: 1px solid black;}*/
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.logobox {
+    width: 180px;
+    height: 45px;
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+/*메인*/
+
+#section0 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.orion {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.orion_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/orion_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orion img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+}
+
+/*market o*/
+
+#section1 {
+    width: 100%;
+    position: relative;
+}
+
+
+.marketO {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.marketO_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/market_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.marketO_Box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 700px;
+}
+
+.marketO_text {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.marketO_text h2 {
+    margin-top: 30px;
+    font-size: 5.5em;
+    color: #568b57;
+}
+
+.marketO_text h5 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #85b686;
+}
+
+.market_btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5em;
+    width: 40%;
+    border: 1px solid #85b686;
+    color: #568b57;
+    padding: 15px 3px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.market_btn i {
+    margin-left: 25px;
+}
+
+.marketO_img {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+
+.marketO_img img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+}
+
+.market_btn:hover {
+    transform: scale(1);
+    background-color: #568b57;
+    color: white;
+}
+
+
+
+/*Dr.You*/
+
+#section2 {
+    width: 100%;
+    position: relative;
+}
+
+
+.DrYou {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.DrYou_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Dr.You_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.DrYou_Box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 700px;
+}
+
+.DrYou_text {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+
+.DrYou_text h2 {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 4em;
+    color: #5b2829;
+}
+
+.DrYou_text h5 {
+    position: absolute;
+    width: 210px;
+    font-size: 35px;
+    color: #ba8765;
+    z-index: 33;
+}
+
+
+.one {
+    top: 22%;
+    right: 60%;
+}
+
+.bar1 {
+    position: absolute;
+    top: 27%;
+    right: 50%;
+    width: 210px;
+    height: 30px;
+    background-color: #c8b690;
+}
+
+.one_p {
+    position: absolute;
+    top: 200px;
+    right: 140px;
+    font-size: 18px;
+    color: #e7b797;
+}
+
+.two {
+    top: 282px;
+    right: 340px;
+}
+
+.bar2 {
+    position: absolute;
+    top: 52%;
+    right: 40%;
+    width: 210px;
+    height: 30px;
+    background-color: #c8b690;
+}
+
+.two_p {
+    position: absolute;
+    top: 350px;
+    right: 140px;
+    font-size: 18px;
+    color: #e7b797;
+}
+
+.DrYou_btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5em;
+    width: 40%;
+    border: 1px solid #ba8765;
+    color: #5b2829;
+    padding: 15px 3px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.DrYou_btn i {
+    margin-left: 25px;
+}
+
+.DrYou_img {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+
+.DrYou_img img:nth-child(1) {
+    position: absolute;
+    width: 35%;
+    top: 0%;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.DrYou_img img:nth-child(2) {
+    position: absolute;
+    width: 105%;
+    bottom: 0;
+    left: 70%;
+    transform: translate(-50%);
+}
+
+.DrYou_btn:hover {
+    transform: scale(1);
+    background-color: #5b2829;
+    color: white;
+}
+
+/*Brand*/
+
+#section3 {
+    width: 100%;
+    position: relative;
+}
+
+
+.Brand {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.Brand_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/brand_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Brand_Box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 700px;
+}
+
+.Brand_text {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.Brand_text h2 {
+    margin-top: 50px;
+    font-size: 4em;
+    color: #ffa200;
+}
+
+.Brand_text h5 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #fed792;
+}
+
+.brand_btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5em;
+    width: 40%;
+    border: 1px solid #fed792;
+    color: #ffa200;
+    padding: 15px 3px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.Brand_text i {
+    margin-left: 25px;
+}
+
+.Brand_img {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+
+.Brand_img img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+}
+
+.brand_btn:hover {
+    transform: scale(1);
+    background-color: #ffa200;
+    color: white;
+}
+
+
+/*Pie*/
+
+#section4 {
+    width: 100%;
+    position: relative;
+}
+
+
+.Pie {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.Pie_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/pie_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Pie_Box {
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1700px;
+    height: 800px;
+}
+
+.Pie_text {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    top: 0;
+}
+
+.Pie_text h2 {
+    position: absolute;
+    width: 550px;
+    height: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3em;
+    color: #5b2829;
+}
+
+.Pie_text h5 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 610px;
+    height: 50px;
+    font-size: 24px;
+    color: #ba8765;
+}
+
+
+.Pie_img {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    top: 17%;
+}
+
+
+.big_img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.big_img img {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sm_img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.item1 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding-top: 80px;
+}
+
+.item1 p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item1 img {
+    transition: 0.5s;
+}
+
+.item1 img:hover {
+    transform: scale(1.2);
+}
+
+.item1 p:hover .item1 img {
+    transform: scale(1.2);
+}
+
+.item2 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding-top: 80px;
+}
+
+.item2 p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item2 img {
+    transition: 0.5s;
+}
+
+.item2 img:hover {
+    transform: scale(1.2);
+}
+
+
+.sm_img li {
+    float: left;
+    width: 33.3%;
+    height: 150px;
+}
+
+.Pie_btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5em;
+    width: 40%;
+    border: 1px solid #ba8765;
+    color: #5b2829;
+    padding: 15px 3px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.Pie_btn i {
+    margin-left: 25px;
+}
+
+.Pie_btn:hover {
+    background-color: #5b2829;
+    color: white;
+}
+
+
+/*ft*/
+
+#section5 {
+    width: 100%;
+    position: relative;
+}
+
+
+.ft {
+    position: relative;
+    width: 100%;
+    height: 92%;
+    top: 40px;
+}
+
+.ft_bg img {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.ft_Box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 700px;
+}
+
+.ft_Box h3 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: palevioletred;
+}
+
+.com {
+    position: absolute;
+    width: 565px;
+    height: 100%;
+}
+
+.com_bg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 442px;
+    background-image: url(img/ft_bg.png);
+}
+
+.com_bg ul {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 300px;
+}
+
+.com_bg li {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+    font-size: 24px;
+    border-bottom: 2px solid gray;
+}
+
+.com_bg li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.new {
+    position: absolute;
+    width: 565px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.new h3 {
+    top: 100px;
+}
+
+.new_bg {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 320px;
+    height: 470px;
+    background-image: url(img/ft_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.new_list li {
+    float: left;
+    width: 320px;
+    height: 470px;
+}
+
+.new_list img {
+    position: relative;
+    top: 80px;
+    width: 200px;
+}
+
+.new_list p {
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    width: 250px;
+    font-size: 18px;
+}
+
+.new_list i {
+    position: relative;
+    top: 120px;
+    font-size: 24px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: lightpink;
+    color: white;
+}
+
+.new_list {
+    width: 1280px;
+    height: 470px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cus {
+    position: absolute;
+    width: 565px;
+    height: 100%;
+    right: 0;
+}
+
+.cus_bg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 442px;
+    background-image: url(img/ft_bg.png);
+}
+
+.cus_bg ul {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 300px;
+}
+
+.cus_bg li {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+    font-size: 24px;
+    border-bottom: 2px solid gray;
+}
+
+.cus_bg li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: saddlebrown;
+}
+
+footer a {
+    color: white;
+    font-size: 12px;
+}
+
+.ft_text1 {
+    width: 380px;
+    height: 30px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.ft_text1 li {
+    float: left;
+}
+
+.ft_text1 li::after {
+    content: "|";
+    padding: 10px;
+    color: white;
+}
+
+.ft_text1 li:last-child::after {
+    content: "";
+    padding: 0;
+}
+
+.ft_text2 {
+    width: 1000px;
+    height: 30px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.ft_text2 li {
+    float: left;
+}
+
+.ft_text2 li::after {
+    content: "|";
+    padding: 10px;
+    color: white;
+}
+
+.ft_text2 li:last-child::after {
+    content: "";
+    padding: 0;
+}
+
+footer p {
+    width: 500px;
+    font-size: 12px;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.last_ft {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

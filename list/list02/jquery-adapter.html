@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>맥심 브랜드</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<link rel="stylesheet" href="index_H.css">
+        <link rel="stylesheet" href="css/fontawesome/css/all.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/index_H.js"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0', '#999'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+  
+</head>
+<body>
+
+		<main id="wrap">
+          <div class="logoBox">
+           <img src="img/logo.png" alt="로고">
+           <ul class="logo_text">
+              <li><a href="#">MEMBERSHIP</a></li>
+               <li><a href="#">LOGIN</a></li>
+           </ul>
+           </div>
+           
+           <nav>
+               <ul class="Big_menu">
+                   <li>
+                       <a href="#">ABOUT MAXIM</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">BRAND INFO</a></li>
+                           <li><a href="#">BRAND HISTORY</a></li>
+                           <li><a href="#">BRAND SLOGAN</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">PRODUCT</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">MAIN PRODUCT</a>
+                           <li><a href="#">SOLUBLE &amp; COFFEEMIX</a></li>
+                           <li><a href="#">INSTANT R &amp; G</a></li>
+                           <li><a href="#">R &amp; G COFFEE</a></li>
+                           <li><a href="#">RTD COFFEE</a></li>
+                           
+                       </ul>
+                   </li>
+                    
+                   <li>
+                       <a href="#">EVENT</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NOW EVENT</a></li>
+                           <li><a href="#">END EVENT</a></li>
+                       </ul>
+                   </li>
+                    
+                   <li>
+                       <a href="#">NEWS &amp; MEDIA</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NEWS &amp; NOTICE</a></li>
+                           <li><a href="#">TV CF</a></li>
+                           <li><a href="#">MAXIM CHANNEL</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">CUSTOMER</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NAVER BLOG</a></li>
+                           <li><a href="#">CUSTOMER SUPPORT</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </nav>
+        </main>
+
+
+
+        <div id="fullpage">
+            <section class="section " id="section0">
+                <div class="vidBox">
+                     <video loop muted controls data-autoplay>
+                     <source src="img/videoplayback2.mp4" type="video/mp4">
+                    </video>
+               </div>
+            </section>
+            
+            <section class="section" id="section1">
+                <div class="iconBox">
+                    <img src="img/icon1.png" alt="아이콘">
+                    <img src="img/icon2.png" alt="아이콘">
+                    <img src="img/icon3.png" alt="아이콘">
+                    <img src="img/icon4.png" alt="아이콘">
+                </div>
+            </section>
+            
+            <section class="section" id="section2">
+                <div><p>브랜드슬로건창입니다.</p></div>
+            </section>
+            
+            <section class="section" id="section2">
+                <div><p>브랜드슬로건창입니다.</p></div>
+            </section>
+</div>
+
+<script type="text/javascript" src="js/examples.js"></script>
+
+</body>
+</html>

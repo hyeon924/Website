@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>오리온</title>
+
+   
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" href="index_H.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+     
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index_H.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    
+    <script>document.documentElement.className = 'js';</script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                //sectionsColor: ['#ffffff', '#85553f', '#ffffff', '#e9dab7','#ffffff'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+      
+    </head>
+    <body class="demo-1">
+       
+       <main class="main main--demo-1">
+            <div class="logobox"></div>
+			<div class="content content--demo-1">
+				<div class="hamburger js-hover">
+					<div class="hamburger__line hamburger__line--01">
+						<div class="hamburger__line-in hamburger__line-in--01"></div>
+					</div>
+					<div class="hamburger__line hamburger__line--02">
+						<div class="hamburger__line-in hamburger__line-in--02"></div>
+					</div>
+					<div class="hamburger__line hamburger__line--03">
+						<div class="hamburger__line-in hamburger__line-in--03"></div>
+					</div>
+					<div class="hamburger__line hamburger__line--cross01">
+						<div class="hamburger__line-in hamburger__line-in--cross01"></div>
+					</div>
+					<div class="hamburger__line hamburger__line--cross02">
+						<div class="hamburger__line-in hamburger__line-in--cross02"></div>
+					</div>
+				</div>
+                <div class="global-menu">
+					<div class="global-menu__wrap">
+						<a class="global-menu__item global-menu__item--demo-1" href="#">NEW PORDUCT</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="index_sub.html">MARKET O</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="#">DR.YOU</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="#">POWER BRAND</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="#">CHOCOPIE HOUSE</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="#">COMPANY</a>
+						<a class="global-menu__item global-menu__item--demo-1" href="#">CUSTOMER</a>
+					</div>
+				</div>
+				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="shape-overlays__path"></path>
+					<path class="shape-overlays__path"></path>
+					<path class="shape-overlays__path"></path>
+				</svg>
+			</div>
+		</main>
+        
+        
+       <div id="fullpage">
+            <section class="section " id="section0">
+                <div class="orion">
+                    <div class="orion_bg"></div>
+                    <img src="img/main_title.png" alt="메인 이미지 타이틀">
+                </div>
+            </section>
+
+
+            <section class="section" id="section1">
+                <div class="marketO">
+                    <div class="marketO_bg"></div>
+                    <div class="marketO_Box">
+                       <div class="marketO_text">
+                            <h2>Market O</h2>
+                            <h5>재료의 맛, 그대로<br>자연이 만든 Market O !</h5>
+                            <a href="index_sub.html" class="market_btn">
+                                <p>
+                                Market O 제품 보러가기
+                                    <i class="fas fa-angle-double-right"></i>
+                                </p>
+                           </a>
+                        </div>
+                        <div class="marketO_img">
+                            <img src="img/market.png" alt="마켓오제품">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         
+            <section class="section" id="section2">
+                <div class="DrYou">
+                  <div class="DrYou_bg"></div>
+                   <div class="DrYou_Box">
+                       <div class="DrYou_text">
+                            <h2>Dr.You의 특징</h2>
+                            <h5 class="one">최고산지 원료</h5>
+                            <div class="bar1"></div>
+                            <p class="one_p">이천 쌀, 임실치즈, 해남 단호박 등 국내 최고산지 이용</p>
+                            <h5 class="two">생애 영양설계</h5>
+                            <div class="bar2"></div>
+                            <p class="two_p">과자 본연의 맛을 살리고 영양 밸런스를 충족</p>
+                            <a href="#" class="DrYou_btn">
+                                <p>
+                                    오리온 제품 보러가기
+                                    <i class="fas fa-angle-double-right"></i>
+                                </p>
+                           </a>
+                        </div>
+                        <div class="DrYou_img">
+                           <img src="img/Dr.Youlogo.png" alt="닥터유">
+                            <img src="img/Dr.You.png" alt="닥터유제품">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section" id="section3">
+                 <div class="Brand">
+                    <div class="Brand_bg"></div>
+                    <div class="Brand_Box">
+                       <div class="Brand_text">
+                            <h2>Orion Power Brand</h2>
+                            <h5>오리온의 다양한 과자들을 <br> 마음껏 즐기세요 !</h5>
+                            <a href="#" class="brand_btn">
+                                <p>
+                                    오리온 제품 보러가기
+                                    <i class="fas fa-angle-double-right"></i>
+                                </p>
+                           </a>
+                        </div>
+                        <div class="Brand_img">
+                            <img src="img/brand.png" alt="브랜드제품">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+             <section class="section" id="section4">
+                 <div class="Pie">
+                    <div class="Pie_bg"></div>
+                    <div class="Pie_Box">
+                       <div class="Pie_text">
+                            <h2>Chocopie House</h2>
+                            <h5>새로워진 디저트 초코파이를 만나보세요 !</h5>
+                        </div>
+                        <div class="Pie_img">
+                           <div class="big_img">
+                                <img src="img/pie.png" alt="파이제품">
+                            </div>
+                            <div class="sm_img">
+                                <ul class="item1">
+                                    <li>
+                                       <a href="#"><img src="img/pie1.png" alt="오리지널">
+                                        <p>ORIGINAL</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="img/pie2.png" alt="솔트 카라멜">
+                                       <p>CARAMEL SALT</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="img/pie3.png" alt="카카오">
+                                       <p>CACAO</p>
+                                       </a>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="item2">
+                                    <li>
+                                       <a href="#"><img src="img/pie4.png" alt="레드벨벳">
+                                       <p>RED VELVET</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="img/pie5.png" alt="인절미">
+                                       <p>INJEOLMI</p>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="img/pie6.png" alt="무화과">
+                                       <p>FIG&amp;EBRRIES</p>
+                                       </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="Pie_btn">
+                        <p>
+                            Chocopie House 제품 보러가기
+                            <i class="fas fa-angle-double-right"></i>
+                        </p>
+                    </a>
+                    </div>
+                    
+                </div>
+       
+            </section>
+
+          <section class="section" id="section5">
+                <div class="ft">
+                  <div class="ft_bg">
+                      <img src="img/footer_icon.png" alt="하단아이콘">
+                  </div>
+                  <div class="ft_Box">
+                    <div class="com">
+                         <h3>COMPANY</h3>
+                          <div class="com_bg">
+                              <ul>
+                                  <li><a href="#">CEO 인사말</a></li>
+                                  <li><a href="#">IR 정보</a></li>
+                                  <li><a href="#">PR 정보</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      
+                      <div class="new">
+                         <h3>NEW PORDUCT</h3>
+                          <div class="new_bg">
+                              <ul class="new_list">
+                                  <li><img src="img/new1.png" alt="신제품1"><p>오 그래놀라! 카카오&amp;유산균볼</p><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                  <li><a href="#"><img src="img/new2.png" alt="신제품2"><p>새로운 맛 출시! 상어밥</p><a href="#"><i class="fas fa-angle-double-right"></i></a></a></li>
+                                  <li><a href="#"><img src="img/new3.png" alt="신제품3"><p>팝핀 팝핀 치킨 팝팝 신제품 출시!</p><a href="#"><i class="fas fa-angle-double-right"></i></a></a></li>
+                                  <li><a href="#"><img src="img/new4.png" alt="신제품4"><p>휘바휘바 자일리톨 새로운 맛!</p><a href="#"><i class="fas fa-angle-double-right"></i></a></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      
+                      <div class="cus">
+                         <h3>CUSTOMER</h3>
+                          <div class="cus_bg">
+                              <ul>
+                                  <li><a href="#">고객 문의</a></li>
+                                  <li><a href="#">자주 묻는 질문</a></li>
+                                  <li><a href="#">매장 위치</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                
+                <footer>
+                   <div class="last_ft">
+                        <ul class="ft_text1">
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">이메일주소수집거부</a></li>
+                        </ul>
+
+                        <ul class="ft_text2">
+                            <li><a href="#">주소 : 서울시 용산구 백범로 90다길 13</a></li>
+                            <li><a href="#">전화번호 : 02-710-6000</a></li>
+                            <li><a href="#">상담실 : 080-023-5700 (수신자 부담)</a></li>
+                            <li><a href="#">제품 구입 문의 : 02-710-6083, orionmaster@orionworld.com</a></li>
+                        </ul>
+
+                        <p>COPYRIGHT ORION CORP. ALL RIGHT RESERVED.</p>
+                    </div>
+                </footer>
+                
+            </section>
+
+           </div>
+           
+    
+       
+     <!--  <script type="text/javascript">
+        
+            sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0', '#999'],  // 배경 이미지가 사용되지 않을 경우 배경 컬러 적용
+            slidesNavigation: true, //  2sild 가로형 슬라이트 도트
+			
+        });
+    </script>-->
+       
+       <script src="js/demo.js"></script>
+		<script src="js/easings.js"></script>
+		<script src="js/demo1.js"></script>
+        
+    </body>
+</html>
