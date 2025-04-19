@@ -26,11 +26,7 @@ body {
     position: relative;
     left: -100px;
     display: inline-block;
-<<<<<<< HEAD
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
-=======
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.3);
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
 }
 
 .profile h3 {
@@ -40,12 +36,9 @@ body {
     background-color: #d5efff;
     margin-top: 15px;
     margin-bottom: 15px;
-<<<<<<< HEAD
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-=======
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
 }
 
 .h_text1 {
@@ -143,30 +136,22 @@ body {
     bottom: 2%;
 }
 
-<<<<<<< HEAD
-.per > h3 {
-=======
 .per h3 {
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
     width: 50%;
     margin: auto;
     position: relative;
     background-color: #d5efff;
     margin-top: 15px;
     margin-bottom: 30px;
-<<<<<<< HEAD
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-=======
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
 }
 
 
 .skill_section {
     width: 50%;
     min-width: 400px;
-<<<<<<< HEAD
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -213,54 +198,6 @@ body {
     font-size: 14px;
     color: #796f7a;
     margin-left: -20px;
-=======
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%);
-    padding:10px;
-}
-
-.skillbar {
-	position:relative;
-	display:block;
-	width:100%;
-	background:#e2e1e2;
-	height:7px;
-	border-radius:3px;
-	transition:0.4s linear;
-	transition-property:width, background-color;
-	margin-bottom:30px;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:-27px;
-	left:0;
-	font-weight:bold;
-	font-size:13px;
-	line-height:27px;
-	text-transform:uppercase;
-	letter-spacing:2px;
-	color:#5b4c5c;
-}
-
-.skillbar-title span {
-	display:block;
-}
-
-.skillbar-bar {
-	height:7px;
-	width:0px;
-	background:#e88988;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	top:-24px;
-	font-size:14px;
-	color:#796f7a;
-	margin-left:-20px;
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
 }
 
 
@@ -271,7 +208,6 @@ body {
 
 
 @media (max-width:1024px) {
-<<<<<<< HEAD
 
     .hhh_img {
         width: 20%;
@@ -351,94 +287,12 @@ body {
 
 
 
-=======
-    
-    .hhh_img {
-    width: 20%;
-}
- 
-    .h_text1 {
-    width: 55%;
-}
-    
-}
-
-@media (max-width:768px) {
-    
-    .about_box {
-    height: 1250px;
-}
-    
-    .profile h3 {
-    width: 100%;
-}
-    
-    .hhh_img {
-    min-width: 110px;
-    left: 0px;
-}
-    
-    .h_text1 {
-    position: relative;
-    width: 100%;
-    bottom: 0%;
-}
-    
-    .h_text1 li {
-    width: 95%;
-        line-height: 1.5;
-    text-align: center;
-}
-
-    
-    .Aby {
-    position: relative;
-    width: 100%;
-    height: 250px;
-}
-    
-    .Aby h3 {
-    width: 100%;
-}
-    
-  
-    
-    .skill {
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-    
-    .skill h3 {
-    width: 100%;
-}
-    
-    
-    .per {
-    position: absolute;
-    bottom: 0;
-        
-}
-    
-    .per h3 {
-    width: 100%;
-}
-    
-    .skill_section {
-        width: 90%;
-        min-width: 300px;
-}
-    
-    
-    
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
 }
 
 
 
 
 @media (max-width:419px) {
-<<<<<<< HEAD
 
     .about_box {
         height: 1160px;
@@ -470,39 +324,6 @@ body {
 
     .skillbar-title {
         font-weight: 450;
-=======
-    
-    .about_box {
-    height: 1160px;
-}
-    
-   .h_text1 {
-    font-size: 1.1em;
-}
-    
-    .h_text1 li {
-    line-height: 2.2;
-}
-
-    
-    .Aby {
-    height: 200px;
-}
-
-    
-    
-    .skill {
-    height: 250px;
-}
-
-    .skill_section {
-    min-width: 250px;
-    font-weight: 400;
-}
-    
-    .skillbar-title {
-    font-weight: 450;
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
     }
 
 }
@@ -510,7 +331,6 @@ body {
 
 
 @media (max-width:399px) {
-<<<<<<< HEAD
 
     .h_text1 {
         font-size: 1em;
@@ -534,33 +354,3 @@ body {
     }
 
 }
-=======
-    
-    .h_text1 {
-    font-size: 1em;
-    min-width: 0;
-}
-    .h_text1 li {
-    line-height: 2;
-    text-align: left;
-    min-width: 0;
-}
-
-    .skill_section {
-    min-width: 100px;
-    font-weight: 400;
-}
-    
-   .skillbar-title {
-	font-weight: 450;
-	font-size: 0.8em;
-}
-
-}
-
-
-
-
-
-
->>>>>>> f809ac965c4f852651c9fe100b4ba6220ebd4026
