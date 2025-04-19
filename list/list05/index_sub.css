@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/*리셋*/
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Noto Sans KR;}
+ol,ul { list-style: none;}
+a { text-decoration: none; color: #333;}
+img {border: 0;}
+/** { border: 1px solid black;}*/
+
+/*전체*/
+body {width: 100%;}
+
+/*wrap*/
+
+#wrap { 
+    width: 1500px;
+    margin: auto;
+}
+
+/*로고*/
+header {
+    width: 1500px;
+    margin: auto;
+    height: 100px;
+    position: relative;
+}
+
+header>h1 { 
+   margin-top: 20px;
+    text-align: center;}
+
+header>h1>span {display: none;}
+
+header>nav {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+    font-size: 18px;
+}
+
+
+
+header>nav>ul>li {
+    margin-top: 5px;
+    margin-left: 80px;
+    float: left;
+    position: relative;
+}
+
+header>nav>ul>li>a:hover {color: orange;}
+
+
+header>nav>ul>li>a {
+    display: block;
+    width: 130px;
+    height: 55px;
+    text-align: center;
+    line-height: 65px;
+    transition: 0.3s;
+}
+
+header>nav>ul>li>ul>li>a {
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+    transition: 0.3s;
+    color: white;
+}
+
+ul.inner_menu {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+
+header>nav>ul>li:hover .inner_menu {display: block;}
+
+ul.inner_menu a:hover {color: coral;}
+
+/*이미지타이틀 부분*/
+
+.imgtitle {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 30px;
+    background-image: url(img_sub/ban2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/*.imgtitle imgbox {
+    width:100%;
+    height: 500px;
+    position: absolute;
+}*/
+
+
+.BlackBox {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 400px;
+    background: black;
+    opacity: 0.3;
+}
+
+
+/* 네비,<강아지> 부분*/
+
+.checktitle {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /*left: 41%;*/
+    top: 50px;
+}
+
+.checktitle p {
+    float: left;
+    font-size: 12px;
+}
+
+.checktitle strong {
+    color: orange;
+}
+
+.checktitle h3 {
+    position: absolute;
+    left: 44%;
+    font-size: 25px;
+}
+
+
+/*아이템 체크박스 부분*/
+
+.checkitem {
+    position: relative;
+    width: 100%;
+    height:  200px;
+    margin-top: 50px;
+    border: 1px solid #999;
+    border-radius: 5px
+}
+
+.itemsbox {
+    position: absolute;
+    width: 1499px;
+    height: 80px;
+    border-bottom: 1px solid #999;
+}
+
+.items {
+    position: absolute;
+    left: 115px;
+    width: 1200px;
+    height: 80px;
+}
+
+.items h3 {
+    width: 399px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.items a {
+    transition: 0.3s;
+}
+
+.items a:hover {
+    color: coral;
+}
+
+
+.check {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 130px;
+}
+.check input:checked {color:red;}
+
+.check input {
+    margin-left: 150px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+.textbox {
+    position: relative;
+    width: 1500px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.text {
+    width: 1499px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.text p {
+    position: absolute;
+    left: 38%;
+    font-size: 20px;
+}
+
+.text strong {
+    color: orange;
+}
+
+.list li {
+    float: left;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+
+
+/*상품 아이템 부분*/
+
+
+.itemBox {
+    width: 100%;
+    height: 2100px;
+    margin-top: 50px;
+}
+
+.itemBox>div>div {
+    padding: 20px;
+}
+
+/*상품 아이템 목록 1*/
+
+.item1 div {
+    float: left;
+    margin-left: 40px;
+}
+
+.item1 div:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+/*상품 아이템 목록 2*/
+
+.item2 div {
+    float: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.item2 div:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+
+/*상품 아이템 목록 3*/
+
+.item3 div {
+    float: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.item3 div:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+/*상품 아이템 목록 4*/
+
+.item4 div {
+    float: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.item4 div:hover {
+    box-shadow: 1px 1px 5px gray;
+}
+
+/*상품 텍스트 부분*/
+
+.itemBox>div>div>ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.itemBox>div>div>ul>li {
+    font-size: 14px;
+}
+
+
+/*숫자목록부분*/
+
+.numberlist {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.numberlistbox {
+    position: absolute;
+    width: 270px;
+    left: 38%;
+}
+
+.numberlist button {
+    display: block;
+    float: left;
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.numberlist li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 5px;
+    color: #999;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: gray;
+    margin-top: 100px;
+    position: relative;
+    clear: both;
+}
+
+.emart {
+    position: absolute;
+    top: 30%;
+    left: 300px;
+}
+
+.mollys {
+    position: absolute;
+    top: 30%;
+    left: 500px;
+}
+
+.Xcon {
+    position: absolute;
+    top: 32%;
+    left: 450px;
+}
+
+footer p {
+    width: 450px;
+    font-size: 12px;
+    position: absolute;
+    top: 25%;
+    left: 750px;
+    line-height: 20px;
+}
+
+footer p strong {
+    color: orange;
+    font-size: 15px;
+}
+
+.topbox {
+    position: fixed;
+    bottom: 30px;
+    z-index: 500;
+    width: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top {
+    position: absolute;
+    right: 0;
+    bottom: -50%;
+    visibility:hidden;
+    text-align: center;
+    font-size: 40px;
+}
+
+.backtotop {
+    visibility:hidden;
+    
+}
+
+.backtotop.visible{visibility:visible; opacity:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

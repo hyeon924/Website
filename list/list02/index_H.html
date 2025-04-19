@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>맥심 브랜드</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<link rel="stylesheet" href="index_H.css">
+        <link rel="stylesheet" href="css/fontawesome/css/all.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/index_H.js"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                sectionsColor: ['#8FB98B', '#85553f', '#ffffff', '#e9dab7','#ffffff'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+  
+</head>
+<body>
+
+		<main id="wrap">
+          <div class="logoBox">
+           <img src="img/logo.png" alt="로고">
+           <ul class="logo_text">
+              <li><a href="#">MEMBERSHIP</a></li>
+               <li><a href="#">LOGIN</a></li>
+           </ul>
+           </div>
+           
+           <nav>
+               <ul class="Big_menu">
+                   <li>
+                       <a href="#">ABOUT MAXIM</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">MAXIM INFO</a></li>
+                           <li><a href="index_sub.html">MAXIM HISTORY</a></li>
+                           <li><a href="#">MAXIM SLOGAN</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">PRODUCT</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">MAIN PRODUCT</a>
+                           <li><a href="#">SOLUBLE &amp; COFFEEMIX</a></li>
+                           <li><a href="#">INSTANT R &amp; G</a></li>
+                           <li><a href="#">R &amp; G COFFEE</a></li>
+                           <li><a href="#">RTD COFFEE</a></li>
+                           
+                       </ul>
+                   </li>
+                    
+                   <li>
+                       <a href="#">EVENT</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NOW EVENT</a></li>
+                           <li><a href="#">END EVENT</a></li>
+                       </ul>
+                   </li>
+                    
+                   <li>
+                       <a href="#">NEWS &amp; MEDIA</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NEWS &amp; NOTICE</a></li>
+                           <li><a href="#">TV CF</a></li>
+                           <li><a href="#">MAXIM CHANNEL</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">CUSTOMER</a>
+                       <ul class="sm_menu">
+                           <li><a href="#">NAVER BLOG</a></li>
+                           <li><a href="#">CUSTOMER SUPPORT</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </nav>
+        </main>
+
+
+
+        <div id="fullpage">
+            <section class="section " id="section0">
+                <div class="vidBox">
+                     <video loop muted controls data-autoplay width="100%;"> <!--다른페이지로갔다가 다시 돌아왔을때 동영상이 멈췄던 곳에서부터 다시 시작-->
+                     <source src="img/videoplayback2.mp4" type="video/mp4">
+                    </video>
+               </div>
+            </section>
+            
+            <section class="section" id="section1">
+                <div class="iconBox">
+                    <div class="icons">
+                       <h3>MAXIM SLOGAN</h3>
+                        <div class="icon1">
+                            <img src="img/icon1.png" alt="아이콘1">
+                            <p>산미와 풍미가 가득한<br>
+                            아라비아 원두 사용</p>
+                        </div>
+                        
+                        <div class="icon2">
+                            <img src="img/icon2.png" alt="아이콘2">
+                            <p>원두 종류 특성에 알맞는<br>
+                            선별적인 프로파일 로스팅 공법</p>
+                        </div>
+                        
+                        <div class="icon3">
+                            <img src="img/icon3.png" alt="아이콘3">
+                            <p>볶은 원두에서 직접 원두커피 향을<br>
+                            회수하는 RAP 공법</p>
+                        </div>
+                        
+                        <div class="icon4">
+                            <img src="img/icon4.png" alt="아이콘4">
+                            <p>저온,단시간으로 추출하는<br>
+                            APEX 추출공법</p>
+                        </div>
+                    </div> 
+                    <!--<div class="bgBox"><img src="img/bg1.png" alt="배경"></div>-->
+                </div>
+                <div class="bgBox"><!--<img src="img/bg1.png" alt="배경">--></div>
+            </section>
+            
+            <section class="section" id="section2">
+                <div class="familyBox">
+                  <h3>MAXIM FAMILY</h3>
+                   <ul class="fam_list1">
+                       <li>
+                           <a href="#">
+                           <img src="img/gold.png" alt="골드">
+                           <div class="fam_text">
+                               <h5>MOCHA GOLD</h5>
+                           </div>
+                           </a>
+                       </li>
+                       
+                       <li>
+                       <a href="#">
+                       <img src="img/white.png" alt="화이트"></a>
+                        <div class="fam_text">
+                            <h5>WHITE GOLD</h5>
+                        </div>
+                       </li>
+                       
+                       <li>
+                       <a href="#">
+                       <img src="img/kanu.png" alt="카누"></a>
+                       <div class="fam_text">
+                            <h5>KANU</h5>
+                        </div>
+                       </li>
+                   </ul>
+                   
+                   <ul class="fam_list2">
+                       <li><a href="#">
+                       <img src="img/tass.png" alt="타시모"></a>
+                       <div class="fam_text">
+                            <h5>TASSIMO</h5>
+                        </div>
+                       </li>
+                       <li><a href="#">
+                       <img src="img/top.png" alt="커피"></a>
+                       <div class="fam_text">
+                            <h5>T.O.P</h5>
+                        </div>
+                       </li>
+                   </ul>
+                   
+                   <div class="ballBox">
+                       <img src="img/ball1.png" alt="배경1">
+                       <img src="img/ball2.png" alt="배경2">
+                       <img src="img/ball3.png" alt="배경3">
+                       <img src="img/ball4.png" alt="배경4">
+                       <img src="img/ball5.png" alt="배경5">
+                       <img src="img/ball6.png" alt="배경6">
+                       <img src="img/ball7.png" alt="배경7">
+                   </div>
+                    
+                </div>
+            </section>
+            
+            <section class="section" id="section3">
+                <div class="slideBox">
+                   <h3>MAXIM MODEL</h3>
+                    <iframe width="720" height="420" src="https://www.youtube.com/embed/97YnfiOMHgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="modelBox">
+                        <ul class="model_list">
+                            <li><a href="#"><img src="img/model1.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model2.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model3.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model4.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model5.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model6.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model7.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model8.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model9.png" alt="모델"></a></li>
+                            <li><a href="#"><img src="img/model10.png" alt="모델"></a></li>
+                        </ul>
+                    </div>
+                    <div class="btnFrame">
+                        <button class="prevBtn"><i class="fas fa-angle-double-left"></i>
+                        </button>
+                        <button class="nextBtn"><i class="fas fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section" id="section4">
+                <div class="banBox">
+                    <h3>MAXIM STORY</h3>
+                    <ul class="ban">
+                        <li><a href="#">
+                        <img src="img/ban1.jpg" alt="배너1"></a></li>
+                        <li><a href="#"><img src="img/ban2.jpg" alt="배너2"></a></li>
+                        <li><a href="#"><img src="img/ban3.jpg" alt="배너3"></a></li>
+                    </ul>
+                </div>
+                <footer>
+                    <ul class="ft_text1">
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                    <ul class="ft_text2">
+                        <li><a href="#">주소 : 서울시 마포구 독막로 324 동서빌딩</a></li>
+                        <li><a href="#">전국대표전화번호 : 1588-2233 </a></li>
+                    </ul>
+                    <p class="ft_p">2013 DONG SUH FOOD. ALL RIGHT RESERVED.</p>
+                </footer>
+            </section>
+            
+</div>
+
+<script type="text/javascript" src="js/examples.js"></script>
+
+</body>
+</html>
