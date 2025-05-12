@@ -20,6 +20,7 @@
         rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/popupStyles.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="css/popbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -217,8 +218,8 @@
                                     <div class="clearfix"></div>
                                     <span>Design / Publishing</span>
                                     <p>Refactoring Complete<img
-                                        src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png"
-                                        alt="Partying Face" width="25" height="25" /></p>
+                                            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png"
+                                            alt="Partying Face" width="25" height="25" /></p>
                                 </div>
                                 <img src="img/pro05.png" class="img-responsive" alt="...">
                             </div>
@@ -235,8 +236,8 @@
                                     <div class="clearfix"></div>
                                     <span>Design / Publishing</span>
                                     <p>Refactoring Complete<img
-                                        src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png"
-                                        alt="Partying Face" width="25" height="25" /></p>
+                                            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png"
+                                            alt="Partying Face" width="25" height="25" /></p>
                                 </div>
                                 <img src="img/pro02.png" class="img-responsive" alt="...">
                             </div>
@@ -246,17 +247,17 @@
 
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 fp lists06">
                     <a href="#" data-toggle="modal" data-target="#Modal-6">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" style="background: linear-gradient(135deg, #ffe0b2, #ffb74d);">
                             <div class="hover-bg">
                                 <div class="hover-text"> <small>Frontend Project</small>
-                                    <h2>준비중</h2>
+                                    <h2>맛콩맛집</h2>
                                     <div class="clearfix"></div>
                                     <span>Project in Progress</span>
-                                    <p>Pending Refactor<img
-                                            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Exploding%20Head.png"
-                                            alt="Exploding Head" width="25" height="25" /></p>
+                                    <p>Deployment complete<img
+                                        src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png"
+                                        alt="Partying Face" width="25" height="25" /></p>
                                 </div>
-                                <img src="img/cs.jpg" class="img-responsive" alt="...">
+                                <img src="img/character.png" alt="..." class="img-responsive" style="max-width: 250px; height: auto; margin: auto;" />
                             </div>
                         </div>
                     </a>
@@ -384,8 +385,8 @@
                                 <h3 class="s">Style Guide</h3>
                                 <img src="img/st05.jpg" alt="스타일">
                             </div>
-                            <a href="list/list01/index_H.html" target="_blank" class="btna01" 
-                            style="color: black; font-weight: bold;">사이트 바로가기</a>
+                            <a href="list/list01/index_H.html" target="_blank" class="btna01"
+                                style="color: black; font-weight: bold;">사이트 바로가기</a>
                         </div>
 
                         <div class="exBox">
@@ -598,29 +599,55 @@
     </section>
 
     <section class="popBox list06 modal fade" id="Modal-6" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
-        <div class="popitem">
-
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="topClose" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                        <h4 class="modal-title" id="Modal-label-1">준비중</h4>
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="modal-bodyBox"
-                            style="display: flex; width: 100%; height: 100%; border: 1px solid rgba(128, 128, 128, 0.139);">
-                            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Exploding%20Head.png"
-                                alt="Exploding Head" width="250" height="250" style="margin: auto;" />
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="botClose" data-dismiss="modal">Close</button>
-                    </div>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="project-card">
+                <button type="button" class="topClose" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <h2 class="project-title">🍙 맛콩 맛집</h2>
+                <p class="project-desc">
+                  공공데이터포털 API를 연동하여 지역/구/음식 카테고리 기반의 맛집 정보를 실시간으로 제공하는 지도 기반 서비스입니다.
+                </p>
+              
+                <div class="project-section">
+                  <h4>✨ 사용 기술</h4>
+                  <ul class="tech-list">
+                    <li>React</li>
+                    <li>Vite</li>
+                    <li>Tailwind CSS</li>
+                    <li>Netlify</li>
+                    <li>공공 API</li>
+                  </ul>
                 </div>
-            </div>
-
+              
+                <div class="project-section">
+                  <h4>🚀 주요 기능</h4>
+                  <ul class="feature-list">
+                    <li>지역/구/카테고리 필터링</li>
+                    <li>API 실시간 호출</li>
+                    <li>카카오 지도 연동</li>
+                    <li>모달 상세 보기</li>
+                  </ul>
+                </div>
+              
+                <div class="project-section">
+                  <h4>🎨 시안</h4>
+                  <div class="mockup-preview">
+                    <img src="img/eat-layout-main.png" alt="메인 시안" />
+                    <img src="img/eat-layout-sub.png" alt="서브 시안" />
+                  </div>
+                </div>
+              
+                <div class="project-links">
+                    <a href="https://splendorous-biscuit-29a7de.netlify.app/" target="_blank" class="project-button">
+                      🚀 사이트 바로가기
+                    </a>
+                    <a href="https://github.com/hyeon924/Eat-Map" target="_blank" class="project-button github">
+                      🐱 GitHub 보기
+                    </a>
+                  </div>
+                  
+              </div>
+              
         </div>
     </section>
 
