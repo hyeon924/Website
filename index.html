@@ -362,7 +362,7 @@
           </div>
 
           <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 bp lists06">
-            <a href="#" data-toggle="modal" data-target="#Modal-6">
+            <a href="#" data-toggle="modal" data-target="#Modal-coming-soon">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -383,6 +383,35 @@
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="popBox modal fade"
+      id="Modal-coming-soon"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="Modal-coming-soon-label"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content project-modal coming-soon">
+          <button
+            type="button"
+            class="topClose"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="coming-soon__inner">
+            <h2 id="Modal-coming-soon-label">Backend Project 준비 중입니다</h2>
+            <p>
+              새로운 프로젝트를 곧 공유할 예정이에요.<br />
+              개발 중인 기능들이 안정화되는 대로 업데이트하겠습니다.
+            </p>
+            <div class="coming-soon__badge">Coming Soon</div>
           </div>
         </div>
       </div>
@@ -452,7 +481,7 @@
                   target="_blank"
                   class="btna01"
                   style="color: black; font-weight: bold"
-                  >사이트 바로가기</a
+                  >🚀 사이트 바로가기</a
                 >
               </div>
 
@@ -552,7 +581,7 @@
                   target="_blank"
                   class="btna01"
                   style="color: black; font-weight: bold"
-                  >사이트 바로가기</a
+                  >🚀 사이트 바로가기</a
                 >
               </div>
 
@@ -642,7 +671,7 @@
                   target="_blank"
                   class="btna01"
                   style="color: black; font-weight: bold"
-                  >사이트 바로가기</a
+                  >🚀 사이트 바로가기</a
                 >
               </div>
 
@@ -853,7 +882,7 @@
       aria-labelledby="Modal-label-1"
     >
       <div class="modal-dialog modal-lg" role="document">
-        <div class="project-card">
+        <div class="project-modal">
           <button
             type="button"
             class="topClose"
@@ -862,42 +891,58 @@
           >
             <span aria-hidden="true"><i class="fas fa-times"></i></span>
           </button>
-          <h2 class="project-title">🍙 맛콩 맛집</h2>
-          <p class="project-desc">
-            공공데이터포털 API를 연동하여 지역/구/음식 카테고리 기반의 맛집
-            정보를 실시간으로 제공하는 지도 기반 서비스입니다.
-          </p>
-
-          <div class="project-section">
-            <h4>✨ 사용 기술</h4>
-            <ul class="tech-list">
-              <li>React</li>
-              <li>Vite</li>
-              <li>Tailwind CSS</li>
-              <li>Netlify</li>
-              <li>공공 API</li>
-            </ul>
-          </div>
-
-          <div class="project-section">
-            <h4>🚀 주요 기능</h4>
-            <ul class="feature-list">
-              <li>지역/구/카테고리 필터링</li>
-              <li>API 실시간 호출</li>
-              <li>카카오 지도 연동</li>
-              <li>모달 상세 보기</li>
-            </ul>
-          </div>
-
-          <div class="project-section">
-            <h4>🎨 시안</h4>
-            <div class="mockup-preview">
-              <img src="img/eat-layout-main.png" alt="메인 시안" />
-              <img src="img/eat-layout-sub.png" alt="서브 시안" />
+          <div class="project-hero">
+            <div class="project-hero__text">
+              <span class="project-chip">Frontend · 지도 기반 서비스</span>
+              <h2 class="project-title">🍙 맛콩 맛집</h2>
+              <p class="project-lead">
+                공공데이터포털의 지역·음식 카테고리 데이터를 연동해 실시간으로
+                맛집 정보를 제공하고, 카카오 지도 위에서 직관적으로 탐색할 수
+                있도록 설계한 서비스입니다.
+              </p>
+              <div class="project-pill-group">
+                <span class="project-pill">React</span>
+                <span class="project-pill">Vite</span>
+                <span class="project-pill">Tailwind CSS</span>
+                <span class="project-pill">공공데이터 API</span>
+                <span class="project-pill">Netlify</span>
+              </div>
+            </div>
+            <div class="project-hero__media">
+              <img src="img/eat-layout-main.png" alt="맛콩 맛집 메인 화면" />
             </div>
           </div>
 
-          <div class="project-links">
+          <div class="project-grid">
+            <article class="project-panel">
+              <h3>핵심 기능</h3>
+              <ul class="project-list">
+                <li>지역 · 구 · 음식 카테고리 다중 필터 UI</li>
+                <li>공공데이터 실시간 호출 및 데이터 스키마 정제</li>
+                <li>카카오 지도 마커 & 장소 상세 모달</li>
+                <li>즐겨찾기와 최근 조회 히스토리 저장</li>
+              </ul>
+            </article>
+
+            <article class="project-panel">
+              <h3>역할 & 기여</h3>
+              <ul class="project-list">
+                <li>API 예외 상황을 고려한 데이터 파이프라인 구성</li>
+                <li>모바일 퍼스트 반응형 UI 및 접근성 개선</li>
+                <li>Netlify 배포 자동화와 환경 변수 관리</li>
+              </ul>
+            </article>
+
+            <article class="project-panel project-panel--gallery">
+              <h3>화면 미리보기</h3>
+              <div class="project-gallery">
+                <img src="img/eat-layout-sub.png" alt="맛콩 맛집 상세 화면" />
+                <img src="img/character.png" alt="맛콩 캐릭터 일러스트" />
+              </div>
+            </article>
+          </div>
+
+          <div class="project-actions">
             <a
               href="https://splendorous-biscuit-29a7de.netlify.app/"
               target="_blank"
@@ -908,7 +953,7 @@
             <a
               href="https://github.com/hyeon924/Eat-Map"
               target="_blank"
-              class="project-button github"
+              class="project-button project-button--github"
             >
               🐱 GitHub 보기
             </a>
