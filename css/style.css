@@ -59,7 +59,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*
 fonts used
 
-font-family: 'Montserrat', sans-serif;
+font-family: 'Paperlogy', sans-serif;
 font-family: 'Crimson Text', serif;
 font-family: 'Lato', sans-serif;
 
@@ -80,12 +80,12 @@ font-family: 'Lato', sans-serif;
 
 
 html, body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	color: #80909c;
 	background: #f5f5f5;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	margin: 15px 0 25px;
 	color: #3c434d;
 }
@@ -118,7 +118,7 @@ h6 {
 	font-weight: 900;
 }
 p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.8;
@@ -137,7 +137,7 @@ p a:hover {
 	-webkit-transition: all 0.5s;
 }
 .p2 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.8;
@@ -148,7 +148,7 @@ p a:hover {
 	font-weight: 600;
 }
 .single p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.8;
@@ -1430,7 +1430,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 .panel-body {
 	color: #6f6f6f;
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	line-height: 1.7;
 }
 /*3.3 Modal Popup */
@@ -1440,7 +1440,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 	text-align: center;
 	font-size: 32px;
 	font-weight: 900;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 }
 .modal-footer {
 	border: none;
@@ -1459,7 +1459,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 	color: #343e5c;
 	letter-spacing: 0.8px;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	line-height: 1.7;
 }
 .close:hover {
@@ -1469,7 +1469,7 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 /* 3.5 Popover */
 
 .popover-content {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-size: 14px;
 	color: #222327;
 	text-align: center;
@@ -1914,7 +1914,7 @@ aside .widget_search button:hover {
 	display: block;
 	margin-left: 0px;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 }
 .widget_recent_entries li {
@@ -1925,7 +1925,7 @@ aside .widget_search button:hover {
 	display: block;
 	font-size: 11px;
 	color: #629fd1;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 16px;
@@ -1944,7 +1944,7 @@ aside .widget_search button:hover {
 	text-transform: none;
 	margin-left: 12px;
 	letter-spacing: 0.8px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	text-decoration: none;
 	margin-top: 0px;
 	line-height: 1.8;
@@ -2000,14 +2000,14 @@ aside .widget_search button:hover {
 	display: block;
 	margin-left: 0px;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 }
 .widget_rss ul li .rss-date {
 	display: inline-block;
 	font-size: 11px;
 	color: #629fd1;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 16px;
@@ -2015,7 +2015,7 @@ aside .widget_search button:hover {
 .widget_rss ul li cite {
 	display: inline-block;
 	font-size: 11px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 16px;
@@ -2053,7 +2053,7 @@ aside {
 }
 aside ul li {
 	padding: 8px 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	letter-spacing: 0.8px;
 	color: #969dad;
 	font-size: 14px;
@@ -2394,13 +2394,13 @@ aside li a:hover {
 	font-size: 14px;
 	letter-spacing: 0.6px;
 	line-height: 1.7;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	margin-left: 0 !important;
 }
 #comments form label {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-weight: 400;
 }
 #comments .comments-title {
@@ -2540,7 +2540,7 @@ aside li a:hover {
 	color: #fff;
 	border: none;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	padding: 18px;
 }
 #respond input[type=submit]:hover {
@@ -3431,7 +3431,7 @@ display:inline-block;
 	display: inline-block;
 	margin: 10px 10px;
 	width: auto !important;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	margin: 25px auto !important;
 }
 .page-article-block .posts-navigation ul li:before {
@@ -3439,7 +3439,7 @@ display:inline-block;
 }
 .page-article-block .posts-navigation ul li a {
 	background: #f5f5f5;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	color: #80909c;
 	font-size: 14px;
 	font-weight: 600;
@@ -3711,7 +3711,7 @@ blockquote p {
 }
 .page figure .wp-caption-text, .single .single-post article figure .wp-caption-text {
 	font-size: 13px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	font-style: italic;
 	text-align: center;
 	color: #80909c;
@@ -3934,7 +3934,7 @@ blockquote p {
 	display: inline-block;
 	margin: 10px 10px;
 	width: auto !important;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	margin: 32px auto !important;
 }
 .posts-navigation ul li:before {
@@ -3945,7 +3945,7 @@ blockquote p {
 }
 .posts-navigation ul li a {
 	background: #f5f5f5;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Paperlogy', sans-serif;
 	color: #80909c;
 	font-size: 14px;
 	height: 34px;

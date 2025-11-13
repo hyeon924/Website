@@ -1,665 +1,644 @@
 @charset "utf-8";
 
 body {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-
 .about_box {
-    width: 100%;
-    height: 650px;
-    position: relative;
+  width: 100%;
+  height: 650px;
+  position: relative;
 }
 
 .profile {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    color: #333;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  color: #333;
 }
 
-
 .hhh_img {
-    border-radius: 10px;
-    width: 15%;
-    min-width: 100px;
-    position: relative;
-    left: -100px;
-    display: inline-block;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 15%;
+  min-width: 100px;
+  position: relative;
+  left: -100px;
+  display: inline-block;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .profile h3 {
-    width: 50%;
-    margin: auto;
-    position: relative;
-    background-color: #d5efff;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background-color: #d5efff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .h_text1 {
-    position: absolute;
-    width: 50%;
-    min-width: 275px;
-    height: 130px;
-    bottom: 20%;
-    right: 0%;
-    text-align: left;
-    font-weight: 400;
-    font-size: 1.3em;
+  position: absolute;
+  width: 50%;
+  min-width: 275px;
+  height: 130px;
+  bottom: 20%;
+  right: 0%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.3em;
 }
 
 .h_text1 li {
-    width: 100%;
-    min-width: 200px;
-    text-align: left;
-    line-height: 1.7;
+  width: 100%;
+  min-width: 200px;
+  text-align: left;
+  line-height: 1.7;
 }
 
-
-
 .Aby {
-    position: absolute;
-    width: 50%;
-    height: 250px;
-    font-weight: 500;
-    font-size: 1.1em;
-    color: #333;
+  position: absolute;
+  width: 50%;
+  height: 250px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #333;
 }
 
 .Aby h3 {
-    width: 50%;
-    margin: auto;
-    position: relative;
-    background-color: #d5efff;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background-color: #d5efff;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .Aby ul {
-    width: 40%;
-    min-width: 200px;
-    margin: auto;
+  width: 40%;
+  min-width: 200px;
+  margin: auto;
 }
 
 .Aby li {
-    width: 100%;
-    min-width: 200px;
-    text-align: left;
-    line-height: 2.7;
-    list-style: circle;
+  width: 100%;
+  min-width: 200px;
+  text-align: left;
+  line-height: 2.7;
+  list-style: circle;
 }
 
 .skill {
-    /* position: absolute; */
-    width: 50%;
-    height: auto;
-    right: 0;
-    color: #333;
-    font-weight: 500;
-    font-size: 1.1em;
+  /* position: absolute; */
+  width: 50%;
+  height: auto;
+  right: 0;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 
 .skill h3 {
-    width: 50%;
-    margin: auto;
-    position: relative;
-    background-color: #d5efff;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background-color: #d5efff;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-
 .skill ul {
-    width: 40%;
-    min-width: 200px;
-    margin: auto;
+  width: 40%;
+  min-width: 200px;
+  margin: auto;
 }
 
 .skill li {
-    width: 100%;
-    min-width: 200px;
-    text-align: left;
-    line-height: 1.7;
-    list-style: circle;
+  width: 100%;
+  min-width: 200px;
+  text-align: left;
+  line-height: 1.7;
+  list-style: circle;
 }
 
-
 .per {
-    position: absolute;
-    width: 100%;
-    height: 350px;
-    bottom: 2%;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  bottom: 2%;
 }
 
 .per h3 {
-    width: 50%;
-    margin: auto;
-    position: relative;
-    background-color: #d5efff;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background-color: #d5efff;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
 .skill_section {
-    width: 50%;
-    min-width: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 10px;
+  width: 50%;
+  min-width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
 }
 
 .skillbar {
-    position: relative;
-    display: block;
-    width: 100%;
-    background: #e2e1e2;
-    height: 7px;
-    border-radius: 3px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-    margin-bottom: 30px;
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #e2e1e2;
+  height: 7px;
+  border-radius: 3px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  margin-bottom: 30px;
 }
 
 .skillbar-title {
-    position: absolute;
-    top: -27px;
-    left: 0;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 27px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #5b4c5c;
+  position: absolute;
+  top: -27px;
+  left: 0;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 27px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #5b4c5c;
 }
 
 .skillbar-title span {
-    display: block;
+  display: block;
 }
 
 .skillbar-bar {
-    height: 7px;
-    width: 0px;
-    background: #e88988;
+  height: 7px;
+  width: 0px;
+  background: #e88988;
 }
 
 .skill-bar-percent {
+  position: absolute;
+  top: -24px;
+  font-size: 14px;
+  color: #796f7a;
+  margin-left: -20px;
+}
+
+@media (max-width: 1024px) {
+  .hhh_img {
+    width: 20%;
+  }
+
+  .h_text1 {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_box {
+    height: 1250px;
+  }
+
+  .profile h3 {
+    width: 100%;
+  }
+
+  .hhh_img {
+    min-width: 110px;
+    left: 0px;
+  }
+
+  .h_text1 {
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+  }
+
+  .h_text1 li {
+    width: 95%;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .Aby {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .Aby h3 {
+    width: 100%;
+  }
+
+  .skill {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  .skill h3 {
+    width: 100%;
+  }
+
+  .per {
     position: absolute;
-    top: -24px;
-    font-size: 14px;
-    color: #796f7a;
-    margin-left: -20px;
+    bottom: 0;
+  }
+
+  .per h3 {
+    width: 100%;
+  }
+
+  .skill_section {
+    width: 90%;
+    min-width: 300px;
+  }
 }
 
+@media (max-width: 419px) {
+  .about_box {
+    height: 1160px;
+  }
 
+  .h_text1 {
+    font-size: 1.1em;
+  }
 
+  .h_text1 li {
+    line-height: 2.2;
+  }
 
+  .Aby {
+    height: 200px;
+  }
 
+  .skill {
+    height: 250px;
+  }
 
+  .skill_section {
+    min-width: 250px;
+    font-weight: 400;
+  }
 
-
-@media (max-width:1024px) {
-
-    .hhh_img {
-        width: 20%;
-    }
-
-    .h_text1 {
-        width: 55%;
-    }
-
+  .skillbar-title {
+    font-weight: 450;
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width: 399px) {
+  .h_text1 {
+    font-size: 1em;
+    min-width: 0;
+  }
 
-    .about_box {
-        height: 1250px;
-    }
+  .h_text1 li {
+    line-height: 2;
+    text-align: left;
+    min-width: 0;
+  }
 
-    .profile h3 {
-        width: 100%;
-    }
+  .skill_section {
+    min-width: 100px;
+    font-weight: 400;
+  }
 
-    .hhh_img {
-        min-width: 110px;
-        left: 0px;
-    }
-
-    .h_text1 {
-        position: relative;
-        width: 100%;
-        bottom: 0%;
-    }
-
-    .h_text1 li {
-        width: 95%;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-
-    .Aby {
-        position: relative;
-        width: 100%;
-        height: 250px;
-    }
-
-    .Aby h3 {
-        width: 100%;
-    }
-
-
-
-    .skill {
-        position: relative;
-        width: 100%;
-        height: 300px;
-    }
-
-    .skill h3 {
-        width: 100%;
-    }
-
-
-    .per {
-        position: absolute;
-        bottom: 0;
-
-    }
-
-    .per h3 {
-        width: 100%;
-    }
-
-    .skill_section {
-        width: 90%;
-        min-width: 300px;
-    }
-
-
-
-}
-
-
-
-
-@media (max-width:419px) {
-
-    .about_box {
-        height: 1160px;
-    }
-
-    .h_text1 {
-        font-size: 1.1em;
-    }
-
-    .h_text1 li {
-        line-height: 2.2;
-    }
-
-
-    .Aby {
-        height: 200px;
-    }
-
-
-
-    .skill {
-        height: 250px;
-    }
-
-    .skill_section {
-        min-width: 250px;
-        font-weight: 400;
-    }
-
-    .skillbar-title {
-        font-weight: 450;
-    }
-
-}
-
-
-
-@media (max-width:399px) {
-
-    .h_text1 {
-        font-size: 1em;
-        min-width: 0;
-    }
-
-    .h_text1 li {
-        line-height: 2;
-        text-align: left;
-        min-width: 0;
-    }
-
-    .skill_section {
-        min-width: 100px;
-        font-weight: 400;
-    }
-
-    .skillbar-title {
-        font-weight: 450;
-        font-size: 0.8em;
-    }
-
+  .skillbar-title {
+    font-weight: 450;
+    font-size: 0.8em;
+  }
 }
 
 /* === 2025 About Box Refresh === */
 .about_box {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem 0 1rem;
-    height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0 1rem;
+  height: auto;
 }
 
 .profile-card,
 .skill-stack {
-    background: #ffffff;
-    border-radius: 24px;
-    padding: 2.75rem 2.5rem;
-    box-shadow: 0 28px 60px rgba(32, 67, 91, 0.12);
-    position: relative;
-    overflow: hidden;
-    width: min(100%, 920px);
-    margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.75rem 2.5rem;
+  box-shadow: 0 28px 60px rgba(32, 67, 91, 0.12);
+  position: relative;
+  overflow: hidden;
+  width: min(100%, 920px);
+  margin: 0 auto;
 }
 
 .profile-card::before {
-    content: "";
-    position: absolute;
-    inset: -60px 65% auto auto;
-    width: 180px;
-    height: 180px;
-    border-radius: 120px;
-    background: linear-gradient(135deg, rgba(98, 159, 209, 0.25), rgba(255, 255, 255, 0));
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: -60px 65% auto auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 120px;
+  background: linear-gradient(
+    135deg,
+    rgba(98, 159, 209, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
 }
 
 .skill-stack::before {
-    content: "";
-    position: absolute;
-    inset: auto auto -80px 67%;
-    width: 210px;
-    height: 210px;
-    border-radius: 140px;
-    background: linear-gradient(135deg, rgba(255, 196, 120, 0.25), rgba(255, 255, 255, 0));
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: auto auto -80px 67%;
+  width: 210px;
+  height: 210px;
+  border-radius: 140px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 196, 120, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
 }
 
 .profile-card h3,
 .skill-stack h3 {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-size: 2.05rem;
-    margin-bottom: 1.8rem;
-    letter-spacing: 0.06em;
-    color: #1a2430;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-size: 2.05rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.06em;
+  color: #1a2430;
 }
 
 .profile-card__body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-    align-items: stretch;
-    position: relative;
-    z-index: 1;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .profile-card__photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 22px;
-    object-fit: cover;
-    box-shadow: 0 18px 35px rgba(65, 111, 147, 0.2);
-    border: 6px solid #f4f8fb;
-    flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 18px 35px rgba(65, 111, 147, 0.2);
+  border: 6px solid #f4f8fb;
+  flex-shrink: 0;
 }
 
 .profile-meta {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    flex: 1 1 280px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  flex: 1 1 280px;
 }
 
 .profile-meta li {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    background: rgba(235, 242, 248, 0.7);
-    padding: 1rem 1.1rem;
-    border-radius: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(235, 242, 248, 0.7);
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .profile-meta li:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 34px rgba(36, 74, 110, 0.16);
-    background: rgba(235, 242, 248, 0.95);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(36, 74, 110, 0.16);
+  background: rgba(235, 242, 248, 0.95);
 }
 
 .profile-meta__icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, rgba(98, 159, 209, 0.4), rgba(239, 245, 250, 1));
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #2e5fa4;
-    font-size: 1.1rem;
-    flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(98, 159, 209, 0.4),
+    rgba(239, 245, 250, 1)
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e5fa4;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .profile-meta__label {
-    display: block;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #5d6c79;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5d6c79;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
 
 .profile-meta__value {
-    display: inline-block;
-    font-size: 1.08rem;
-    font-weight: 600;
-    color: #1b2734;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
-    line-height: 1.55;
+  display: inline-block;
+  font-size: 1.08rem;
+  font-weight: 650;
+  color: #162331;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
 }
 
 .profile-meta a.profile-meta__value {
-    text-decoration: none;
-    color: #1f56b4;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  color: #1976c7;
+  transition: color 0.2s ease;
 }
 
 .profile-meta a.profile-meta__value:hover {
-    color: #143b6e;
+  color: #143b6e;
 }
 
 .skill-stack__intro {
-    margin: 0 0 2.3rem;
-    font-size: 1.08rem;
-    line-height: 1.85;
-    color: #3f4d59;
-    position: relative;
-    z-index: 1;
+  margin: 0 0 2.3rem;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #3f4d59;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.7rem;
-    position: relative;
-    z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.7rem;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-card {
-    background: rgba(245, 248, 252, 0.9);
-    border-radius: 18px;
-    padding: 1.6rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    align-items: flex-start;
-    text-align: left;
-    box-shadow:
-        0 6px 18px rgba(32, 61, 92, 0.18),
-        0 1px 0 rgba(255, 255, 255, 0.6) inset;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(245, 248, 252, 0.9);
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(32, 61, 92, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.6) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(32, 67, 91, 0.14);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(32, 67, 91, 0.14);
 }
 
 .skill-card__icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(255, 206, 153, 0.8), rgba(255, 238, 214, 0.9));
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #a05823;
-    font-size: 1.2rem;
-    flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 206, 153, 0.8),
+    rgba(255, 238, 214, 0.9)
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #a05823;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .skill-card__content h4 {
-    margin: 0 0 0.85rem;
-    font-size: 1.28rem;
-    font-weight: 700;
-    color: #182734;
-    letter-spacing: 0.02em;
+  margin: 0 0 0.85rem;
+  font-size: 1.28rem;
+  font-weight: 760;
+  color: #111f2d;
+  letter-spacing: 0.02em;
 }
 
 .skill-card__content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.5rem;
-    font-size: 1.04rem;
-    color: #243544;
-    line-height: 1.62;
-    word-break: keep-all;
-    overflow-wrap: anywhere;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1.04rem;
+  color: #1976c7;
+  line-height: 1.62;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  font-weight: 500;
 }
 
 .skill-keywords {
-    margin-top: 2.4rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    position: relative;
-    z-index: 1;
+  margin-top: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-keywords__item {
-    padding: 0.6rem 1.2rem;
-    border-radius: 999px;
-    background: rgba(33, 150, 243, 0.12);
-    color: #215b92;
-    font-size: 0.92rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(33, 150, 243, 0.12);
+  color: #215b92;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 @media (max-width: 1024px) {
-    .profile-card,
-    .skill-stack {
-        padding: 2.2rem 2rem;
-        width: min(100%, 760px);
-    }
+  .profile-card,
+  .skill-stack {
+    padding: 2.2rem 2rem;
+    width: min(100%, 760px);
+  }
 
-    .profile-card__photo {
-        width: 140px;
-        height: 140px;
-    }
+  .profile-card__photo {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 @media (max-width: 768px) {
-    .about_box {
-        gap: 2.2rem;
-    }
+  .about_box {
+    gap: 2.2rem;
+  }
 
-    .profile-card,
-    .skill-stack {
-        padding: 2rem 1.75rem;
-        width: 100%;
-        border-radius: 20px;
-    }
+  .profile-card,
+  .skill-stack {
+    padding: 2rem 1.75rem;
+    width: 100%;
+    border-radius: 20px;
+  }
 
-    .skill-card-grid {
-        grid-template-columns: 1fr;
-    }
+  .skill-card-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .skill-card {
-        padding: 1.4rem 1.3rem;
-    }
+  .skill-card {
+    padding: 1.4rem 1.3rem;
+  }
 
-    .skill-card__icon {
-        width: 42px;
-        height: 42px;
-    }
+  .skill-card__icon {
+    width: 42px;
+    height: 42px;
+  }
 
-    .skill-keywords {
-        justify-content: flex-start;
-    }
+  .skill-keywords {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 480px) {
-    .profile-card h3,
-    .skill-stack h3 {
-        font-size: 1.6rem;
-    }
+  .profile-card h3,
+  .skill-stack h3 {
+    font-size: 1.6rem;
+  }
 
-    .profile-card__body {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .profile-card__body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .profile-meta {
-        width: 100%;
-    }
+  .profile-meta {
+    width: 100%;
+  }
 
-    .profile-meta li {
-        text-align: left;
-    }
+  .profile-meta li {
+    text-align: left;
+  }
 
-    .skill-stack__intro {
-        font-size: 0.95rem;
-    }
+  .skill-stack__intro {
+    font-size: 0.95rem;
+  }
 
-    .skill-keywords__item {
-        font-size: 0.85rem;
-        padding: 0.5rem 1rem;
-    }
+  .skill-keywords__item {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
 }
