@@ -491,6 +491,7 @@ body {
   gap: 1.7rem;
   position: relative;
   z-index: 1;
+  justify-content: center;
 }
 
 .skill-card {
@@ -597,10 +598,15 @@ body {
 
   .skill-card-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
   }
 
   .skill-card {
     padding: 1.4rem 1.3rem;
+    width: min(100%, 360px);
+    margin: 0 auto;
+    justify-self: center;
   }
 
   .skill-card__icon {
