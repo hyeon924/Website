@@ -1,4 +1,4 @@
-# Hyehyun's Portfolio Site
+# Hyehyeon's Portfolio Site
 
 개인 포트폴리오를 소개하는 웹사이트입니다. Publishing, Frontend, Backend 프로젝트들을 카테고리별로 확인할 수 있습니다.
 
