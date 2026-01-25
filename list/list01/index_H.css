@@ -271,12 +271,14 @@ button {
   position: sticky;
   top: var(--header-height);
   z-index: 999;
+  overflow: visible;
 }
 
 .nav-container {
   max-width: var(--container-max-width);
   margin: 0 auto;
   /* padding: 0 var(--spacing-lg); */
+  overflow: visible;
 }
 
 .main-menu {
@@ -294,6 +296,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
+}
+
+.has-submenu {
+  position: relative;
+  overflow: visible;
 }
 
 .menu-item {
@@ -342,6 +350,8 @@ button {
   top: 100%;
   left: 0;
   right: 0;
+  width: 100%;
+  min-width: 200px;
   background-color: var(--color-bg-light);
   padding: var(--spacing-xs);
   box-shadow: var(--shadow-lg);
@@ -349,12 +359,16 @@ button {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all var(--transition-base);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
   z-index: 1000;
   margin: 0;
   list-style: none;
+}
+
+.sub-menu li {
+  display: block;
+  width: 100%;
 }
 
 .has-submenu:hover .sub-menu,
@@ -1271,22 +1285,30 @@ button {
 
   .mobile-menu-toggle {
     display: flex;
+    z-index: 1001;
+  }
+
+  .header {
+    position: relative;
+    z-index: 1000;
   }
 
   .main-nav {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: var(--header-height);
     left: 0;
     right: 0;
+    width: 100%;
     background-color: var(--color-bg);
     box-shadow: var(--shadow-lg);
     max-height: calc(100vh - var(--header-height));
     overflow-y: auto;
+    z-index: 999;
   }
 
   .main-nav.active {
-    display: block;
+    display: block !important;
     animation: slideDown var(--transition-base);
   }
 
