@@ -272,6 +272,7 @@ body {
 
 .project-gallery {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.95rem;
 }
 
@@ -279,6 +280,7 @@ body {
   width: 100%;
   border-radius: 18px;
   box-shadow: 0 15px 35px rgba(23, 43, 72, 0.22);
+  object-fit: cover;
 }
 
 .project-actions {
@@ -337,6 +339,40 @@ body {
 
 .project-modal--backend .project-button:hover {
   box-shadow: 0 18px 32px rgba(30, 136, 229, 0.34);
+}
+
+/* 경찰청 프로젝트 모달 블루 테마 */
+.project-modal--police {
+  background: linear-gradient(160deg, #e3f2fd 0%, #ffffff 58%, #c7e7fa 100%);
+}
+
+.project-modal--police::before,
+.project-modal--police::after {
+  background: rgba(30, 58, 138, 0.12);
+}
+
+.project-modal--police .project-chip {
+  background: rgba(30, 58, 138, 0.14);
+  color: #1e3a8a;
+}
+
+.project-modal--police .project-button {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.28);
+}
+
+.project-modal--police .project-button:hover {
+  box-shadow: 0 18px 32px rgba(30, 64, 175, 0.34);
+}
+
+.project-button--secondary {
+  background: linear-gradient(135deg, #64748b, #475569) !important;
+  box-shadow: 0 12px 28px rgba(71, 85, 105, 0.28) !important;
+}
+
+.project-button--secondary:hover {
+  box-shadow: 0 18px 32px rgba(71, 85, 105, 0.34) !important;
+  transform: translateY(-2px);
 }
 
 .modal-dialog {
@@ -840,6 +876,10 @@ body {
 
   .project-actions {
     gap: 0.85rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
   }
 }
 
