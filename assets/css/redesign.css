@@ -2883,3 +2883,50 @@ body {
 #intro .about_box--skills .skill-stack::before {
   display: none;
 }
+
+#intro .about_box--skills .skill-card__header {
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+}
+
+#intro .about_box--skills .skill-card__header h4 {
+  color: #ffffff !important;
+  font-size: clamp(1.1rem, 2vw, 1.65rem) !important;
+  margin: 0;
+}
+
+#intro .about_box--skills .skill-card > ul {
+  display: grid;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#intro .about_box--skills .skill-card > ul li {
+  color: #c7d2fe !important;
+  font-size: clamp(0.85rem, 1.4vw, 1.15rem) !important;
+  line-height: 1.45;
+  padding-left: 0.9rem;
+  position: relative;
+}
+
+#intro .about_box--skills .skill-card > ul li::before {
+  color: #f9a8d4;
+  content: "-";
+  left: 0;
+  position: absolute;
+}
+
+@media (min-width: 1181px) {
+  #intro .about_box--skills {
+    left: 50%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none;
+    position: relative;
+    transform: translateX(-50%);
+    width: min(calc(100vw - var(--desktop-nav-width) - 12vw), 960px) !important;
+  }
+}
