@@ -2933,6 +2933,10 @@ body {
 }
 
 @media (min-width: 1181px) {
+  #header.page-panel {
+    width: auto !important;
+  }
+
   #intro.page-panel {
     width: auto !important;
   }
@@ -2955,6 +2959,53 @@ body {
 }
 
 @media (min-width: 1181px) and (max-height: 920px) {
+  #header {
+    padding: clamp(2rem, 4vh, 3.5rem) clamp(2rem, 4vw, 4rem) !important;
+  }
+
+  #header .inner {
+    gap: clamp(2rem, 4vw, 3.25rem) !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
+  }
+
+  #header.alt h1 {
+    font-size: clamp(4.25rem, 7.5vh, 6rem) !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-summary {
+    font-size: clamp(1rem, 1.7vh, 1.2rem) !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-actions {
+    margin-top: 1.4rem !important;
+  }
+
+  .hero-button {
+    min-width: 10.5rem;
+    padding: 0.85rem 1.2rem !important;
+  }
+
+  .hero-panel {
+    padding: 1rem !important;
+  }
+
+  .hero-panel__header {
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .hero-panel__header strong {
+    font-size: clamp(1.35rem, 2.4vh, 1.75rem);
+    line-height: 1.2;
+  }
+
+  .hero-panel li {
+    margin-bottom: 0.45rem;
+    padding: 0.65rem 0.75rem;
+  }
+
   #intro {
     padding-bottom: clamp(2rem, 4vh, 3.5rem) !important;
     padding-top: clamp(2rem, 4vh, 3.5rem) !important;
