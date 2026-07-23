@@ -608,9 +608,9 @@ body {
 
 #header .inner {
   align-items: center;
+  display: block;
   gap: clamp(3rem, 5vw, 6rem) !important;
-  grid-template-columns: minmax(0, 1.24fr) minmax(360px, 0.76fr);
-  max-width: 1540px !important;
+  max-width: 1180px !important;
 }
 
 #header.alt h1 {
