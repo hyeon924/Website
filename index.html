@@ -994,12 +994,51 @@
       aria-labelledby="Modal-label-6"
     >
       <div class="modal-dialog modal-lg" role="document">
-        <article class="portfolio-modal__surface">
+        <article class="portfolio-modal__surface frontend-modal">
           <button type="button" class="portfolio-modal__close" data-dismiss="modal" aria-label="닫기"><i class="fa fa-times" aria-hidden="true"></i></button>
-          <header class="portfolio-modal__header"><div class="portfolio-modal__title"><span>Frontend</span><h2>맛콩맛집</h2></div></header>
-          <div class="portfolio-modal__layout">
-            <section class="portfolio-modal__focus"><figure class="portfolio-modal__focus-mark"><img loading="lazy" decoding="async" src="img/eat-layout-main.png" alt="맛콩맛집 대표 이미지" /></figure><div class="portfolio-modal__focus-content"><h3>트러블슈팅</h3><ul><li>API 응답의 누락·예외 데이터를 정규화해 화면 오류를 방지</li><li>필터 상태와 지도 마커를 같은 데이터 흐름으로 동기화</li><li>빈 결과와 로딩 상태를 분리해 탐색 흐름을 명확하게 구성</li></ul><dl class="portfolio-modal__meta"><div><dt>서비스 유형</dt><dd>지도 기반 맛집 탐색</dd></div><div><dt>작업 범위</dt><dd>React UI · 컴포넌트 · 배포</dd></div></dl></div><footer class="portfolio-modal__links"><a href="https://splendorous-biscuit-29a7de.netlify.app/" target="_blank" rel="noopener">배포 사이트 <i class="fa fa-external-link" aria-hidden="true"></i></a><a href="https://github.com/hyeon924" target="_blank" rel="noopener" class="is-secondary">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></footer></section>
-            <section class="portfolio-modal__screens"><h3>화면 상세 이미지</h3><div class="portfolio-modal__carousel" data-gallery><button type="button" class="portfolio-modal__gallery-button" data-gallery-prev aria-label="이전 이미지"><i class="fa fa-angle-left" aria-hidden="true"></i></button><div class="portfolio-modal__gallery-stage"><img class="is-active" loading="lazy" decoding="async" src="img/eat-layout-sub-preview.png" alt="맛콩맛집 상세 화면" /><img loading="lazy" decoding="async" src="img/character-preview.png" alt="맛콩맛집 캐릭터 이미지" /></div><button type="button" class="portfolio-modal__gallery-button" data-gallery-next aria-label="다음 이미지"><i class="fa fa-angle-right" aria-hidden="true"></i></button><p class="portfolio-modal__gallery-count"><span data-gallery-current>1</span> / <span data-gallery-total>2</span></p></div></section>
+          <header class="frontend-modal__header">
+            <div class="portfolio-modal__title"><span>Frontend</span><h2 id="Modal-label-6">맛콩맛집</h2></div>
+            <div class="frontend-modal__tabs" role="tablist" aria-label="맛콩맛집 상세 정보">
+              <button type="button" class="is-active" role="tab" aria-selected="true" aria-controls="frontend-troubleshooting" id="frontend-tab-troubleshooting" data-project-tab="troubleshooting">정보 및 트러블슈팅</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="frontend-screens" id="frontend-tab-screens" data-project-tab="screens" tabindex="-1">화면 상세 이미지</button>
+            </div>
+          </header>
+
+          <div class="frontend-modal__body">
+            <section class="frontend-modal__panel frontend-modal__panel--troubleshooting is-active" id="frontend-troubleshooting" role="tabpanel" aria-labelledby="frontend-tab-troubleshooting" data-project-panel="troubleshooting">
+              <div class="frontend-modal__troubleshoot-stage" data-troubleshooting>
+                <article class="frontend-modal__troubleshoot-slide is-active">
+                  <div class="frontend-modal__troubleshoot-copy"><span>01</span><h3>API 응답 정규화</h3><p>누락된 값과 예외 형식을 화면 데이터로 변환해 목록과 상세 화면에서 오류가 발생하지 않도록 처리했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/eat-layout-main.png" alt="맛콩맛집 API 데이터가 표시된 메인 화면" /></figure>
+                </article>
+                <article class="frontend-modal__troubleshoot-slide">
+                  <div class="frontend-modal__troubleshoot-copy"><span>02</span><h3>필터와 지도 상태 동기화</h3><p>지역·구·음식 필터 상태를 하나의 흐름으로 관리해 목록 결과와 지도 마커가 항상 같은 조건을 반영하도록 구성했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/eat-layout-sub-preview.png" alt="맛콩맛집 필터와 지도 탐색 화면" /></figure>
+                </article>
+                <article class="frontend-modal__troubleshoot-slide">
+                  <div class="frontend-modal__troubleshoot-copy"><span>03</span><h3>빈 결과와 로딩 상태 분리</h3><p>검색 전·로딩 중·결과 없음 상태를 구분해 사용자가 현재 탐색 흐름을 명확하게 이해할 수 있도록 개선했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/character-preview.png" alt="맛콩맛집 빈 결과 안내 캐릭터" /></figure>
+                </article>
+              </div>
+              <div class="frontend-modal__controls">
+                <button type="button" data-troubleshooting-prev aria-label="이전 트러블슈팅"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <p><span data-troubleshooting-current>1</span> / <span data-troubleshooting-total>3</span></p>
+                <button type="button" data-troubleshooting-next aria-label="다음 트러블슈팅"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </div>
+              <footer class="frontend-modal__links"><a href="https://splendorous-biscuit-29a7de.netlify.app/" target="_blank" rel="noopener">배포 사이트 <i class="fa fa-external-link" aria-hidden="true"></i></a><a href="https://github.com/hyeon924" target="_blank" rel="noopener" class="is-secondary">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></footer>
+            </section>
+
+            <section class="frontend-modal__panel frontend-modal__panel--screens" id="frontend-screens" role="tabpanel" aria-labelledby="frontend-tab-screens" data-project-panel="screens" hidden>
+              <div class="frontend-modal__screen-stage" data-frontend-screens>
+                <img class="is-active" loading="lazy" decoding="async" src="img/eat-layout-sub-preview.png" alt="맛콩맛집 상세 화면" />
+                <img loading="lazy" decoding="async" src="img/character-preview.png" alt="맛콩맛집 캐릭터 이미지" />
+              </div>
+              <div class="frontend-modal__controls">
+                <button type="button" data-frontend-screen-prev aria-label="이전 화면"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <p><span data-frontend-screen-current>1</span> / <span data-frontend-screen-total>2</span></p>
+                <button type="button" data-frontend-screen-next aria-label="다음 화면"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </div>
+            </section>
           </div>
         </article>
         <div class="project-modal">
@@ -1014,7 +1053,7 @@
           <div class="project-hero">
             <div class="project-hero__text">
               <span class="project-chip">Frontend · 지도 기반 서비스</span>
-              <h2 class="project-title" id="Modal-label-6">🍙 맛콩 맛집</h2>
+              <h2 class="project-title" id="legacy-Modal-label-6">🍙 맛콩 맛집</h2>
               <p class="project-lead">
                 공공데이터포털의 지역·음식 카테고리 데이터를 연동해 실시간으로
                 맛집 정보를 제공하고, 카카오 지도 위에서 직관적으로 탐색할 수
