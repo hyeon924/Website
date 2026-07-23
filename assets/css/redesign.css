@@ -3212,7 +3212,9 @@ body {
 
 #intro .section-kicker,
 .collaboration-page__header > span {
+  color: #f9a8d4 !important;
   font-size: 1rem !important;
+  font-weight: 900 !important;
   line-height: 1 !important;
   margin: 0 0 0.55rem !important;
 }
