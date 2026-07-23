@@ -1490,7 +1490,7 @@ table.alt tbody tr td {
   background-image: url("../../images/banner-hero.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: scroll;
   text-align: center;
   position: relative;
   cursor: default;
@@ -1564,17 +1564,6 @@ table.alt tbody tr td {
   min-height: 75vh;
 }
 
-#header.alt:before {
-  -moz-transition: background-color 3s ease;
-  -webkit-transition: background-color 3s ease;
-  -ms-transition: background-color 3s ease;
-  transition: background-color 3s ease;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -ms-transition-delay: 1s;
-  transition-delay: 1s;
-}
-
 #header.alt h1 {
   font-size: 4em;
   padding: 0 0.5em 0.25em 0.5em;
@@ -1591,22 +1580,6 @@ table.alt tbody tr td {
   font-weight: 400;
   font-size: 0.8em;
   padding: 0 1.25em;
-}
-
-#header.alt .inner {
-  -moz-transition: opacity 2s ease;
-  -webkit-transition: opacity 2s ease;
-  -ms-transition: opacity 2s ease;
-  transition: opacity 2s ease;
-  opacity: 1;
-}
-
-body.is-loading #header.alt:before {
-  background-color: black;
-}
-
-body.is-loading #header.alt .inner {
-  opacity: 0;
 }
 
 @media screen and (max-width: 1280px) {
