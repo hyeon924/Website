@@ -108,6 +108,18 @@
       return;
     }
 
+    var mediaToggle = event.target.closest('[data-troubleshooting-media-toggle]');
+
+    if (mediaToggle) {
+      var stage = mediaToggle.closest('[data-troubleshooting]');
+      var isExpanded = stage.classList.toggle('has-media');
+      var label = mediaToggle.querySelector('span');
+
+      mediaToggle.setAttribute('aria-expanded', String(isExpanded));
+      label.textContent = isExpanded ? '접기' : '이미지 자료 보기';
+      return;
+    }
+
     var troubleshootingControl = event.target.closest('[data-troubleshooting-prev], [data-troubleshooting-next]');
 
     if (troubleshootingControl) {

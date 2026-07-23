@@ -2391,18 +2391,23 @@ body {
 
 .frontend-modal__troubleshoot-stage {
   min-height: 0;
+  position: relative;
 }
 
 .frontend-modal__troubleshoot-slide {
   align-items: stretch;
   display: none;
   gap: clamp(1rem, 2vw, 2.2rem);
-  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1.1fr);
+  grid-template-columns: minmax(0, 1fr);
   height: 100%;
 }
 
 .frontend-modal__troubleshoot-slide.is-active {
   display: grid;
+}
+
+.frontend-modal__troubleshoot-stage.has-media .frontend-modal__troubleshoot-slide.is-active {
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1.1fr);
 }
 
 .frontend-modal__troubleshoot-copy,
@@ -2418,6 +2423,11 @@ body {
 .frontend-modal__troubleshoot-copy {
   align-content: center;
   display: grid;
+  padding-right: clamp(8rem, 12vw, 11rem);
+}
+
+.frontend-modal__troubleshoot-stage.has-media .frontend-modal__troubleshoot-copy {
+  padding-right: clamp(1.25rem, 2.2vw, 2.2rem);
 }
 
 .frontend-modal__troubleshoot-copy > span {
@@ -2447,8 +2457,12 @@ body {
 
 .frontend-modal__troubleshoot-slide figure {
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+.frontend-modal__troubleshoot-stage.has-media .frontend-modal__troubleshoot-slide figure {
+  display: flex;
 }
 
 .frontend-modal__troubleshoot-slide figure img {
@@ -2458,6 +2472,27 @@ body {
   max-height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+.frontend-modal__media-toggle {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 0.6rem;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: clamp(0.76rem, 0.95vh, 0.92rem);
+  font-weight: 800;
+  gap: 0.45rem;
+  padding: 0.65rem 0.85rem;
+  position: absolute;
+  right: clamp(1.25rem, 2.2vw, 2.2rem);
+  top: clamp(1.25rem, 2.2vw, 2.2rem);
+  z-index: 1;
+}
+
+.frontend-modal__media-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .frontend-modal__controls {
@@ -2575,6 +2610,15 @@ body {
 
   .frontend-modal__troubleshoot-slide.is-active {
     grid-template-columns: 1fr;
+  }
+
+  .frontend-modal__troubleshoot-stage.has-media .frontend-modal__troubleshoot-slide.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .frontend-modal__troubleshoot-copy {
+    padding-right: 1.25rem;
+    padding-top: 5rem;
   }
 
   .frontend-modal__troubleshoot-slide figure {
