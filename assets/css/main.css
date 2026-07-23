@@ -1490,7 +1490,8 @@ table.alt tbody tr td {
 }
 
 #header.alt h1 {
-  font-size: 4em;
+  font-size: clamp(4.5rem, 7vw, 5.5rem);
+  line-height: 1;
   padding: 0 0.5em 0.25em 0.5em;
   border-bottom: solid 2px #ffffff;
   font-weight: 200;
@@ -1503,7 +1504,7 @@ table.alt tbody tr td {
   text-transform: uppercase;
   letter-spacing: 0.325rem;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
   padding: 0 1.25em;
 }
 
@@ -1519,7 +1520,7 @@ table.alt tbody tr td {
   }
 
   #header.alt h1 {
-    font-size: 2.5em;
+    font-size: clamp(3rem, 14vw, 4rem);
     padding-left: 0;
     padding-right: 0;
   }
