@@ -2074,3 +2074,76 @@ body {
     top: 4.5rem;
   }
 }
+
+@media (max-width: 1180px) and (orientation: portrait) {
+  .page-panel {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .project-category {
+    align-content: start;
+    gap: clamp(1.25rem, 2.5vh, 2rem);
+    grid-template-rows: auto auto;
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+    padding: clamp(1.5rem, 3vh, 2.5rem) clamp(1rem, 3vw, 2rem);
+  }
+
+  #portfolio-type-a .project-grid,
+  #portfolio-type-a .project-grid--single {
+    align-content: start;
+    gap: clamp(1rem, 2.2vh, 1.5rem);
+    grid-auto-rows: max-content;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #portfolio-type-a .project-card {
+    align-self: start;
+    height: max-content !important;
+  }
+
+  #portfolio-type-a .project-card > a,
+  #portfolio-type-a .project-card--featured > a,
+  #portfolio-type-a .project-grid--single .project-card > a {
+    gap: clamp(1rem, 2.5vh, 1.6rem);
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
+    min-height: max-content;
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  #portfolio-type-a .project-card img,
+  #portfolio-type-a .project-card--featured img,
+  #portfolio-type-a .project-grid--single .project-card img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    max-height: min(34vh, 21rem);
+    padding: clamp(0.75rem, 1.6vw, 1rem);
+  }
+
+  .project-category__header h3 {
+    font-size: clamp(2rem, 3.6vh, 2.7rem);
+  }
+
+  .project-category__header p {
+    font-size: clamp(0.95rem, 1.7vh, 1.08rem);
+  }
+
+  .project-card__copy h2 {
+    font-size: clamp(1.8rem, 3.2vh, 2.45rem);
+  }
+
+  .project-card__copy p {
+    font-size: clamp(0.95rem, 1.8vh, 1.12rem);
+  }
+
+  .project-card__features {
+    font-size: clamp(0.9rem, 1.65vh, 1.05rem);
+  }
+
+  #portfolio-type-a .project-tags em {
+    font-size: clamp(0.72rem, 1.3vh, 0.88rem);
+  }
+}
