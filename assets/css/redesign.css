@@ -2089,6 +2089,11 @@ body {
     overflow-y: auto;
   }
 
+  #portfolio-type-a .project-category.page-panel {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .project-category {
     align-content: start;
     gap: clamp(1.25rem, 2.5vh, 2rem);
