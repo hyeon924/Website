@@ -1128,12 +1128,52 @@
       aria-labelledby="Modal-label-7"
     >
       <div class="modal-dialog modal-lg" role="document">
-        <article class="portfolio-modal__surface">
+        <article class="portfolio-modal__surface frontend-modal fullstack-modal">
           <button type="button" class="portfolio-modal__close" data-dismiss="modal" aria-label="닫기"><i class="fa fa-times" aria-hidden="true"></i></button>
-          <header class="portfolio-modal__header"><div class="portfolio-modal__title"><span>Full Stack</span><h2>감정 블로그 플랫폼</h2></div></header>
-          <div class="portfolio-modal__layout">
-            <section class="portfolio-modal__focus"><figure class="portfolio-modal__focus-mark"><img loading="lazy" decoding="async" src="img/emotion-main.png" alt="감정 블로그 플랫폼 대표 이미지" /></figure><div class="portfolio-modal__focus-content"><h3>트러블슈팅</h3><ul><li>인증 상태와 보호 페이지를 분리해 접근 흐름을 정리</li><li>게시글·사용자 데이터를 관계형 구조로 모델링</li><li>배포 환경 변수와 API 연결을 분리해 운영 환경을 구성</li></ul><dl class="portfolio-modal__meta"><div><dt>서비스 유형</dt><dd>인증 기반 블로그</dd></div><div><dt>작업 범위</dt><dd>API · 인증 · DB 모델링 · UI</dd></div></dl></div><footer class="portfolio-modal__links"><a href="https://d-emotion-blog-main.vercel.app/users/login" target="_blank" rel="noopener">배포 사이트 <i class="fa fa-external-link" aria-hidden="true"></i></a><a href="https://github.com/hyeon924" target="_blank" rel="noopener" class="is-secondary">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></footer></section>
-            <section class="portfolio-modal__screens"><h3>화면 상세 이미지</h3><div class="portfolio-modal__carousel" data-gallery><button type="button" class="portfolio-modal__gallery-button" data-gallery-prev aria-label="이전 이미지"><i class="fa fa-angle-left" aria-hidden="true"></i></button><div class="portfolio-modal__gallery-stage"><img class="is-active" loading="lazy" decoding="async" src="img/emotion-post-preview.png" alt="감정 블로그 게시글 화면" /><img loading="lazy" decoding="async" src="img/emotion-my-preview.png" alt="감정 블로그 마이페이지" /></div><button type="button" class="portfolio-modal__gallery-button" data-gallery-next aria-label="다음 이미지"><i class="fa fa-angle-right" aria-hidden="true"></i></button><p class="portfolio-modal__gallery-count"><span data-gallery-current>1</span> / <span data-gallery-total>2</span></p></div></section>
+          <header class="frontend-modal__header">
+            <div class="portfolio-modal__title"><span>Full Stack</span><h2 id="Modal-label-7">감정 블로그 플랫폼</h2></div>
+            <div class="frontend-modal__tabs" role="tablist" aria-label="감정 블로그 플랫폼 상세 정보">
+              <button type="button" class="is-active" role="tab" aria-selected="true" aria-controls="fullstack-troubleshooting" id="fullstack-tab-troubleshooting" data-project-tab="troubleshooting">트러블슈팅</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="fullstack-screens" id="fullstack-tab-screens" data-project-tab="screens" tabindex="-1">주요 화면</button>
+            </div>
+          </header>
+
+          <div class="frontend-modal__body">
+            <section class="frontend-modal__panel frontend-modal__panel--troubleshooting is-active" id="fullstack-troubleshooting" role="tabpanel" aria-labelledby="fullstack-tab-troubleshooting" data-project-panel="troubleshooting">
+              <div class="frontend-modal__troubleshoot-stage" data-troubleshooting>
+                <button type="button" class="frontend-modal__media-toggle" data-troubleshooting-media-toggle aria-expanded="false"><i class="fa fa-picture-o" aria-hidden="true"></i> <span>이미지 자료 보기</span></button>
+                <article class="frontend-modal__troubleshoot-slide is-active">
+                  <div class="frontend-modal__troubleshoot-copy"><span>01</span><h3>인증과 보호 페이지 분리</h3><p>로그인 상태 확인과 보호 페이지 접근 제어를 분리해 비인증 사용자가 필요한 흐름으로 자연스럽게 이동하도록 구성했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/emotion-login-preview.png" alt="감정 블로그 로그인 화면" /></figure>
+                </article>
+                <article class="frontend-modal__troubleshoot-slide">
+                  <div class="frontend-modal__troubleshoot-copy"><span>02</span><h3>게시글과 사용자 데이터 모델링</h3><p>게시글, 사용자, 감정 기록의 관계를 정리해 작성·조회·마이페이지 흐름에서 일관된 데이터를 제공하도록 설계했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/emotion-post-preview.png" alt="감정 블로그 게시글 화면" /></figure>
+                </article>
+                <article class="frontend-modal__troubleshoot-slide">
+                  <div class="frontend-modal__troubleshoot-copy"><span>03</span><h3>배포 환경과 API 연결 분리</h3><p>환경 변수로 API 주소와 인증 설정을 관리해 개발 환경과 배포 환경에서 안정적으로 서비스를 연결할 수 있도록 구성했습니다.</p></div>
+                  <figure><img loading="lazy" decoding="async" src="img/emotion-my-preview.png" alt="감정 블로그 마이페이지" /></figure>
+                </article>
+              </div>
+              <div class="frontend-modal__controls">
+                <button type="button" data-troubleshooting-prev aria-label="이전 트러블슈팅"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <p><span data-troubleshooting-current>1</span> / <span data-troubleshooting-total>3</span></p>
+                <button type="button" data-troubleshooting-next aria-label="다음 트러블슈팅"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </div>
+              <footer class="frontend-modal__links"><a href="https://d-emotion-blog-main.vercel.app/users/login" target="_blank" rel="noopener">배포 사이트 <i class="fa fa-external-link" aria-hidden="true"></i></a><a href="https://github.com/hyeon924" target="_blank" rel="noopener" class="is-secondary">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></footer>
+            </section>
+
+            <section class="frontend-modal__panel frontend-modal__panel--screens" id="fullstack-screens" role="tabpanel" aria-labelledby="fullstack-tab-screens" data-project-panel="screens" hidden>
+              <div class="frontend-modal__screen-stage" data-frontend-screens>
+                <img class="is-active" loading="lazy" decoding="async" src="img/emotion-post-preview.png" alt="감정 블로그 게시글 화면" />
+                <img loading="lazy" decoding="async" src="img/emotion-my-preview.png" alt="감정 블로그 마이페이지" />
+              </div>
+              <div class="frontend-modal__controls">
+                <button type="button" data-frontend-screen-prev aria-label="이전 화면"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <p><span data-frontend-screen-current>1</span> / <span data-frontend-screen-total>2</span></p>
+                <button type="button" data-frontend-screen-next aria-label="다음 화면"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </div>
+            </section>
           </div>
         </article>
         <div class="project-modal project-modal--backend">
@@ -1148,7 +1188,7 @@
           <div class="project-hero">
             <div class="project-hero__text">
               <span class="project-chip">Full Stack · Spring Boot</span>
-              <h2 class="project-title" id="Modal-label-7">🐱 감정 블로그<br />플랫폼</h2>
+              <h2 class="project-title" id="legacy-Modal-label-7">🐱 감정 블로그<br />플랫폼</h2>
               <p class="project-lead">
                 스프링 부트를 사용하여 일상을 감정형으로 기록하는 블로그
                 플랫폼을 개발한 프로젝트입니다.
