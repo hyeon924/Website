@@ -793,10 +793,11 @@ body {
 }
 
 @media (min-width: 1181px) and (max-height: 950px) {
-  #portfolio-type-a .project-grid--frontend .project-card:not(.project-card--private) img {
-    height: clamp(8.5rem, 18vh, 11rem);
+  #projects-frontend .project-card:not(.project-card--private) img,
+  #projects-fullstack .project-card:not(.project-card--private) img {
+    height: clamp(5.75rem, 10vh, 6.5rem);
     min-height: 0;
-    padding: 0.75rem;
+    padding: 0.65rem;
   }
 }
 
