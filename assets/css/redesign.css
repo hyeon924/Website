@@ -3093,3 +3093,123 @@ body {
     font-size: clamp(4.25rem, 7.5vh, 6rem) !important;
   }
 }
+
+/* Collaboration page */
+.collaboration-page {
+  align-content: center;
+  background:
+    radial-gradient(circle at 88% 14%, rgba(139, 92, 246, 0.16), transparent 28rem),
+    linear-gradient(180deg, #080b18 0%, #11172f 100%) !important;
+  color: #dbe4ff;
+  gap: clamp(2rem, 5vh, 4rem);
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: clamp(3rem, 6vh, 5rem) clamp(2rem, 6vw, 7rem);
+}
+
+.collaboration-page__header span,
+.collaboration-card > span {
+  color: #f9a8d4;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.collaboration-page__header h2 {
+  color: #ffffff;
+  font-size: clamp(3.2rem, 5vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0.55rem 0 1rem;
+}
+
+.collaboration-page__header p {
+  color: #c7d2fe;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 760px;
+}
+
+.collaboration-grid {
+  align-self: stretch;
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.75rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 0;
+}
+
+.collaboration-card {
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid rgba(167, 139, 250, 0.24);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-width: 0;
+  padding: clamp(1.4rem, 2.2vw, 2.25rem);
+}
+
+.collaboration-card > i {
+  align-items: center;
+  background: rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 0.65rem;
+  color: #f9a8d4;
+  display: inline-flex;
+  font-size: 1.25rem;
+  height: 2.8rem;
+  justify-content: center;
+  width: 2.8rem;
+}
+
+.collaboration-card h3 {
+  color: #ffffff;
+  font-family: "Lato", "Paperlogy", sans-serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.collaboration-card ul {
+  display: grid;
+  gap: 0.7rem;
+  list-style: none;
+  margin: auto 0 0;
+  padding: 0;
+}
+
+.collaboration-card li {
+  color: #c7d2fe;
+  font-size: clamp(0.9rem, 1.15vw, 1.05rem);
+  line-height: 1.55;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.collaboration-card li::before {
+  color: #f9a8d4;
+  content: "-";
+  left: 0;
+  position: absolute;
+}
+
+@media (max-width: 1180px) {
+  .collaboration-page {
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .collaboration-page {
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .collaboration-grid {
+    grid-template-columns: 1fr;
+  }
+}
