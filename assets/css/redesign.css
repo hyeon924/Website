@@ -2846,6 +2846,7 @@ body {
 }
 
 #intro .about_box--skills .skill-card-grid {
+  grid-auto-rows: minmax(0, 1fr);
   width: 100%;
   margin: 0 auto;
 }
@@ -2853,6 +2854,7 @@ body {
 #intro .about_box--skills .skill-card {
   align-items: flex-start;
   gap: 1rem;
+  height: 100%;
   text-align: left;
 }
 
@@ -2927,6 +2929,6 @@ body {
     max-width: none;
     position: relative;
     transform: translateX(-50%);
-    width: min(calc(100vw - var(--desktop-nav-width) - 12vw), 960px) !important;
+    width: min(calc(100vw - var(--desktop-nav-width) - 12vw), 1120px) !important;
   }
 }
