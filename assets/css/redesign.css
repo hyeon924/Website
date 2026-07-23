@@ -3334,3 +3334,18 @@ body {
     color: #ffffff !important;
   }
 }
+
+@media (max-width: 760px) {
+  #collaboration.page-panel.is-active {
+    align-content: normal;
+    display: block !important;
+  }
+
+  .collaboration-page__header {
+    margin-bottom: 2rem;
+  }
+
+  .collaboration-grid {
+    align-self: auto;
+  }
+}
