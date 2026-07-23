@@ -1286,7 +1286,8 @@ body {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 0.7rem;
-  color: #ffffff;
+  border-color: rgba(249, 168, 212, 0.7);
+  color: #f9a8d4 !important;
   display: inline-flex;
   font-size: 1.1rem;
   height: 2.8rem;
@@ -1300,7 +1301,7 @@ body {
 }
 
 .portfolio-modal__close:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(249, 168, 212, 0.16);
   transform: translateY(-2px);
 }
 
@@ -1617,10 +1618,10 @@ body {
   background: #f8fafc;
   border: 1px solid rgba(167, 139, 250, 0.35);
   border-radius: 0.65rem;
-  height: clamp(7rem, 10vw, 9rem);
+  height: 7rem;
   margin: 0;
   overflow: hidden;
-  width: clamp(7rem, 10vw, 9rem);
+  width: 7rem;
 }
 
 .portfolio-modal__focus-mark img {
@@ -1630,7 +1631,7 @@ body {
 }
 
 .portfolio-modal__focus-content {
-  align-self: center;
+  align-self: start;
   min-width: 0;
 }
 
@@ -1683,9 +1684,9 @@ body {
 .portfolio-modal__gallery-button {
   align-items: center;
   background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(249, 168, 212, 0.7);
   border-radius: 0.6rem;
-  color: #ffffff;
+  color: #f9a8d4 !important;
   display: inline-flex;
   font-size: 1.2rem;
   grid-row: 2;
@@ -1698,7 +1699,7 @@ body {
 }
 
 .portfolio-modal__gallery-button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(249, 168, 212, 0.16);
   transform: translateY(-2px);
 }
 
