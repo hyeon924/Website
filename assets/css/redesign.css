@@ -1650,7 +1650,7 @@ body {
 
 .portfolio-modal__meta dt {
   color: #c4b5fd;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.07rem;
   margin: 0 0 0.28rem;
@@ -1659,7 +1659,7 @@ body {
 
 .portfolio-modal__meta dd {
   color: #ffffff;
-  font-size: 0.82rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin: 0;
   word-break: keep-all;
