@@ -78,11 +78,11 @@
         <strong>Hyehyeon</strong>
       </a>
       <nav>
-        <a href="#header">Intro</a>
-        <a href="#intro">Skills</a>
-        <a href="#projects-publishing">Publishing</a>
-        <a href="#projects-frontend">Frontend</a>
-        <a href="#projects-fullstack">Full Stack</a>
+        <a href="#header" data-page-link="header">Intro</a>
+        <a href="#intro" data-page-link="intro">Skills</a>
+        <a href="#projects-publishing" data-page-link="projects-publishing">Publishing</a>
+        <a href="#projects-frontend" data-page-link="projects-frontend">Frontend</a>
+        <a href="#projects-fullstack" data-page-link="projects-fullstack">Full Stack</a>
       </nav>
       <div class="side-nav__links">
         <a href="mailto:hyeonn4713@gmail.com">Email</a>
@@ -91,7 +91,7 @@
     </aside>
 
     <!-- Header -->
-    <header id="header" class="alt">
+    <header id="header" class="alt page-panel is-active" data-page="header">
       <div class="hero-glow hero-glow--violet" aria-hidden="true"></div>
       <div class="hero-glow hero-glow--pink" aria-hidden="true"></div>
       <div class="inner">
@@ -104,7 +104,7 @@
             3년차 풀스택 개발자입니다.
           </p>
           <div class="hero-actions" aria-label="주요 링크">
-            <a href="#portfolio-type-a" class="hero-button hero-button--primary">프로젝트 보기</a>
+            <a href="#projects-publishing" data-page-link="projects-publishing" class="hero-button hero-button--primary">프로젝트 보기</a>
             <a href="mailto:hyeonn4713@gmail.com" class="hero-button">이메일 보내기</a>
             <a href="https://github.com/hyeon924/hyeon924" target="_blank" rel="noopener" class="hero-button">
               GitHub
@@ -146,7 +146,7 @@
     <!-- Wrapper -->
 
     <!-- Banner -->
-    <section id="intro" class="main">
+    <section id="intro" class="main page-panel" data-page="intro">
       <span class="logo"
         ><img
           src="images/logo.png"
@@ -296,7 +296,7 @@
         <p>좌측 메뉴에서 카테고리를 선택하고, 프로젝트 카드를 클릭하면 상세 모달에서 작업 내용을 확인할 수 있습니다.</p>
       </div>
 
-      <section id="projects-publishing" class="project-category" aria-labelledby="projects-publishing-title">
+      <section id="projects-publishing" class="project-category page-panel" data-page="projects-publishing" aria-labelledby="projects-publishing-title">
         <div class="project-category__header">
           <span>01</span>
           <h3 id="projects-publishing-title">Publishing</h3>
@@ -357,7 +357,7 @@
         </div>
       </section>
 
-      <section id="projects-frontend" class="project-category" aria-labelledby="projects-frontend-title">
+      <section id="projects-frontend" class="project-category page-panel" data-page="projects-frontend" aria-labelledby="projects-frontend-title">
         <div class="project-category__header">
           <span>02</span>
           <h3 id="projects-frontend-title">Frontend</h3>
@@ -384,7 +384,7 @@
         </div>
       </section>
 
-      <section id="projects-fullstack" class="project-category" aria-labelledby="projects-fullstack-title">
+      <section id="projects-fullstack" class="project-category page-panel" data-page="projects-fullstack" aria-labelledby="projects-fullstack-title">
         <div class="project-category__header">
           <span>03</span>
           <h3 id="projects-fullstack-title">Full Stack</h3>
@@ -1107,5 +1107,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/page-panels.js"></script>
   </body>
 </html>

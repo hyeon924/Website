@@ -522,10 +522,15 @@ body {
 }
 
 .side-nav nav a:hover,
-.side-nav__links a:hover {
+.side-nav__links a:hover,
+.side-nav nav a.is-active {
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff !important;
   transform: translateX(4px);
+}
+
+.side-nav nav a.is-active {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.75), rgba(139, 92, 246, 0.75));
 }
 
 .side-nav__links {
@@ -540,6 +545,27 @@ body {
 #intro,
 #portfolio-type-a {
   margin-left: 0 !important;
+}
+
+.page-panel {
+  display: none !important;
+  min-height: 100vh;
+}
+
+.page-panel.is-active {
+  display: grid !important;
+}
+
+#header.page-panel.is-active {
+  display: flex !important;
+}
+
+#intro.page-panel.is-active {
+  display: block !important;
+}
+
+#portfolio-type-a.project-board {
+  display: block !important;
 }
 
 #header {
@@ -600,10 +626,11 @@ body {
 }
 
 #portfolio-type-a.project-board {
-  padding: 7rem clamp(2rem, 5vw, 6rem) !important;
+  padding: 0 clamp(2rem, 5vw, 6rem) !important;
 }
 
 #portfolio-type-a.project-board > .section-heading {
+  display: none;
   margin-left: 0;
   max-width: 920px;
   text-align: left;
@@ -611,10 +638,9 @@ body {
 
 .project-category {
   border-top: 1px solid rgba(167, 139, 250, 0.2);
-  display: grid;
   gap: 2rem;
   grid-template-columns: 320px minmax(0, 1fr);
-  padding: 4rem 0;
+  padding: 6rem 0;
   scroll-margin-top: 2rem;
 }
 
