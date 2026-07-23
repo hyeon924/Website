@@ -3312,3 +3312,25 @@ body {
     height: auto;
   }
 }
+
+@media (max-width: 1180px) {
+  #intro.page-panel.is-active,
+  #collaboration.page-panel.is-active {
+    height: calc(100vh - var(--compact-nav-height)) !important;
+    height: calc(100dvh - var(--compact-nav-height)) !important;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .side-nav__toggle {
+    background: rgba(99, 102, 241, 0.28) !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
+  }
+
+  .side-nav__toggle i {
+    color: #ffffff !important;
+  }
+}
