@@ -700,10 +700,12 @@ body {
 }
 
 .project-category {
-  align-items: center;
+  align-content: center;
+  align-items: stretch;
   border-top: 1px solid rgba(167, 139, 250, 0.2);
-  gap: 2rem;
-  grid-template-columns: 320px minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vh, 2.5rem);
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
   height: 100vh;
   min-height: 0;
   overflow: hidden;
@@ -712,7 +714,7 @@ body {
 }
 
 .project-category__header {
-  align-self: center;
+  align-self: start;
   position: static;
 }
 
@@ -740,13 +742,15 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
+  max-width: 760px;
 }
 
 #portfolio-type-a .project-grid {
-  align-self: center;
+  align-self: stretch;
   display: grid;
   gap: 1.4rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 0;
   width: 100%;
 }
 
@@ -761,7 +765,7 @@ body {
   border-radius: 1.5rem !important;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
   float: none !important;
-  height: auto !important;
+  height: 100% !important;
   left: auto !important;
   margin: 0 !important;
   overflow: hidden;
@@ -779,7 +783,7 @@ body {
   gap: 1rem;
   grid-template-columns: minmax(0, 1fr);
   height: 100%;
-  min-height: min(58vh, 620px);
+  min-height: 0;
   padding: 1.25rem;
   position: relative;
   text-decoration: none !important;
@@ -788,7 +792,7 @@ body {
 
 #portfolio-type-a .project-card--featured > a {
   grid-template-columns: minmax(0, 1fr);
-  min-height: min(58vh, 620px);
+  min-height: 0;
 }
 
 #portfolio-type-a .project-grid--single .project-card > a {
@@ -1127,7 +1131,8 @@ body {
 
   .project-category {
     gap: 1.1rem;
-    grid-template-columns: 250px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
     padding: 2rem clamp(1.5rem, 3vw, 3rem);
   }
 
