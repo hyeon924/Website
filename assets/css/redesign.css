@@ -2894,7 +2894,9 @@ body {
 
 #intro .about_box--skills .skill-card__header h4 {
   color: #ffffff !important;
+  font-family: "Lato", "Paperlogy", sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.65rem) !important;
+  letter-spacing: 0 !important;
   margin: 0;
 }
 
@@ -2921,14 +2923,29 @@ body {
   position: absolute;
 }
 
+#intro .about_box--skills .skill-card {
+  transition: none;
+}
+
+#intro .about_box--skills .skill-card:hover {
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24) !important;
+  transform: none;
+}
+
 @media (min-width: 1181px) {
+  #intro.page-panel.is-active {
+    align-items: stretch;
+    display: flex !important;
+    flex-direction: column;
+  }
+
   #intro .about_box--skills {
-    left: 50%;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    align-self: center;
+    left: auto;
+    margin: 3rem auto 0 !important;
     max-width: none;
-    position: relative;
-    transform: translateX(-50%);
-    width: min(calc(100vw - var(--desktop-nav-width) - 12vw), 1120px) !important;
+    position: static;
+    transform: none;
+    width: min(100%, 1120px) !important;
   }
 }
