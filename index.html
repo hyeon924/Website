@@ -72,6 +72,24 @@
   </head>
 
   <body>
+    <aside class="side-nav" aria-label="포트폴리오 메뉴">
+      <a href="#header" class="side-nav__brand">
+        <span>H</span>
+        <strong>Hyehyeon</strong>
+      </a>
+      <nav>
+        <a href="#header">Intro</a>
+        <a href="#intro">Skills</a>
+        <a href="#projects-publishing">Publishing</a>
+        <a href="#projects-frontend">Frontend</a>
+        <a href="#projects-fullstack">Full Stack</a>
+      </nav>
+      <div class="side-nav__links">
+        <a href="mailto:hyeonn4713@gmail.com">Email</a>
+        <a href="https://github.com/hyeon924/hyeon924" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </aside>
+
     <!-- Header -->
     <header id="header" class="alt">
       <div class="hero-glow hero-glow--violet" aria-hidden="true"></div>
@@ -103,6 +121,18 @@
             <li><span>Backend</span><strong>Spring Boot · REST API</strong></li>
             <li><span>Database</span><strong>PostgreSQL · MySQL</strong></li>
           </ul>
+          <div class="hero-about">
+            <article>
+              <span>Experience</span>
+              <strong>3년차</strong>
+              <p>퍼블리싱부터 프론트엔드, 백엔드 API까지 단계적으로 구현해왔습니다.</p>
+            </article>
+            <article>
+              <span>Strength</span>
+              <strong>연결 중심</strong>
+              <p>화면, 서버, 데이터 흐름을 함께 보며 기능 완성도를 높입니다.</p>
+            </article>
+          </div>
           <div class="hero-panel__tags">
             <span>React</span>
             <span>Spring Boot</span>
@@ -126,11 +156,11 @@
           height="63"
           decoding="async"
       /></span>
-      <span class="section-kicker">About</span>
-      <h2>소개</h2>
+      <span class="section-kicker">Capabilities</span>
+      <h2>기술 스택</h2>
       <p class="intro-lead">
-        화면 구현, API 연동, 데이터 흐름을 함께 고려하며 작동하는 서비스를 완성하는 데 집중합니다.
-        작은 UI 디테일부터 배포 후 개선까지 연결해 보는 개발자입니다.
+        프로젝트에서 실제로 맡은 역할과 구현 범위에 맞춰 사용한 기술을 정리했습니다.
+        React UI, Spring Boot API, 데이터 모델링, 배포 흐름을 연결하는 데 집중합니다.
       </p>
 
       <div class="about-highlights">
@@ -149,7 +179,7 @@
       </div>
 
       <div class="about_box">
-        <section class="profile-card">
+        <section class="profile-card compact-profile">
           <h3>Profile</h3>
           <div class="profile-card__body">
             <img
@@ -259,168 +289,127 @@
 
     <!-- 포트폴리오 영역 -->
 
-    <section id="portfolio-type-a">
-      <div class="container">
-        <div class="section-heading section-heading--dark">
-          <span>Selected Work</span>
-          <h2>프로젝트</h2>
-          <p>기획 의도, 담당 역할, 사용 기술이 한눈에 보이도록 대표 작업을 정리했습니다.</p>
-        </div>
-        <div class="categories">
-          <ul class="cat">
-            <li>
-              <ol class="type">
-                <li><a href="#" data-filter="*" class="active">All</a></li>
-                <li><a href="#" data-filter=".pp">Publishing</a></li>
-                <li><a href="#" data-filter=".fp">Frontend</a></li>
-                <li><a href="#" data-filter=".fsp">Full Stack</a></li>
-              </ol>
-            </li>
-          </ul>
-        </div>
-
-        <div id="lightbox" class="row">
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 pp lists02">
-            <a href="#" data-toggle="modal" data-target="#Modal-2">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <div class="hover-text">
-                    <small>Publishing</small>
-                    <h2>대전지방경찰청</h2>
-                    <div class="clearfix"></div>
-                    <span>공공기관형 정보 구조와 반응형 퍼블리싱을 개선한 웹 프로젝트</span>
-                    <p>담당: UI 개선 · Publishing · 반응형 정리</p>
-                    <div class="project-tags">
-                      <em>HTML</em>
-                      <em>CSS</em>
-                      <em>JavaScript</em>
-                    </div>
-                  </div>
-                  <img loading="lazy" decoding="async" src="img/pro01.png" class="img-responsive" alt="대전지방경찰청 웹사이트 썸네일" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 pp lists01">
-            <a href="#" data-toggle="modal" data-target="#Modal-1">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <div class="hover-text">
-                    <small>Publishing</small>
-                    <h2>Molly's PET SHOP</h2>
-                    <div class="clearfix"></div>
-                    <span>브랜드 컬러와 상품 탐색 흐름을 중심으로 구성한 반려동물 쇼핑몰 페이지</span>
-                    <p>담당: UI Design · Publishing · 스타일 가이드</p>
-                    <div class="project-tags">
-                      <em>HTML</em>
-                      <em>CSS</em>
-                      <em>jQuery</em>
-                    </div>
-                  </div>
-                  <img loading="lazy" decoding="async" src="img/pro05.png" class="img-responsive" alt="Molly's PET SHOP 웹사이트 썸네일" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 pp lists03">
-            <a href="#" data-toggle="modal" data-target="#Modal-3">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <div class="hover-text">
-                    <small>Publishing</small>
-                    <h2>맥심 브랜드</h2>
-                    <div class="clearfix"></div>
-                    <span>브랜드 콘텐츠를 시각적으로 전달하는 프로모션형 웹 페이지</span>
-                    <p>담당: UI Design · Publishing · 인터랙션 구현</p>
-                    <div class="project-tags">
-                      <em>HTML</em>
-                      <em>CSS</em>
-                      <em>JavaScript</em>
-                    </div>
-                  </div>
-                  <img loading="lazy" decoding="async" src="img/pro02.png" class="img-responsive" alt="맥심 브랜드 웹사이트 썸네일" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 fp lists06">
-            <a href="#" data-toggle="modal" data-target="#Modal-6">
-              <div
-                class="portfolio-item"
-                style="background: linear-gradient(135deg, #ffe0b2, #ffb74d)"
-              >
-                <div class="hover-bg">
-                  <div class="hover-text">
-                    <small>Frontend</small>
-                    <h2>맛콩맛집</h2>
-                    <div class="clearfix"></div>
-                    <span>맛집 탐색 경험을 캐릭터와 카드 UI로 풀어낸 프론트엔드 프로젝트</span>
-                    <p>담당: React UI · 컴포넌트 설계 · 배포</p>
-                    <div class="project-tags">
-                      <em>React</em>
-                      <em>Vite</em>
-                      <em>CSS</em>
-                    </div>
-                  </div>
-                  <img loading="lazy" decoding="async"
-                    src="img/character-thumb.png"
-                    alt="맛콩맛집 캐릭터 썸네일"
-                    class="img-responsive"
-                    style="max-width: 250px; height: auto; margin: auto"
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 fsp lists07">
-            <a href="#" data-toggle="modal" data-target="#Modal-7">
-              <div
-                class="portfolio-item"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    #e3f2fd,
-                    #bbdefb,
-                    #90caf9
-                  );
-                "
-              >
-                <div class="hover-bg">
-                  <div class="hover-text">
-                    <small>Full Stack</small>
-                    <h2>감정 블로그 플랫폼</h2>
-                    <div class="clearfix"></div>
-                    <span>감정 기록과 게시글 흐름을 연결한 풀스택 블로그 플랫폼</span>
-                    <p>담당: API · 인증 흐름 · DB 모델링 · UI 연동</p>
-                    <div class="project-tags">
-                      <em>Spring Boot</em>
-                      <em>PostgreSQL</em>
-                      <em>React</em>
-                    </div>
-                  </div>
-                  <img loading="lazy" decoding="async"
-                    src="img/emotion-favicon-thumb.png"
-                    alt="감정 블로그 플랫폼 썸네일"
-                    class="img-responsive"
-                    style="
-                      max-width: 250px;
-                      width: 100%;
-                      height: auto;
-                      margin: auto;
-                      object-fit: contain;
-                    "
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
+    <section id="portfolio-type-a" class="project-board">
+      <div class="section-heading section-heading--dark">
+        <span>Selected Work</span>
+        <h2>프로젝트</h2>
+        <p>좌측 메뉴에서 카테고리를 선택하고, 프로젝트 카드를 클릭하면 상세 모달에서 작업 내용을 확인할 수 있습니다.</p>
       </div>
+
+      <section id="projects-publishing" class="project-category" aria-labelledby="projects-publishing-title">
+        <div class="project-category__header">
+          <span>01</span>
+          <h3 id="projects-publishing-title">Publishing</h3>
+          <p>정적인 화면을 정확하게 구현하고, 반응형 구조와 브랜드 톤을 맞춘 작업입니다.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="portfolio-item project-card project-card--featured pp lists02">
+            <a href="#" data-toggle="modal" data-target="#Modal-2">
+              <div class="project-card__copy">
+                <small>Publishing</small>
+                <h2>대전지방경찰청</h2>
+                <p>공공기관형 정보 구조와 반응형 퍼블리싱을 개선한 웹 프로젝트</p>
+                <span>담당: UI 개선 · Publishing · 반응형 정리</span>
+                <div class="project-tags">
+                  <em>HTML</em>
+                  <em>CSS</em>
+                  <em>JavaScript</em>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" src="img/pro01.png" alt="대전지방경찰청 웹사이트 썸네일" />
+            </a>
+          </article>
+
+          <article class="portfolio-item project-card pp lists01">
+            <a href="#" data-toggle="modal" data-target="#Modal-1">
+              <div class="project-card__copy">
+                <small>Publishing</small>
+                <h2>Molly's PET SHOP</h2>
+                <p>브랜드 컬러와 상품 탐색 흐름을 중심으로 구성한 반려동물 쇼핑몰 페이지</p>
+                <span>담당: UI Design · Publishing · 스타일 가이드</span>
+                <div class="project-tags">
+                  <em>HTML</em>
+                  <em>CSS</em>
+                  <em>jQuery</em>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" src="img/pro05.png" alt="Molly's PET SHOP 웹사이트 썸네일" />
+            </a>
+          </article>
+
+          <article class="portfolio-item project-card pp lists03">
+            <a href="#" data-toggle="modal" data-target="#Modal-3">
+              <div class="project-card__copy">
+                <small>Publishing</small>
+                <h2>맥심 브랜드</h2>
+                <p>브랜드 콘텐츠를 시각적으로 전달하는 프로모션형 웹 페이지</p>
+                <span>담당: UI Design · Publishing · 인터랙션 구현</span>
+                <div class="project-tags">
+                  <em>HTML</em>
+                  <em>CSS</em>
+                  <em>JavaScript</em>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" src="img/pro02.png" alt="맥심 브랜드 웹사이트 썸네일" />
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-frontend" class="project-category" aria-labelledby="projects-frontend-title">
+        <div class="project-category__header">
+          <span>02</span>
+          <h3 id="projects-frontend-title">Frontend</h3>
+          <p>사용자 흐름, 컴포넌트 구성, 배포까지 고려한 프론트엔드 프로젝트입니다.</p>
+        </div>
+
+        <div class="project-grid project-grid--single">
+          <article class="portfolio-item project-card project-card--featured fp lists06">
+            <a href="#" data-toggle="modal" data-target="#Modal-6">
+              <div class="project-card__copy">
+                <small>Frontend</small>
+                <h2>맛콩맛집</h2>
+                <p>맛집 탐색 경험을 캐릭터와 카드 UI로 풀어낸 프론트엔드 프로젝트</p>
+                <span>담당: React UI · 컴포넌트 설계 · 배포</span>
+                <div class="project-tags">
+                  <em>React</em>
+                  <em>Vite</em>
+                  <em>CSS</em>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" src="img/character-thumb.png" alt="맛콩맛집 캐릭터 썸네일" />
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects-fullstack" class="project-category" aria-labelledby="projects-fullstack-title">
+        <div class="project-category__header">
+          <span>03</span>
+          <h3 id="projects-fullstack-title">Full Stack</h3>
+          <p>API, 데이터 모델링, 화면 연동까지 한 흐름으로 설계한 프로젝트입니다.</p>
+        </div>
+
+        <div class="project-grid project-grid--single">
+          <article class="portfolio-item project-card project-card--featured fsp lists07">
+            <a href="#" data-toggle="modal" data-target="#Modal-7">
+              <div class="project-card__copy">
+                <small>Full Stack</small>
+                <h2>감정 블로그 플랫폼</h2>
+                <p>감정 기록과 게시글 흐름을 연결한 풀스택 블로그 플랫폼</p>
+                <span>담당: API · 인증 흐름 · DB 모델링 · UI 연동</span>
+                <div class="project-tags">
+                  <em>Spring Boot</em>
+                  <em>PostgreSQL</em>
+                  <em>React</em>
+                </div>
+              </div>
+              <img loading="lazy" decoding="async" src="img/emotion-favicon-thumb.png" alt="감정 블로그 플랫폼 썸네일" />
+            </a>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section
