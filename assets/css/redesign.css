@@ -811,31 +811,6 @@ body {
   display: none !important;
 }
 
-#portfolio-type-a .project-card__visit {
-  align-items: center;
-  background: #f8fafc;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 0.6rem;
-  bottom: 1.25rem;
-  color: #111827 !important;
-  display: inline-flex;
-  font-size: 0.78rem;
-  font-weight: 900;
-  gap: 0.4rem;
-  height: auto !important;
-  min-height: 0 !important;
-  padding: 0.65rem 0.8rem;
-  position: absolute !important;
-  right: 1.25rem;
-  text-decoration: none !important;
-  z-index: 4;
-}
-
-#portfolio-type-a .project-card__visit:hover {
-  background: #ffffff;
-  color: #111827 !important;
-}
-
 .project-card__copy {
   align-content: start;
   display: grid;
