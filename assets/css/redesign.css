@@ -1606,7 +1606,9 @@ body {
 
 .portfolio-modal__focus {
   align-items: center;
-  grid-template-columns: clamp(7rem, 10vw, 9rem) minmax(0, 1fr);
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   gap: clamp(0.9rem, 1.5vw, 1.4rem);
 }
 
@@ -1628,7 +1630,17 @@ body {
 }
 
 .portfolio-modal__focus-content {
+  align-self: center;
   min-width: 0;
+}
+
+.portfolio-modal__focus .portfolio-modal__links {
+  align-self: end;
+  border-top: 1px solid rgba(167, 139, 250, 0.2);
+  justify-content: flex-start;
+  margin: 0;
+  padding-top: 1rem;
+  position: static;
 }
 
 .portfolio-modal__screens {
