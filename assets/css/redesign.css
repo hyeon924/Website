@@ -379,6 +379,14 @@ textarea {
   margin: 3rem auto 0 !important;
 }
 
+#intro .about_box--skills {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+#intro .about_box--skills .skill-stack {
+  width: 100% !important;
+}
+
 .profile-card,
 .skill-stack {
   width: auto !important;
