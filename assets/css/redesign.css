@@ -792,7 +792,7 @@ body {
   font-weight: 900;
 }
 
-@media (min-width: 1181px) and (max-height: 950px) {
+@media (min-width: 1181px) and (max-width: 1600px) and (max-height: 950px) {
   #projects-frontend .project-card:not(.project-card--private) img,
   #projects-fullstack .project-card:not(.project-card--private) img {
     height: clamp(5.75rem, 10vh, 6.5rem);
