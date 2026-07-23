@@ -2933,6 +2933,10 @@ body {
 }
 
 @media (min-width: 1181px) {
+  #intro.page-panel {
+    width: auto !important;
+  }
+
   #intro.page-panel.is-active {
     align-items: stretch;
     display: flex !important;
