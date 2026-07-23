@@ -2090,6 +2090,9 @@ body {
   }
 
   #portfolio-type-a .project-category.page-panel {
+    height: calc(100vh - 5rem);
+    height: calc(100dvh - 5rem);
+    min-height: 0;
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -2107,9 +2110,11 @@ body {
   #portfolio-type-a .project-grid,
   #portfolio-type-a .project-grid--single {
     align-content: start;
+    align-self: start;
     gap: clamp(1rem, 2.2vh, 1.5rem);
     grid-auto-rows: max-content;
     grid-template-columns: minmax(0, 1fr);
+    padding-bottom: calc(clamp(2rem, 5vh, 4rem) + env(safe-area-inset-bottom));
   }
 
   #portfolio-type-a .project-card {
@@ -2130,9 +2135,9 @@ body {
   #portfolio-type-a .project-card img,
   #portfolio-type-a .project-card--featured img,
   #portfolio-type-a .project-grid--single .project-card img {
-    aspect-ratio: 16 / 9;
-    height: auto;
-    max-height: min(34vh, 21rem);
+    aspect-ratio: auto;
+    height: clamp(12rem, 34vh, 21rem);
+    max-height: none;
     padding: clamp(0.75rem, 1.6vw, 1rem);
   }
 
@@ -2158,5 +2163,12 @@ body {
 
   #portfolio-type-a .project-tags em {
     font-size: clamp(0.72rem, 1.3vh, 0.88rem);
+  }
+}
+
+@media (max-width: 760px) {
+  #portfolio-type-a .project-category.page-panel {
+    height: calc(100vh - 4.5rem);
+    height: calc(100dvh - 4.5rem);
   }
 }
