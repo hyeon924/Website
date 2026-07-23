@@ -2824,3 +2824,57 @@ body {
   box-shadow: none !important;
   padding: 0 !important;
 }
+
+/* Skills content hierarchy */
+#intro.page-panel {
+  text-align: center;
+}
+
+#intro .section-kicker,
+#intro > h2,
+#intro .intro-lead {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
+
+#intro .about_box--skills {
+  align-self: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#intro .about_box--skills .skill-card-grid {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+#intro .about_box--skills .skill-card {
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+#intro .about_box--skills .skill-card__content {
+  width: 100%;
+}
+
+#intro .about_box--skills .skill-card__content h4 {
+  margin: 0 0 0.8rem;
+}
+
+#intro .about_box--skills .skill-card__content ul {
+  gap: 0.55rem;
+}
+
+#intro .about_box--skills .skill-card__content li {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+#intro .about_box--skills .skill-card__content li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: #f9a8d4;
+}
