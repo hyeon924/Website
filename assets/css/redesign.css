@@ -3202,8 +3202,12 @@ body {
 .project-category__header h3,
 .collaboration-page__header h2 {
   font-family: "Paperlogy", sans-serif !important;
+  font-size: clamp(2.8rem, 4vw, 4.5rem) !important;
   font-weight: 900 !important;
   letter-spacing: 0 !important;
+  line-height: 1.05 !important;
+  margin: 0.55rem 0 1rem !important;
+  text-transform: none !important;
 }
 
 @media (max-width: 1180px) {
