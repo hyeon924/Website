@@ -2701,3 +2701,84 @@ body {
     min-height: 25rem;
   }
 }
+
+/* Responsive layout normalization */
+:root {
+  --desktop-nav-width: 240px;
+  --compact-nav-height: 5rem;
+}
+
+.side-nav,
+.page-panel,
+.project-category {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1181px) {
+  .side-nav {
+    width: var(--desktop-nav-width);
+  }
+
+  .page-panel {
+    bottom: auto;
+    height: 100vh;
+    height: 100dvh;
+    left: var(--desktop-nav-width);
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  #header.page-panel,
+  #intro.page-panel,
+  .project-category.page-panel {
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 0 !important;
+  }
+
+  .project-category {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1180px) {
+  .side-nav {
+    height: var(--compact-nav-height);
+  }
+
+  .page-panel {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: var(--compact-nav-height);
+    width: auto;
+  }
+
+  #header.page-panel,
+  #intro.page-panel,
+  .project-category.page-panel {
+    height: auto !important;
+    min-height: 100% !important;
+  }
+
+  #intro,
+  .project-category {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1180px) and (orientation: portrait) {
+  #portfolio-type-a .project-grid,
+  #portfolio-type-a .project-grid--frontend,
+  #portfolio-type-a #projects-fullstack .project-grid--fullstack {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --compact-nav-height: 4.5rem;
+  }
+}
