@@ -53,6 +53,22 @@
   });
 }());
 
+(function ($) {
+  if (!$) {
+    return;
+  }
+
+  $('.portfolio-modal').on('hidden.bs.modal', function () {
+    window.setTimeout(function () {
+      var activeElement = document.activeElement;
+
+      if (activeElement && activeElement.matches('#portfolio-type-a .project-card > a[data-toggle="modal"]')) {
+        activeElement.blur();
+      }
+    }, 0);
+  });
+}(window.jQuery));
+
 (function () {
   function updateSlides(container, nextIndex, activeClass, currentSelector, totalSelector) {
     var slides = Array.prototype.slice.call(container.querySelectorAll(activeClass));
