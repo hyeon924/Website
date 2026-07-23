@@ -2372,9 +2372,14 @@ body {
   color: #ffffff;
 }
 
+.frontend-modal__tabs button:not(.is-active) {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
 .frontend-modal__tabs button.is-active {
   background: #f8fafc;
-  color: #111827;
+  color: #111827 !important;
 }
 
 .frontend-modal__body {
