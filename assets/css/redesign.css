@@ -2827,15 +2827,15 @@ body {
 
 /* Skills content hierarchy */
 #intro.page-panel {
-  text-align: center;
+  text-align: left;
 }
 
 #intro .section-kicker,
 #intro > h2,
 #intro .intro-lead {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left;
 }
 
 #intro .about_box--skills {
