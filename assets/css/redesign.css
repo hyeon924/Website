@@ -2842,10 +2842,11 @@ body {
   align-self: center;
   margin-left: auto !important;
   margin-right: auto !important;
+  width: min(100%, 960px) !important;
 }
 
 #intro .about_box--skills .skill-card-grid {
-  width: min(100%, 1120px);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -2877,4 +2878,8 @@ body {
   position: absolute;
   left: 0;
   color: #f9a8d4;
+}
+
+#intro .about_box--skills .skill-stack::before {
+  display: none;
 }
