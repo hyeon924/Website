@@ -763,6 +763,10 @@ body {
   max-width: none;
 }
 
+#portfolio-type-a .project-grid--frontend {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 #portfolio-type-a .project-card {
   background: rgba(255, 255, 255, 0.07) !important;
   border: 1px solid rgba(167, 139, 250, 0.24) !important;
@@ -910,6 +914,78 @@ body {
 #portfolio-type-a .project-card:hover img,
 #portfolio-type-a .project-card:focus-within img {
   transform: scale(1.025);
+}
+
+#portfolio-type-a .project-card--private {
+  background:
+    linear-gradient(145deg, rgba(57, 48, 105, 0.38), rgba(20, 24, 46, 0.68)) !important;
+  border-style: dashed !important;
+  box-shadow: none;
+}
+
+#portfolio-type-a .project-card--private:hover {
+  border-color: rgba(196, 181, 253, 0.4) !important;
+  box-shadow: none;
+  transform: none !important;
+}
+
+.project-card__private-content {
+  align-content: center;
+  display: grid;
+  justify-items: start;
+  min-height: 100%;
+  padding: 1.5rem;
+}
+
+.project-card__private-mark {
+  align-items: center;
+  background: rgba(249, 168, 212, 0.1);
+  border: 1px solid rgba(249, 168, 212, 0.28);
+  border-radius: 0.75rem;
+  color: #f9a8d4;
+  display: inline-flex;
+  font-size: 1.05rem;
+  height: 2.85rem;
+  justify-content: center;
+  margin-bottom: 1.35rem;
+  width: 2.85rem;
+}
+
+.project-card__private-content small {
+  color: #f9a8d4;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.55rem;
+  text-transform: uppercase;
+}
+
+.project-card__private-content h2 {
+  color: #ffffff;
+  font-size: clamp(1.65rem, 2.4vh, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0 0 0.65rem;
+}
+
+.project-card__private-content p {
+  color: #c7d2fe;
+  font-size: clamp(0.94rem, 1.3vh, 1.08rem);
+  line-height: 1.55;
+  margin: 0;
+  word-break: keep-all;
+}
+
+.project-card__private-note {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #aebbf3;
+  display: flex;
+  font-size: 0.82rem;
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  width: 100%;
 }
 
 #portfolio-type-a .project-card--featured img {
