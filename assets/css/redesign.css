@@ -773,8 +773,16 @@ body {
   position: relative !important;
   top: auto !important;
   transform: none !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
   width: auto !important;
   z-index: 2;
+}
+
+#portfolio-type-a .project-card:hover,
+#portfolio-type-a .project-card:focus-within {
+  border-color: rgba(196, 181, 253, 0.72) !important;
+  box-shadow: 0 30px 78px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(196, 181, 253, 0.1);
+  transform: translateY(-0.45rem) !important;
 }
 
 #portfolio-type-a .project-card > a {
@@ -890,8 +898,14 @@ body {
   object-fit: contain;
   padding: 1rem;
   position: relative;
+  transition: transform 180ms ease;
   width: 100%;
   z-index: 2;
+}
+
+#portfolio-type-a .project-card:hover img,
+#portfolio-type-a .project-card:focus-within img {
+  transform: scale(1.025);
 }
 
 #portfolio-type-a .project-card--featured img {
