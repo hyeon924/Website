@@ -1276,7 +1276,7 @@ body {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   padding: clamp(1.5rem, 3vw, 3rem);
   position: relative;
 }
@@ -1332,7 +1332,9 @@ body {
   align-items: stretch;
   display: grid;
   gap: clamp(1rem, 2vw, 2rem);
-  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(24rem, 1.2fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 2fr);
+  min-height: 0;
 }
 
 .portfolio-modal__cover,
@@ -1348,6 +1350,9 @@ body {
 .portfolio-modal__cover {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
+  grid-column: 1;
+  grid-row: 1;
+  min-height: 0;
 }
 
 .portfolio-modal__cover figcaption,
@@ -1371,7 +1376,9 @@ body {
   align-self: center;
   background: #f8fafc;
   border-radius: 0.65rem;
-  height: clamp(15rem, 38vh, 38rem);
+  height: 100%;
+  max-height: 100%;
+  min-height: 0;
   object-fit: contain;
   width: 100%;
 }
@@ -1379,6 +1386,10 @@ body {
 .portfolio-modal__focus {
   align-content: center;
   display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .portfolio-modal__focus ul {
@@ -1409,20 +1420,27 @@ body {
 }
 
 .portfolio-modal__screens {
-  grid-column: 1 / -1;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
 }
 
 .portfolio-modal__screens > div {
   display: grid;
   gap: clamp(0.75rem, 1.2vw, 1.2rem);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  min-height: 0;
 }
 
 .portfolio-modal__screens img {
   background: #f8fafc;
   border-radius: 0.65rem;
-  height: clamp(10rem, 21vh, 20rem);
-  object-fit: cover;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -1465,23 +1483,28 @@ body {
 
   .portfolio-modal__surface {
     border-radius: 0.9rem;
+    overflow: auto;
     padding: 1.15rem;
   }
 
   .portfolio-modal__layout {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .portfolio-modal__cover img {
-    height: min(42vh, 21rem);
+    height: auto;
+    max-height: min(42vh, 21rem);
   }
 
   .portfolio-modal__screens {
     grid-column: auto;
+    grid-row: auto;
   }
 
   .portfolio-modal__screens > div {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .portfolio-modal__screens img {
