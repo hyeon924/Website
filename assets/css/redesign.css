@@ -1652,6 +1652,8 @@ body {
   grid-row: 2;
   height: 2.7rem;
   justify-content: center;
+  min-width: 0;
+  padding: 0 !important;
   transition: background-color 0.2s ease, transform 0.2s ease;
   width: 2.7rem;
 }
