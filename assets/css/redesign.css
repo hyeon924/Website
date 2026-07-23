@@ -1620,7 +1620,7 @@ body {
 }
 
 .portfolio-modal__gallery-stage {
-  grid-column: 2;
+  grid-column: 1 / -1;
   grid-row: 1;
   height: 100%;
   min-height: 0;
@@ -1633,7 +1633,7 @@ body {
   display: none;
   height: 100%;
   min-height: 0;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -1649,7 +1649,7 @@ body {
   color: #ffffff;
   display: inline-flex;
   font-size: 1.2rem;
-  grid-row: 1;
+  grid-row: 2;
   height: 2.7rem;
   justify-content: center;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -1672,7 +1672,7 @@ body {
 .portfolio-modal__gallery-count {
   color: #c4b5fd;
   font-size: 0.9rem;
-  grid-column: 1 / -1;
+  grid-column: 2;
   grid-row: 2;
   margin: 0;
   text-align: center;
