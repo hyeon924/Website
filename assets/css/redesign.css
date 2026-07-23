@@ -2949,3 +2949,36 @@ body {
     width: min(100%, 1120px) !important;
   }
 }
+
+@media (min-width: 1181px) and (max-height: 920px) {
+  #intro {
+    padding-bottom: clamp(2rem, 4vh, 3.5rem) !important;
+    padding-top: clamp(2rem, 4vh, 3.5rem) !important;
+  }
+
+  #intro > h2 {
+    font-size: clamp(3.3rem, 7vh, 4.5rem) !important;
+  }
+
+  #intro .about_box--skills {
+    margin-top: clamp(1.25rem, 3vh, 2rem) !important;
+  }
+
+  #intro .about_box--skills .skill-card-grid {
+    gap: 0.8rem !important;
+  }
+
+  #intro .about_box--skills .skill-card {
+    gap: 0.7rem;
+    padding: 1.25rem !important;
+  }
+
+  #intro .about_box--skills .skill-card > ul {
+    gap: 0.35rem;
+  }
+
+  #intro .about_box--skills .skill-card > ul li {
+    font-size: clamp(0.78rem, 1.3vw, 1rem) !important;
+    line-height: 1.3;
+  }
+}
