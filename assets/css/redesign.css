@@ -2341,6 +2341,7 @@ body {
 }
 
 .frontend-modal__header .portfolio-modal__title h2 {
+  color: #ffffff;
   margin-right: 0;
   white-space: nowrap;
 }
