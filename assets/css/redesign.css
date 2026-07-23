@@ -848,7 +848,8 @@ body {
   }
 
   #portfolio-type-a .project-tags em {
-    font-size: clamp(0.65rem, 0.9vh, 0.84rem);
+    font-size: clamp(0.78rem, 1.1vh, 0.98rem);
+    padding: 0.4rem 0.7rem;
   }
 
   #portfolio-type-a .project-card img {
@@ -1094,7 +1095,8 @@ body {
 }
 
 #portfolio-type-a .project-tags em {
-  font-size: clamp(0.72rem, 0.9vh, 0.9rem);
+  font-size: clamp(0.82rem, 1.15vh, 1.05rem);
+  padding: 0.45rem 0.75rem;
 }
 
 #portfolio-type-a .project-grid--single .project-card img {
