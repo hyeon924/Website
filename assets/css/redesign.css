@@ -474,7 +474,7 @@ body {
   padding: 2rem 1.35rem;
   position: fixed;
   top: 0;
-  width: 280px;
+  width: 240px;
   z-index: 1000;
 }
 
@@ -564,13 +564,13 @@ body {
   display: none !important;
   bottom: 0;
   height: 100vh;
-  left: 280px;
+  left: 240px;
   min-height: 0;
   overflow: hidden;
   position: fixed;
   right: 0;
   top: 0;
-  width: calc(100vw - 280px);
+  width: calc(100vw - 240px);
 }
 
 .page-panel.is-active {
