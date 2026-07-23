@@ -3037,3 +3037,28 @@ body {
     line-height: 1.3;
   }
 }
+
+@media (max-width: 980px) {
+  #header .inner,
+  .hero-panel,
+  .hero-panel li,
+  .hero-about article {
+    box-sizing: border-box;
+  }
+
+  #header .inner {
+    min-width: 0;
+    width: 100% !important;
+  }
+
+  .hero-panel {
+    justify-self: stretch;
+    max-width: 100% !important;
+    min-width: 0;
+    width: 100% !important;
+  }
+
+  .hero-panel * {
+    min-width: 0;
+  }
+}
