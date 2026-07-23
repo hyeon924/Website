@@ -2432,7 +2432,7 @@ body {
 }
 
 .frontend-modal__troubleshoot-copy {
-  align-content: center;
+  align-content: start;
   display: grid;
   padding-right: clamp(8rem, 12vw, 11rem);
 }
