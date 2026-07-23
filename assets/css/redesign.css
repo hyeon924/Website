@@ -3197,6 +3197,15 @@ body {
   position: absolute;
 }
 
+/* Subpage title typography */
+#intro > h2,
+.project-category__header h3,
+.collaboration-page__header h2 {
+  font-family: "Paperlogy", sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+}
+
 @media (max-width: 1180px) {
   .collaboration-page {
     min-height: 100%;
