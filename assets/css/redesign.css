@@ -2817,3 +2817,10 @@ body {
 #intro .about_box--skills .skill-stack__intro {
   text-align: left;
 }
+
+#intro .about_box--skills .skill-stack {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
