@@ -3349,3 +3349,16 @@ body {
     align-self: auto;
   }
 }
+
+@media (min-width: 1181px) and (max-width: 1600px) and (max-height: 950px) {
+  #projects-publishing .project-card--featured > a,
+  #projects-frontend .project-card--featured > a {
+    gap: 0.7rem;
+    padding: 0.9rem;
+  }
+
+  #projects-publishing .project-card--featured img,
+  #projects-frontend .project-card--featured img {
+    padding: 0.55rem;
+  }
+}
