@@ -771,6 +771,7 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+#projects-frontend .project-card__scope,
 #projects-fullstack .project-card__scope {
   align-items: baseline;
   background: rgba(255, 255, 255, 0.065);
@@ -785,6 +786,7 @@ body {
   padding: 0.55rem 0.7rem;
 }
 
+#projects-frontend .project-card__scope strong,
 #projects-fullstack .project-card__scope strong {
   color: #ffffff;
   font-weight: 900;
