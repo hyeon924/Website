@@ -2347,28 +2347,45 @@ body {
 
 .frontend-modal__tabs {
   align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 0.75rem;
   display: inline-flex;
-  padding: 0.28rem;
+  gap: clamp(1.25rem, 2vw, 2rem);
 }
 
 .frontend-modal__tabs button {
   background: transparent;
   border: 0;
-  border-radius: 0.55rem;
   color: #aebbf3;
   font-size: clamp(0.82rem, 1vh, 0.98rem);
   font-weight: 800;
-  min-height: 2.6rem;
-  padding: 0.55rem 0.9rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0;
+  position: relative;
   white-space: nowrap;
 }
 
+.frontend-modal__tabs button::after {
+  background: #f9a8d4;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.frontend-modal__tabs button:hover {
+  color: #e7ecff;
+}
+
 .frontend-modal__tabs button.is-active {
-  background: #f8fafc;
-  color: #111827;
+  color: #ffffff;
+}
+
+.frontend-modal__tabs button.is-active::after {
+  transform: scaleX(1);
 }
 
 .frontend-modal__body {
@@ -2594,13 +2611,14 @@ body {
   }
 
   .frontend-modal__tabs {
+    justify-content: center;
     width: 100%;
   }
 
   .frontend-modal__tabs button {
-    flex: 1 1 50%;
+    flex: 0 1 auto;
     font-size: 0.76rem;
-    padding: 0.5rem 0.35rem;
+    padding: 0.5rem 0;
   }
 
   .frontend-modal__body,
