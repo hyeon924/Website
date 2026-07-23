@@ -1682,9 +1682,9 @@ body {
 }
 
 .portfolio-modal__focus .portfolio-modal__links a.is-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.45);
-  color: #ffffff !important;
+  background: #f8fafc;
+  border-color: #ffffff;
+  color: #111827 !important;
 }
 
 .portfolio-modal__screens {
