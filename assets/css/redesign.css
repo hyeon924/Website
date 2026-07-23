@@ -3224,7 +3224,18 @@ body {
   font-size: clamp(1rem, 1.4vw, 1.2rem) !important;
   line-height: 1.65 !important;
   margin: 0 !important;
-  max-width: 760px !important;
+  max-width: none !important;
+}
+
+#intro .intro-lead > span {
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  #intro .intro-lead > span,
+  .collaboration-page__header p {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 1181px) {
