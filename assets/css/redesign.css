@@ -816,6 +816,13 @@ body {
   display: grid;
 }
 
+.project-card__copy h2,
+.project-card__copy p,
+.project-card__features li {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
 .project-card__copy small {
   color: #f9a8d4;
   font-size: 0.82rem;
