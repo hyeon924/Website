@@ -155,13 +155,14 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <button className="icon-button" onClick={onClose} aria-label="상세 정보 닫기">×</button>
       </header>
       <div className="modal-tabs" role="tablist" aria-label={project.title + ' 상세 정보'}>
-        <button className={tab === 'info' ? 'active' : ''} role="tab" aria-selected={tab === 'info'} onClick={() => setTab('info')}>구현 정보</button>
+        <button className={tab === 'info' ? 'active' : ''} role="tab" aria-selected={tab === 'info'} onClick={() => setTab('info')}>프로젝트 소개</button>
         <button className={tab === 'screens' ? 'active' : ''} role="tab" aria-selected={tab === 'screens'} onClick={() => setTab('screens')}>주요 화면</button>
         <button className={tab === 'troubleshooting' ? 'active' : ''} role="tab" aria-selected={tab === 'troubleshooting'} onClick={() => setTab('troubleshooting')}>트러블슈팅</button>
       </div>
-      {tab === 'info' && <div className="modal-info">
-        <img src={asset(project.image)} alt="" />
-        <div><p className="modal-label">구현 포인트</p><ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
+      {tab === 'info' && <div className="modal-info project-overview">
+        <figure className="project-overview__media"><img src={asset(project.image)} alt={project.title + ' 대표 이미지'} /></figure>
+        <div className="project-overview__content"><p className="modal-label">PROJECT OVERVIEW</p><h3>{project.title}</h3><p className="project-overview__summary">{project.summary}</p>
+          <p className="modal-label">핵심 구현</p><ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
           <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
           <div className="modal-links">{project.liveUrl && <a href={project.liveUrl}>배포 사이트 ↗</a>}{project.githubUrl && <a href={project.githubUrl}>GitHub ↗</a>}</div>
         </div>
