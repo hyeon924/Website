@@ -95,6 +95,23 @@ h1, h2, p { overflow-wrap: break-word; }
 .viewer-controls { display: flex; align-items: center; justify-content: center; gap: 26px; margin-top: 16px; font-weight: 800; }
 .viewer-controls button { width: 74px; height: 40px; border: 1px solid #f7f7ff; border-radius: 9px; color: #fff; background: #25273d; font-size: 29px; line-height: 1; }
 
+@media (min-width: 901px) and (max-height: 950px) {
+  .project-page.frontend { padding-top: 46px; padding-bottom: 34px; }
+  .project-page.frontend .page-heading h1 { font-size: clamp(42px, 4vw, 60px); }
+  .project-page.frontend .page-description { margin-top: 8px; font-size: 15px; line-height: 1.55; }
+  .project-page.frontend .project-grid { gap: 13px; margin-top: 28px; }
+  .project-page.frontend .project-card,
+  .project-page.frontend .private-card { min-height: 0; height: clamp(385px, calc(100dvh - 310px), 455px); padding: 20px; }
+  .project-page.frontend .project-card h2 { margin: 4px 0 6px; font-size: 26px; }
+  .project-page.frontend .project-card-copy > p:not(.project-category) { min-height: 0; font-size: 14px; line-height: 1.45; }
+  .project-page.frontend .scope { margin-top: 10px; padding: 7px; font-size: 12px; }
+  .project-page.frontend .project-card ul { margin-top: 9px; font-size: 13px; line-height: 1.45; }
+  .project-page.frontend .stack-list { gap: 5px; margin-top: 10px; }
+  .project-page.frontend .stack-list span { padding: 5px 8px; font-size: 11px; }
+  .project-page.frontend .project-card img { height: 108px; margin-top: 13px; }
+  .project-page.frontend .private-card { padding: 25px; }
+}
+
 @media (max-width: 900px) {
   .app-shell { overflow: visible; }
   .sidebar { width: 180px; flex-basis: 180px; padding: 25px 20px; }

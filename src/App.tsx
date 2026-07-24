@@ -91,7 +91,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: (project: 
 
 function ProjectPage({ category, number, title, description, onOpen }: { category: Project['category']; number: string; title: string; description: string; onOpen: (project: Project) => void }) {
   const list = useMemo(() => projects.filter((project) => project.category === category), [category]);
-  return <section className="page-content">
+  return <section className={'page-content project-page ' + category}>
     <Heading number={number} title={title} description={description} />
     <div className={'project-grid ' + category}>
       {list.map((project) => <ProjectCard key={project.id} project={project} onOpen={onOpen} />)}
