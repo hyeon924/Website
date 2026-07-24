@@ -1,10 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { collaboration, navItems, projects, skills, type PageId, type Project } from './data/portfolio';
 
 const asset = (path: string) => import.meta.env.BASE_URL + path;
-const projectLink = (url: string) => url.startsWith('http') ? url : asset(url);
-
 function Sidebar({ page, setPage }: { page: PageId; setPage: (page: PageId) => void }) {
   const [open, setOpen] = useState(false);
   const select = (id: PageId) => { setPage(id); setOpen(false); };
@@ -108,11 +106,14 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
   const [imageIndex, setImageIndex] = useState(0);
   const [troubleshootingIndex, setTroubleshootingIndex] = useState(0);
   const [showTroubleshootingMedia, setShowTroubleshootingMedia] = useState(false);
+  const [showUnavailableNotice, setShowUnavailableNotice] = useState(false);
+  const unavailableNoticeTimer = useRef<number | undefined>(undefined);
   useEffect(() => {
     const close = (event: KeyboardEvent) => event.key === 'Escape' && onClose();
     window.addEventListener('keydown', close);
     return () => window.removeEventListener('keydown', close);
   }, [onClose]);
+  useEffect(() => () => window.clearTimeout(unavailableNoticeTimer.current), []);
   const detailImage = project.detailImages[imageIndex];
   const troubleshooting = project.troubleshooting ?? [];
   const currentTroubleshooting = troubleshooting[troubleshootingIndex];
@@ -120,6 +121,11 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
   const previous = () => setImageIndex((index) => (index - 1 + project.detailImages.length) % project.detailImages.length);
   const nextTroubleshooting = () => setTroubleshootingIndex((index) => (index + 1) % troubleshooting.length);
   const previousTroubleshooting = () => setTroubleshootingIndex((index) => (index - 1 + troubleshooting.length) % troubleshooting.length);
+  const showUnavailable = () => {
+    window.clearTimeout(unavailableNoticeTimer.current);
+    setShowUnavailableNotice(true);
+    unavailableNoticeTimer.current = window.setTimeout(() => setShowUnavailableNotice(false), 3000);
+  };
   return <motion.div className="modal-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <motion.section className={'project-modal ' + (project.category === 'publishing' ? 'publishing-modal' : '')} role="dialog" aria-modal="true" aria-label={project.title + ' 상세 정보'} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 16 }}>
       {project.category === 'publishing' ? <>
@@ -136,9 +142,9 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
               <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
             </div>
             <footer className="publishing-modal__links">
-              {project.liveUrl && <a href={projectLink(project.liveUrl)} target="_blank" rel="noreferrer">사이트 보기 ↗</a>}
-              {project.subUrl && <a href={projectLink(project.subUrl)} target="_blank" rel="noreferrer" className="secondary">서브 페이지 ↗</a>}
-              {project.githubUrl && <a href={projectLink(project.githubUrl)} target="_blank" rel="noreferrer" className="secondary">GitHub ↗</a>}
+              {project.liveUrl && <button type="button" onClick={showUnavailable}>사이트 보기 ↗</button>}
+              {project.subUrl && <button type="button" onClick={showUnavailable} className="secondary">서브 페이지 ↗</button>}
+              {project.githubUrl && <button type="button" onClick={showUnavailable} className="secondary">GitHub ↗</button>}
             </footer>
           </section>
           <section className="publishing-modal__screens">
@@ -166,7 +172,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <div className="project-overview__content"><p className="modal-label">PROJECT OVERVIEW</p><h3>{project.title}</h3><p className="project-overview__summary">{project.summary}</p>
           <p className="modal-label">핵심 구현</p><ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
           <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
-          <div className="modal-links">{project.liveUrl && <a href={project.liveUrl}>배포 사이트 ↗</a>}{project.githubUrl && <a href={project.githubUrl}>GitHub ↗</a>}</div>
+          <div className="modal-links">{project.liveUrl && <button type="button" onClick={showUnavailable}>배포 사이트 ↗</button>}{project.githubUrl && <button type="button" onClick={showUnavailable}>GitHub ↗</button>}</div>
         </div>
       </div>}
       {tab === 'screens' && <div className="screen-viewer">
@@ -180,6 +186,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <div className="troubleshooting-controls"><button onClick={previousTroubleshooting} aria-label="이전 트러블슈팅">‹</button><span>{troubleshootingIndex + 1} / {troubleshooting.length}</span><button onClick={nextTroubleshooting} aria-label="다음 트러블슈팅">›</button></div>
       </section> : <div className="troubleshooting-empty">트러블슈팅 내용을 정리 중입니다.</div>)}
       </>}
+      <AnimatePresence>{showUnavailableNotice && <motion.p className="modal-toast" role="status" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}>준비 중입니다.</motion.p>}</AnimatePresence>
     </motion.section>
   </motion.div>;
 }
