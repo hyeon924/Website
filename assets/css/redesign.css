@@ -2665,13 +2665,15 @@ body {
 
   .frontend-modal__tabs {
     justify-content: center;
+    max-width: 22rem;
     width: 100%;
   }
 
   .frontend-modal__tabs button {
-    flex: 0 1 auto;
+    flex: 1 1 0;
     font-size: 0.76rem;
-    padding: 0.5rem 0;
+    min-width: 0;
+    padding: 0.5rem 0.65rem;
   }
 
   .frontend-modal__body,
