@@ -159,7 +159,7 @@ h1, h2, p { overflow-wrap: break-word; }
   .project-page .project-grid { margin-top: 52px; }
   .project-page .project-card,
   .project-page .private-card { height: auto; min-height: 430px; }
-  .project-grid.publishing, .project-grid.frontend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-grid.publishing, .project-grid.frontend, .project-grid.fullstack { grid-template-columns: 1fr; }
   .project-card, .private-card { min-height: 430px; }
 }
 @media (max-width: 680px) {
