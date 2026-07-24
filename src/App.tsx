@@ -102,16 +102,22 @@ function ProjectPage({ category, number, title, description, onOpen }: { categor
 }
 
 function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
-  const [tab, setTab] = useState<'info' | 'screens'>('info');
+  const [tab, setTab] = useState<'info' | 'screens' | 'troubleshooting'>('info');
   const [imageIndex, setImageIndex] = useState(0);
+  const [troubleshootingIndex, setTroubleshootingIndex] = useState(0);
+  const [showTroubleshootingMedia, setShowTroubleshootingMedia] = useState(false);
   useEffect(() => {
     const close = (event: KeyboardEvent) => event.key === 'Escape' && onClose();
     window.addEventListener('keydown', close);
     return () => window.removeEventListener('keydown', close);
   }, [onClose]);
   const detailImage = project.detailImages[imageIndex];
+  const troubleshooting = project.troubleshooting ?? [];
+  const currentTroubleshooting = troubleshooting[troubleshootingIndex];
   const next = () => setImageIndex((index) => (index + 1) % project.detailImages.length);
   const previous = () => setImageIndex((index) => (index - 1 + project.detailImages.length) % project.detailImages.length);
+  const nextTroubleshooting = () => setTroubleshootingIndex((index) => (index + 1) % troubleshooting.length);
+  const previousTroubleshooting = () => setTroubleshootingIndex((index) => (index - 1 + troubleshooting.length) % troubleshooting.length);
   return <motion.div className="modal-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <motion.section className={'project-modal ' + (project.category === 'publishing' ? 'publishing-modal' : '')} role="dialog" aria-modal="true" aria-label={project.title + ' 상세 정보'} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 16 }}>
       {project.category === 'publishing' ? <>
@@ -148,20 +154,29 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <div><p>{project.role}</p><h2>{project.title}</h2></div>
         <button className="icon-button" onClick={onClose} aria-label="상세 정보 닫기">×</button>
       </header>
-      <div className="modal-tabs">
-        <button className={tab === 'info' ? 'active' : ''} onClick={() => setTab('info')}>구현 정보</button>
-        <button className={tab === 'screens' ? 'active' : ''} onClick={() => setTab('screens')}>주요 화면</button>
+      <div className="modal-tabs" role="tablist" aria-label={project.title + ' 상세 정보'}>
+        <button className={tab === 'info' ? 'active' : ''} role="tab" aria-selected={tab === 'info'} onClick={() => setTab('info')}>구현 정보</button>
+        <button className={tab === 'screens' ? 'active' : ''} role="tab" aria-selected={tab === 'screens'} onClick={() => setTab('screens')}>주요 화면</button>
+        <button className={tab === 'troubleshooting' ? 'active' : ''} role="tab" aria-selected={tab === 'troubleshooting'} onClick={() => setTab('troubleshooting')}>트러블슈팅</button>
       </div>
-      {tab === 'info' ? <div className="modal-info">
+      {tab === 'info' && <div className="modal-info">
         <img src={asset(project.image)} alt="" />
         <div><p className="modal-label">구현 포인트</p><ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
           <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
           <div className="modal-links">{project.liveUrl && <a href={project.liveUrl}>배포 사이트 ↗</a>}{project.githubUrl && <a href={project.githubUrl}>GitHub ↗</a>}</div>
         </div>
-      </div> : <div className="screen-viewer">
+      </div>}
+      {tab === 'screens' && <div className="screen-viewer">
         <img src={asset(detailImage)} alt={project.title + ' 주요 화면 ' + (imageIndex + 1)} />
         <div className="viewer-controls"><button onClick={previous} aria-label="이전 화면">‹</button><span>{imageIndex + 1} / {project.detailImages.length}</span><button onClick={next} aria-label="다음 화면">›</button></div>
       </div>}
+      {tab === 'troubleshooting' && (currentTroubleshooting ? <section className={'troubleshooting-viewer ' + (showTroubleshootingMedia ? 'has-media' : '')}>
+        {currentTroubleshooting.image && <button className="troubleshooting-media-toggle" onClick={() => setShowTroubleshootingMedia((show) => !show)} aria-pressed={showTroubleshootingMedia}>{showTroubleshootingMedia ? '이미지 자료 접기' : '이미지 자료 보기'}</button>}
+        <div className="troubleshooting-copy"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3><p>{currentTroubleshooting.description}</p></div>
+        {showTroubleshootingMedia && currentTroubleshooting.image && <figure><img src={asset(currentTroubleshooting.image)} alt={currentTroubleshooting.title + ' 자료 이미지'} /></figure>}
+        <div className="troubleshooting-controls"><button onClick={previousTroubleshooting} aria-label="이전 트러블슈팅">‹</button><span>{troubleshootingIndex + 1} / {troubleshooting.length}</span><button onClick={nextTroubleshooting} aria-label="다음 트러블슈팅">›</button></div>
+        <footer className="modal-links">{project.liveUrl && <a href={project.liveUrl}>배포 사이트 ↗</a>}{project.githubUrl && <a href={project.githubUrl}>GitHub ↗</a>}</footer>
+      </section> : <div className="troubleshooting-empty">트러블슈팅 내용을 정리 중입니다.</div>)}
       </>}
     </motion.section>
   </motion.div>;

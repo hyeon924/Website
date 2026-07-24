@@ -15,6 +15,11 @@ export type Project = {
   liveUrl?: string;
   subUrl?: string;
   githubUrl?: string;
+  troubleshooting?: {
+    title: string;
+    description: string;
+    image?: string;
+  }[];
 };
 
 export const navItems: { id: PageId; label: string }[] = [
@@ -78,6 +83,11 @@ export const projects: Project[] = [
     detailImages: ['img/eat-layout-main.png', 'img/eat-layout-sub-preview.png'],
     period: '2025.01 - 2025.02', role: 'Frontend',
     liveUrl: '#', githubUrl: '#',
+    troubleshooting: [
+      { title: 'API 응답 정규화', description: '누락된 값과 예외 형식을 화면 데이터로 변환해 목록과 상세 화면에서 오류가 발생하지 않도록 처리했습니다.', image: 'img/eat-layout-main.png' },
+      { title: '필터와 지도 상태 동기화', description: '지역·구·음식 필터 상태를 하나의 흐름으로 관리해 목록 결과와 지도 마커가 항상 같은 조건을 반영하도록 구성했습니다.', image: 'img/eat-layout-sub-preview.png' },
+      { title: '빈 결과와 로딩 상태 분리', description: '검색 전·로딩 중·결과 없음 상태를 구분해 사용자가 현재 탐색 흐름을 명확하게 이해할 수 있도록 개선했습니다.', image: 'img/character-preview.png' },
+    ],
   },
   {
     id: 'emotion', category: 'fullstack', title: '감정 블로그 플랫폼',
@@ -87,6 +97,11 @@ export const projects: Project[] = [
     stack: ['Spring Boot', 'PostgreSQL', 'React'], image: 'img/emotion-favicon-thumb.png',
     detailImages: ['img/emotion-login-preview.png', 'img/emotion-post-preview.png', 'img/emotion-my-preview.png'],
     period: '2025.03 - 2025.05', role: 'Full Stack', liveUrl: '#', githubUrl: '#',
+    troubleshooting: [
+      { title: '인증과 보호 페이지 분리', description: '로그인 상태 확인과 보호 페이지 접근 제어를 분리해 비인증 사용자가 필요한 흐름으로 자연스럽게 이동하도록 구성했습니다.', image: 'img/emotion-login-preview.png' },
+      { title: '게시글과 사용자 데이터 모델링', description: '게시글, 사용자, 감정 기록의 관계를 정리해 작성·조회·마이페이지 흐름에서 일관된 데이터를 제공하도록 설계했습니다.', image: 'img/emotion-post-preview.png' },
+      { title: '배포 환경과 API 연결 분리', description: '환경 변수로 API 주소와 인증 설정을 관리해 개발 환경과 배포 환경에서 안정적으로 서비스를 연결할 수 있도록 구성했습니다.', image: 'img/emotion-my-preview.png' },
+    ],
   },
   {
     id: 'dashboard', category: 'fullstack', title: '업무 관리 대시보드',
