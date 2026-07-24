@@ -92,11 +92,13 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: (project: 
 
 function ProjectPage({ category, number, title, description, onOpen }: { category: Project['category']; number: string; title: string; description: string; onOpen: (project: Project) => void }) {
   const list = useMemo(() => projects.filter((project) => project.category === category), [category]);
+  const publicProjects = list.filter((project) => !project.isPrivate);
+  const privateProjectCount = list.filter((project) => project.isPrivate).length + (category === 'frontend' ? 2 : 0);
   return <section className={'page-content project-page ' + category}>
     <Heading number={number} title={title} description={description} />
     <div className={'project-grid ' + category}>
-      {list.map((project) => <ProjectCard key={project.id} project={project} onOpen={onOpen} />)}
-      {category === 'frontend' && [1, 2].map((item) => <article className="private-card" key={item}><span>🔒</span><p>PRIVATE PROJECT</p><h2>비공개 프로젝트</h2><small>세부 정보는 추후 업데이트됩니다.</small></article>)}
+      {publicProjects.map((project) => <ProjectCard key={project.id} project={project} onOpen={onOpen} />)}
+      {Array.from({ length: privateProjectCount }, (_, index) => <article className="private-card" key={'private-' + index}><span>🔒</span><p>PRIVATE PROJECT</p><h2>비공개 프로젝트</h2><small>세부 정보는 추후 업데이트됩니다.</small></article>)}
     </div>
   </section>;
 }

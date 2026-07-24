@@ -15,6 +15,7 @@ export type Project = {
   liveUrl?: string;
   subUrl?: string;
   githubUrl?: string;
+  isPrivate?: boolean;
   troubleshooting?: {
     title: string;
     description: string;
@@ -109,6 +110,6 @@ export const projects: Project[] = [
     scope: '서비스 설계 · REST API · 데이터 모델링 · 배포',
     points: ['업무 상태 관리', '권한별 화면 분기', '대시보드 데이터 시각화'],
     stack: ['Spring Boot', 'PostgreSQL', 'React'], image: 'img/pro05.png',
-    detailImages: ['img/emotion-my-preview.png'], period: '2025.06', role: 'Full Stack',
+    detailImages: ['img/emotion-my-preview.png'], period: '2025.06', role: 'Full Stack', isPrivate: true,
   },
 ];
