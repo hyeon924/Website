@@ -176,7 +176,6 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <div className="troubleshooting-copy"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3><p>{currentTroubleshooting.description}</p></div>
         {showTroubleshootingMedia && currentTroubleshooting.image && <figure><img src={asset(currentTroubleshooting.image)} alt={currentTroubleshooting.title + ' 자료 이미지'} /></figure>}
         <div className="troubleshooting-controls"><button onClick={previousTroubleshooting} aria-label="이전 트러블슈팅">‹</button><span>{troubleshootingIndex + 1} / {troubleshooting.length}</span><button onClick={nextTroubleshooting} aria-label="다음 트러블슈팅">›</button></div>
-        <footer className="modal-links">{project.liveUrl && <a href={project.liveUrl}>배포 사이트 ↗</a>}{project.githubUrl && <a href={project.githubUrl}>GitHub ↗</a>}</footer>
       </section> : <div className="troubleshooting-empty">트러블슈팅 내용을 정리 중입니다.</div>)}
       </>}
     </motion.section>
