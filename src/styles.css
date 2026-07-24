@@ -135,8 +135,9 @@ h1, h2, p { overflow-wrap: break-word; }
 }
 
 @media (min-width: 901px) and (max-height: 1000px) {
+  .project-page { padding-bottom: 22px; }
   .project-page .project-card { padding: 22px; }
-  .project-page .project-card img { height: clamp(100px, 12vh, 120px); }
+  .project-page .project-card img { height: clamp(130px, 15vh, 145px); }
 }
 
 @media (max-width: 900px) {
