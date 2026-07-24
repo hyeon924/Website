@@ -245,6 +245,10 @@ h1, h2, p { overflow-wrap: break-word; }
   .publishing-modal__header h2 { font-size: clamp(26px, 8vw, 36px); }
   .publishing-modal__layout { display: flex; flex: 1; flex-direction: column; gap: 14px; overflow: auto; }
   .publishing-modal__focus, .publishing-modal__screens { padding: 14px; }
+  .publishing-modal__focus { flex: none; }
+  .publishing-modal__mark { flex: none; }
+  .publishing-modal__links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+  .publishing-modal__links a { min-width: 0; min-height: 38px; padding: 8px 4px; font-size: 11px; white-space: nowrap; }
   .publishing-modal__screens { min-height: 320px; flex: none; }
   .publishing-modal__focus dl { grid-template-columns: 1fr; }
   .publishing-modal__controls { grid-template-columns: 1fr 72px 1fr; gap: 10px; }
