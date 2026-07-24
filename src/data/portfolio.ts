@@ -53,7 +53,7 @@ export const projects: Project[] = [
     summary: '브랜드 컬러와 상품 탐색 흐름을 중심으로 구성한 반려동물 쇼핑몰',
     scope: 'UI Design · Publishing · 스타일 가이드',
     points: ['브랜드 컬러 적용', '상품 탐색 흐름 설계', '인터랙션 구현'],
-    stack: ['HTML', 'CSS', 'jQuery'], image: 'img/pro02.png',
+    stack: ['HTML', 'CSS', 'jQuery'], image: 'img/pro05.png',
     detailImages: ['img/mo01.jpg', 'img/mo02.jpg'], period: '2024.05 - 2024.06', role: 'Publishing',
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     summary: '브랜드 콘텐츠를 시각적으로 전달하는 프로모션 웹 페이지',
     scope: 'UI Design · Publishing · 인터랙션 구현',
     points: ['프로모션 페이지 제작', '스크롤 인터랙션', '반응형 화면 구성'],
-    stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro05.png',
+    stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro02.png',
     detailImages: ['img/max01.jpg', 'img/max02.jpg'], period: '2024.07', role: 'Publishing',
   },
   {
