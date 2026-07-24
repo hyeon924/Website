@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { collaboration, navItems, projects, skills, type PageId, type Project } from './data/portfolio';
 
 const asset = (path: string) => import.meta.env.BASE_URL + path;
+const projectLink = (url: string) => url.startsWith('http') ? url : asset(url);
 
 function Sidebar({ page, setPage }: { page: PageId; setPage: (page: PageId) => void }) {
   const [open, setOpen] = useState(false);
@@ -112,7 +113,37 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
   const next = () => setImageIndex((index) => (index + 1) % project.detailImages.length);
   const previous = () => setImageIndex((index) => (index - 1 + project.detailImages.length) % project.detailImages.length);
   return <motion.div className="modal-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-    <motion.section className="project-modal" role="dialog" aria-modal="true" aria-label={project.title + ' 상세 정보'} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 16 }}>
+    <motion.section className={'project-modal ' + (project.category === 'publishing' ? 'publishing-modal' : '')} role="dialog" aria-modal="true" aria-label={project.title + ' 상세 정보'} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 16 }}>
+      {project.category === 'publishing' ? <>
+        <header className="publishing-modal__header">
+          <div><p>{project.role}</p><h2>{project.title}</h2></div>
+          <button className="icon-button" onClick={onClose} aria-label="상세 정보 닫기">×</button>
+        </header>
+        <div className="publishing-modal__layout">
+          <section className="publishing-modal__focus">
+            <figure className="publishing-modal__mark"><img src={asset(project.image)} alt={project.title + ' 대표 이미지'} /></figure>
+            <div className="publishing-modal__focus-content">
+              <h3>구현 포인트</h3>
+              <ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
+              <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
+            </div>
+            <footer className="publishing-modal__links">
+              {project.liveUrl && <a href={projectLink(project.liveUrl)} target="_blank" rel="noreferrer">사이트 보기 ↗</a>}
+              {project.subUrl && <a href={projectLink(project.subUrl)} target="_blank" rel="noreferrer" className="secondary">서브 페이지 ↗</a>}
+              {project.githubUrl && <a href={projectLink(project.githubUrl)} target="_blank" rel="noreferrer" className="secondary">GitHub ↗</a>}
+            </footer>
+          </section>
+          <section className="publishing-modal__screens">
+            <h3>주요 화면</h3>
+            <div className="publishing-modal__carousel">
+              <img src={asset(detailImage)} alt={project.title + ' 주요 화면 ' + (imageIndex + 1)} />
+              <div className="publishing-modal__controls">
+                <button onClick={previous} aria-label="이전 화면">‹</button><span>{imageIndex + 1} / {project.detailImages.length}</span><button onClick={next} aria-label="다음 화면">›</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </> : <>
       <header className="modal-header">
         <div><p>{project.role}</p><h2>{project.title}</h2></div>
         <button className="icon-button" onClick={onClose} aria-label="상세 정보 닫기">×</button>
@@ -131,6 +162,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <img src={asset(detailImage)} alt={project.title + ' 주요 화면 ' + (imageIndex + 1)} />
         <div className="viewer-controls"><button onClick={previous} aria-label="이전 화면">‹</button><span>{imageIndex + 1} / {project.detailImages.length}</span><button onClick={next} aria-label="다음 화면">›</button></div>
       </div>}
+      </>}
     </motion.section>
   </motion.div>;
 }

@@ -13,6 +13,7 @@ export type Project = {
   period: string;
   role: string;
   liveUrl?: string;
+  subUrl?: string;
   githubUrl?: string;
 };
 
@@ -47,6 +48,7 @@ export const projects: Project[] = [
     points: ['정보 구조 재정리', '반응형 화면 구현', '컴포넌트 단위 스타일 관리'],
     stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro01.png',
     detailImages: ['img/pol03.jpg', 'img/pol04.jpg'], period: '2024.03 - 2024.04', role: 'Publishing',
+    liveUrl: 'list/list01/index_H.html', subUrl: 'list/list01/index_sub.html', githubUrl: 'https://github.com/hyeon924/Website',
   },
   {
     id: 'molly', category: 'publishing', title: "Molly's PET SHOP",
@@ -55,6 +57,7 @@ export const projects: Project[] = [
     points: ['브랜드 컬러 적용', '상품 탐색 흐름 설계', '인터랙션 구현'],
     stack: ['HTML', 'CSS', 'jQuery'], image: 'img/pro05.png',
     detailImages: ['img/mo01.jpg', 'img/mo02.jpg'], period: '2024.05 - 2024.06', role: 'Publishing',
+    liveUrl: 'list/list05/index_H.html', githubUrl: 'https://github.com/hyeon924/Website',
   },
   {
     id: 'maxim', category: 'publishing', title: '맥심 브랜드',
@@ -63,6 +66,7 @@ export const projects: Project[] = [
     points: ['프로모션 페이지 제작', '스크롤 인터랙션', '반응형 화면 구성'],
     stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro02.png',
     detailImages: ['img/max01.jpg', 'img/max02.jpg'], period: '2024.07', role: 'Publishing',
+    liveUrl: 'list/list02/index_H.html', githubUrl: 'https://github.com/hyeon924/Website',
   },
   {
     id: 'eat', category: 'frontend', title: '맛콩맛집',
