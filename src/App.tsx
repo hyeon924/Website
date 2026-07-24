@@ -35,7 +35,7 @@ function Intro({ setPage }: { setPage: (page: PageId) => void }) {
       <p className="eyebrow">FULL-STACK DEVELOPER PORTFOLIO</p>
       <p className="name">HYEHYEON</p>
       <h1>Full-stack Developer</h1>
-      <p className="lead"><span>사용자 화면과 서버 로직, 데이터 흐름을 함께 설계해 작동하는 서비스를 만듭니다.</span><span>3년차 풀스택 개발자입니다.</span></p>
+      <p className="lead"><span>사용자 화면과 서버 로직, 데이터 흐름을 함께 설계해 작동하는 서비스를 만드는,</span><span>3년차 풀스택 개발자입니다.</span></p>
       <div className="hero-actions">
         <button className="primary-button" onClick={() => setPage('fullstack')}>프로젝트 보기</button>
         <a className="secondary-button" href="mailto:hyeonn4713@gmail.com">이메일 보내기</a>
