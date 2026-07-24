@@ -2660,11 +2660,18 @@ body {
     align-items: start;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 3.4rem 1rem 0;
+    padding: 0 0 1rem;
+  }
+
+  .frontend-modal__header .portfolio-modal__title {
+    padding-right: 3.4rem;
+    width: 100%;
   }
 
   .frontend-modal__tabs {
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 22rem;
     width: 100%;
   }
