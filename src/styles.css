@@ -74,13 +74,14 @@ h1, h2, p { overflow-wrap: break-word; }
 .project-page .project-card { display: flex; flex-direction: column; justify-content: normal; }
 .project-card-copy { min-height: 0; margin-bottom: clamp(20px, 2.5vh, 32px); }
 .project-card:hover { transform: translateY(-4px); border-color: #7664d8; }
-.project-card h2 { margin: 6px 0 10px; color: #fff; font-size: clamp(26px, 1.6vw, 34px); letter-spacing: -.045em; }
+.project-card h2 { margin: 0; color: #fff; font-size: clamp(26px, 1.6vw, 34px); letter-spacing: -.045em; }
 .project-category { margin: 0; color: #f095c7; font-size: clamp(11px, .65vw, 13px); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-.project-card-copy > p:not(.project-category) { margin: 0; min-height: 48px; color: #c4c9e8; font-size: clamp(14px, .85vw, 17px); line-height: 1.55; }
-.scope { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; padding: 9px; border-left: 2px solid #ef93c6; background: #2b2d41; font-size: clamp(12px, .75vw, 15px); color: #c4c9e8; }
+.project-card-copy { display: grid; gap: clamp(8px, 1.25vh, 14px); }
+.project-card-copy > p:not(.project-category) { margin: 0; min-height: 0; color: #c4c9e8; font-size: clamp(14px, .85vw, 17px); line-height: 1.55; }
+.scope { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 0; padding: 9px; border-left: 2px solid #ef93c6; background: #2b2d41; font-size: clamp(12px, .75vw, 15px); color: #c4c9e8; }
 .scope strong { color: #fff; }
-.project-card ul { margin-top: 13px; font-size: clamp(13px, .8vw, 16px); }
-.stack-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+.project-card ul { margin-top: 0; font-size: clamp(13px, .8vw, 16px); }
+.stack-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 0; }
 .stack-list span { padding: 7px 10px; border: 1px solid #49427d; border-radius: 999px; background: #292852; color: #e3e3ff; font-size: clamp(11px, .7vw, 13px); font-weight: 700; }
 .project-card img { width: 100%; height: clamp(150px, 20vh, 260px); margin-top: clamp(12px, 2vh, 20px); border-radius: 12px; object-fit: contain; background: #f3f3f5; flex-shrink: 1; }
 .project-page .project-card img { margin-top: auto; }
@@ -131,6 +132,11 @@ h1, h2, p { overflow-wrap: break-word; }
 @media (min-width: 901px) and (max-height: 950px) {
   .project-page .project-card { gap: 18px; }
   .project-page .project-card img { height: clamp(120px, 14vh, 145px); }
+}
+
+@media (min-width: 901px) and (max-height: 1000px) {
+  .project-page .project-card { padding: 22px; }
+  .project-page .project-card img { height: clamp(100px, 12vh, 120px); }
 }
 
 @media (max-width: 900px) {
