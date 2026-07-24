@@ -9,7 +9,7 @@ function Sidebar({ page, setPage }: { page: PageId; setPage: (page: PageId) => v
   const select = (id: PageId) => { setPage(id); setOpen(false); };
   return (
     <>
-      <button className="menu-toggle" aria-label="메뉴 열기" onClick={() => setOpen(!open)}>☰</button>
+      <button className="menu-toggle" aria-label={open ? '메뉴 닫기' : '메뉴 열기'} aria-expanded={open} onClick={() => setOpen(!open)}>☰</button>
       <aside className={'sidebar ' + (open ? 'is-open' : '')}>
         <div className="brand"><span>H</span><strong>Hyehyeon</strong></div>
         <nav aria-label="주요 메뉴">
