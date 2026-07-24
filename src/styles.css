@@ -235,7 +235,8 @@ h1, h2, p { overflow-wrap: break-word; }
 @media (max-width: 900px) {
   .publishing-modal { width: calc(100vw - 24px); height: calc(100dvh - 24px); max-height: calc(100dvh - 24px); padding: 20px; }
   .publishing-modal__layout { grid-template-columns: 1fr; overflow: auto; }
-  .publishing-modal__focus-content { overflow: visible; }
+  .publishing-modal__focus { display: flex; flex-direction: column; gap: 14px; }
+  .publishing-modal__focus-content { min-height: auto; overflow: visible; }
   .publishing-modal__screens { min-height: 360px; }
 }
 
@@ -244,8 +245,6 @@ h1, h2, p { overflow-wrap: break-word; }
   .publishing-modal__header h2 { font-size: clamp(26px, 8vw, 36px); }
   .publishing-modal__layout { display: flex; flex: 1; flex-direction: column; gap: 14px; overflow: auto; }
   .publishing-modal__focus, .publishing-modal__screens { padding: 14px; }
-  .publishing-modal__focus { display: flex; flex-direction: column; gap: 14px; }
-  .publishing-modal__focus-content { overflow: visible; }
   .publishing-modal__screens { min-height: 320px; flex: none; }
   .publishing-modal__focus dl { grid-template-columns: 1fr; }
   .publishing-modal__controls { grid-template-columns: 1fr 72px 1fr; gap: 10px; }
