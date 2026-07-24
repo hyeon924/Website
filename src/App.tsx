@@ -53,7 +53,7 @@ function Heading({ number, title, description }: { number: string; title: string
 }
 
 function SkillsPage() {
-  return <section className="page-content">
+  return <section className="page-content standard-page">
     <Heading number="01" title="Skills" description={<><span>프로젝트에서 맡은 역할을 Frontend, UI & Experience, Backend, Collaboration 네 가지 역량으로 정리했습니다.</span><br /><span>구현 과정에서 사용한 기술과 업무 범위를 구체적으로 확인할 수 있습니다.</span></>} />
     <div className="capability-grid">
       {skills.map((skill) => <article className="capability-card" key={skill.title}>
@@ -65,7 +65,7 @@ function SkillsPage() {
 }
 
 function CollaborationPage() {
-  return <section className="page-content">
+  return <section className="page-content standard-page">
     <Heading number="02" title="Collaboration" description="작업 내용을 공유 가능한 단위로 정리하고, 요구사항부터 변경 이력까지 팀이 확인할 수 있는 흐름으로 관리합니다." />
     <div className="collaboration-grid">
       {collaboration.map((item, index) => <article className="collaboration-card" key={item.title}>

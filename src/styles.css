@@ -25,7 +25,9 @@ a { color: inherit; text-decoration: none; }
 .page-area { min-width: 0; flex: 1; min-height: 100dvh; }
 .page-motion, .page-content { min-height: 100dvh; }
 .page-content { width: min(1120px, calc(100% - 96px)); margin: auto; padding: clamp(48px, 8vh, 96px) 0; }
-.project-page { width: min(1440px, calc(100% - 48px)); height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: clamp(28px, 5vh, 52px); overflow: hidden; }
+.standard-page,
+.project-page { width: min(1440px, calc(100% - 48px)); }
+.project-page { height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: clamp(28px, 5vh, 52px); overflow: hidden; }
 .intro { display: grid; align-items: center; position: relative; overflow: hidden; }
 .hero-copy { max-width: 880px; position: relative; }
 .hero-copy::before { content: "03"; position: absolute; left: -1.1rem; top: -2.2rem; color: #ffffff08; font-size: clamp(180px, 19vw, 288px); font-weight: 900; line-height: .8; pointer-events: none; }
