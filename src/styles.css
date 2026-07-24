@@ -61,7 +61,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .project-card { min-width: 0; min-height: clamp(500px, 58vh, 620px); padding: clamp(26px, 2vw, 34px); color: inherit; text-align: left; display: flex; flex-direction: column; justify-content: space-between; transition: transform .2s ease, border-color .2s ease; }
 .project-page .project-card,
 .project-page .private-card { height: 100%; min-height: 0; overflow: hidden; }
-.project-page .project-card { display: grid; grid-template-rows: minmax(0, 1fr) auto; align-items: start; justify-content: normal; gap: clamp(12px, 2vh, 20px); }
+.project-page .project-card { display: grid; grid-template-rows: auto auto; align-content: space-between; align-items: start; justify-content: normal; gap: clamp(18px, 2.5vh, 28px); }
 .project-card-copy { min-height: 0; }
 .project-card:hover { transform: translateY(-4px); border-color: #7664d8; }
 .project-card h2 { margin: 6px 0 10px; color: #fff; font-size: clamp(23px, 2vw, 31px); letter-spacing: -.045em; }
