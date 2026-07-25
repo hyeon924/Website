@@ -274,7 +274,13 @@ h1, h2, p { overflow-wrap: break-word; }
 
 @media (max-width: 900px) {
   .project-modal:not(.publishing-modal) { width: calc(100vw - 24px); height: calc(100dvh - 24px); max-height: calc(100dvh - 24px); }
+  .modal-info.project-overview { display: flex; height: 100%; flex-direction: column; gap: 18px; overflow: auto; }
+  .project-overview__media { height: clamp(200px, 34vw, 280px); flex: none; }
+  .project-overview__content { min-height: auto; overflow: visible; }
   .troubleshooting-viewer { min-height: 0; }
+  .troubleshooting-viewer.has-media { grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; overflow: auto; }
+  .troubleshooting-viewer.has-media figure { grid-row: 3; grid-column: 1; min-height: 240px; }
+  .troubleshooting-viewer.has-media .troubleshooting-controls { grid-column: 1; grid-row: 4; }
 }
 
 @media (max-width: 680px) {
