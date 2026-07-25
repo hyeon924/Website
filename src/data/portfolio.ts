@@ -63,7 +63,7 @@ export const projects: Project[] = [
     points: ['브랜드 컬러 적용', '상품 탐색 흐름 설계', '인터랙션 구현'],
     stack: ['HTML', 'CSS', 'jQuery'], image: 'img/pro05.png',
     detailImages: ['img/mo01.jpg', 'img/mo02.jpg'], period: '2024.05 - 2024.06', role: 'Publishing',
-    liveUrl: '#', githubUrl: '#',
+    liveUrl: 'https://hyeon924.github.io/mollys-pet-shop/', githubUrl: 'https://github.com/hyeon924/mollys-pet-shop',
   },
   {
     id: 'maxim', category: 'publishing', title: '맥심 브랜드',
