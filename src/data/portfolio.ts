@@ -49,7 +49,7 @@ export const collaboration = [
 export const projects: Project[] = [
   {
     id: 'police', category: 'publishing', title: '대전지방경찰청',
-    summary: '기존 정적 사이트를 React 기반으로 전환 및 컴포넌트 중심으로 재구성한 웹 프로젝트',
+    summary: '공공기관 정보를 더 쉽게 탐색할 수 있도록 React 기반 경험으로 재구성한 웹사이트',
     scope: 'UI 개선 · React 리팩토링 · 반응형 · GitHub Pages 배포',
     points: ['React + TypeScript로 마이그레이션', '공통 페이지 레이아웃 컴포넌트화', '메인 슬라이더, 공지 탭, 역사관 갤러리/모달 구현', 'GitHub Pages 자동 배포 구성'],
     stack: ['React', 'TypeScript', 'Vite', 'React Router', 'CSS', 'GitHub Actions'], image: 'img/pro01.png',
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   },
   {
     id: 'molly', category: 'publishing', title: "Molly's PET SHOP",
-    summary: 'React 기반으로 마이그레이션한 반려동물 쇼핑몰',
+    summary: '반려동물 쇼핑의 탐색 흐름을 React 기반 인터랙션으로 재구성한 쇼핑몰',
     scope: 'React Migration · UI 개선 · GitHub Pages 배포',
     points: ['React · Vite 기반 환경 구축', '상품 슬라이드 · 필터 · 정렬 인터랙션 구현', '반응형 UI · 접근성 개선', 'GitHub Pages 배포 자동화'],
     stack: ['React', 'Vite', 'TypeScript', 'CSS', 'GitHub Actions'], image: 'img/pro05.png',
