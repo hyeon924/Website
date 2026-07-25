@@ -224,7 +224,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .publishing-modal__focus li::before { position: absolute; left: 0; top: .62em; width: 5px; aspect-ratio: 1; border-radius: 50%; background: #f095c7; content: ''; }
 .publishing-modal__focus dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #a78bfa2e; }
 .publishing-modal__focus dt { color: #c4b5fd; font-size: 12px; font-weight: 800; letter-spacing: .06em; }
-.publishing-modal__focus dd { margin: 6px 0 0; color: #fff; font-size: 14px; line-height: 1.45; word-break: keep-all; }
+.publishing-modal__focus dd { margin: 6px 0 0; color: #fff; font-size: 14px; line-height: 1.45; white-space: pre-line; word-break: keep-all; }
 .publishing-modal__links { display: flex; flex-wrap: wrap; gap: 9px; padding-top: 16px; border-top: 1px solid #a78bfa2e; }
 .publishing-modal__links a, .publishing-modal__links button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 9px 13px; border: 1px solid #fff; border-radius: 9px; color: #111827; background: #f8fafc; font-size: 13px; font-weight: 800; }
 .publishing-modal__links a.secondary, .publishing-modal__links button.secondary { border-color: #ffffff73; color: #fff; background: #ffffff12; }
