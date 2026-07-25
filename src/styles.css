@@ -278,8 +278,9 @@ h1, h2, p { overflow-wrap: break-word; }
 }
 
 @media (max-width: 680px) {
-  .project-overview__media { height: 180px; }
-  .project-overview__content { overflow: auto; }
+  .modal-info.project-overview { display: flex; height: 100%; flex-direction: column; gap: 16px; overflow: auto; }
+  .project-overview__media { height: 180px; flex: none; }
+  .project-overview__content { min-height: auto; overflow: visible; }
   .troubleshooting-viewer, .troubleshooting-viewer.has-media { grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; padding: 18px; }
   .troubleshooting-viewer { height: 100%; overflow: auto; }
   .troubleshooting-media-toggle { justify-self: stretch; }
@@ -291,6 +292,4 @@ h1, h2, p { overflow-wrap: break-word; }
 @media (max-width: 480px) {
   .modal-tabs { display: grid; width: 100%; grid-template-columns: 1fr; gap: 5px; margin: 14px 0; border-radius: 14px; }
   .modal-tabs button { width: 100%; min-height: 42px; white-space: nowrap; }
-  .modal-info.project-overview { grid-template-columns: 1fr; grid-template-rows: 180px minmax(0, 1fr); gap: 16px; }
-  .project-overview__media { height: auto; }
 }
