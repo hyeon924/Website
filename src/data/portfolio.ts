@@ -62,7 +62,7 @@ export const projects: Project[] = [
     scope: 'React Migration · UI 개선 · GitHub Pages 배포',
     points: ['React · Vite 기반 환경 구축', '상품 슬라이드 · 필터 · 정렬 인터랙션 구현', '반응형 UI · 접근성 개선', 'GitHub Pages 배포 자동화'],
     stack: ['React', 'Vite', 'TypeScript', 'CSS', 'GitHub Actions'], image: 'img/pro05.png',
-    detailImages: ['img/mo01.jpg', 'img/mo02.jpg'], period: '2024.05 - 2024.06', role: 'Publishing',
+    detailImages: ['img/mo01.png', 'img/mo02.jpg'], period: '2024.05 - 2024.06', role: 'Publishing',
     liveUrl: 'https://hyeon924.github.io/mollys-pet-shop/', githubUrl: 'https://github.com/hyeon924/mollys-pet-shop',
   },
   {
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     scope: 'React Migration · 풀페이지 인터랙션 · 반응형 UI · GitHub Pages 배포',
     points: ['React · TypeScript · Vite 기반 전환', '공통 레이아웃과 페이지 컴포넌트 설계', 'CSS Scroll Snap 기반 풀페이지 인터랙션', '모바일 메뉴 및 반응형 UI 구현', 'GitHub Pages 자동 배포 구성'],
     stack: ['React', 'TypeScript', 'Vite', 'CSS', 'GitHub Actions'], image: 'img/pro02.png',
-    detailImages: ['img/max01.jpg', 'img/max02.jpg'], period: '2024.07', role: 'Publishing',
+    detailImages: ['img/max01.png', 'img/max02.png'], period: '2024.07', role: 'Publishing',
     liveUrl: 'https://hyeon924.github.io/maxim-brand/', githubUrl: 'https://github.com/hyeon924/maxim-brand',
   },
   {
