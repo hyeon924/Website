@@ -49,10 +49,10 @@ export const collaboration = [
 export const projects: Project[] = [
   {
     id: 'police', category: 'publishing', title: '대전지방경찰청',
-    summary: '공공기관 정보 구조와 반응형 퍼블리싱을 개선한 웹 프로젝트',
-    scope: 'UI 개선 · Publishing · 반응형 정리',
-    points: ['정보 구조 재정리', '반응형 화면 구현', '컴포넌트 단위 스타일 관리'],
-    stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro01.png',
+    summary: '기존 정적 퍼블리싱 사이트를 React 기반으로 전환하고, 공통 레이아웃과 인터랙션을 컴포넌트 중심으로 재구성한 웹 프로젝트',
+    scope: 'UI 개선 · React 리팩토링 · 반응형 · GitHub Pages 배포',
+    points: ['정적 구조를 React + TypeScript + Vite로 마이그레이션', '공통 페이지 레이아웃 컴포넌트화', '메인 슬라이더, 공지 탭, 역사관 갤러리·모달 구현', 'GitHub Pages 자동 배포 구성'],
+    stack: ['React', 'TypeScript', 'Vite', 'React Router', 'CSS', 'GitHub Actions'], image: 'img/pro01.png',
     detailImages: ['img/pol03.jpg', 'img/pol04.jpg'], period: '2024.03 - 2024.04', role: 'Publishing',
     liveUrl: 'https://hyeon924.github.io/police-website/', subUrl: '#', githubUrl: '#',
   },
