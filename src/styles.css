@@ -285,7 +285,8 @@ h1, h2, p { overflow-wrap: break-word; }
 
 @media (min-width: 681px) and (max-width: 900px) {
   .modal-backdrop { padding: 32px; }
-  .project-modal { width: min(600px, calc(100vw - 64px)); height: min(760px, calc(100dvh - 64px)); max-height: calc(100dvh - 64px); }
+  .project-modal:not(.publishing-modal),
+  .publishing-modal { width: min(600px, calc(100vw - 64px)); height: min(760px, calc(100dvh - 64px)); max-height: calc(100dvh - 64px); }
   .screen-viewer { height: auto; align-self: start; grid-template-rows: auto auto; }
   .screen-viewer > img { height: min(48dvh, 420px); }
 }
