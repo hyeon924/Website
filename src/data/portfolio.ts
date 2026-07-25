@@ -54,7 +54,7 @@ export const projects: Project[] = [
     points: ['정보 구조 재정리', '반응형 화면 구현', '컴포넌트 단위 스타일 관리'],
     stack: ['HTML', 'CSS', 'JavaScript'], image: 'img/pro01.png',
     detailImages: ['img/pol03.jpg', 'img/pol04.jpg'], period: '2024.03 - 2024.04', role: 'Publishing',
-    liveUrl: '#', subUrl: '#', githubUrl: '#',
+    liveUrl: 'https://hyeon924.github.io/police-website/', subUrl: '#', githubUrl: '#',
   },
   {
     id: 'molly', category: 'publishing', title: "Molly's PET SHOP",
