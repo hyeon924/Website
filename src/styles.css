@@ -283,6 +283,12 @@ h1, h2, p { overflow-wrap: break-word; }
   .troubleshooting-viewer.has-media .troubleshooting-controls { grid-column: 1; grid-row: 4; }
 }
 
+@media (min-width: 681px) and (max-width: 900px) {
+  .project-modal { width: min(640px, calc(100vw - 40px)); height: min(820px, calc(100dvh - 40px)); max-height: calc(100dvh - 40px); }
+  .screen-viewer { height: auto; align-self: start; grid-template-rows: auto auto; }
+  .screen-viewer > img { height: min(48dvh, 420px); }
+}
+
 @media (max-width: 680px) {
   .modal-info.project-overview { display: flex; height: 100%; flex-direction: column; gap: 16px; overflow: auto; }
   .project-overview__media { height: 180px; flex: none; }
