@@ -137,6 +137,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
           <section className="publishing-modal__focus">
             <figure className="publishing-modal__mark"><img src={asset(project.image)} alt={project.title + ' 대표 이미지'} /></figure>
             <div className="publishing-modal__focus-content">
+              <p className="publishing-modal__summary">{project.summary}</p>
               <h3>구현 포인트</h3>
               <ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
               <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
