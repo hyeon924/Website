@@ -199,8 +199,8 @@ h1, h2, p { overflow-wrap: break-word; }
 
 .publishing-modal {
   width: min(1240px, calc(100vw - 64px));
-  height: min(780px, calc(100dvh - 64px));
-  max-height: calc(100dvh - 64px);
+  height: min(820px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 48px);
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
   gap: clamp(18px, 2vh, 28px);
