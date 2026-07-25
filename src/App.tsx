@@ -146,7 +146,9 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
                 ? <button type="button" onClick={showUnavailable}>사이트 보기 ↗</button>
                 : <a href={project.liveUrl} target="_blank" rel="noreferrer">사이트 보기 ↗</a>)}
               {project.subUrl && <button type="button" onClick={showUnavailable} className="secondary">서브 페이지 ↗</button>}
-              {project.githubUrl && <button type="button" onClick={showUnavailable} className="secondary">GitHub ↗</button>}
+              {project.githubUrl && (project.githubUrl === '#'
+                ? <button type="button" onClick={showUnavailable} className="secondary">GitHub ↗</button>
+                : <a href={project.githubUrl} target="_blank" rel="noreferrer" className="secondary">GitHub ↗</a>)}
             </footer>
           </section>
           <section className="publishing-modal__screens">

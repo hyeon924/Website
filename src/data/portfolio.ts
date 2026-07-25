@@ -54,7 +54,7 @@ export const projects: Project[] = [
     points: ['정적 구조를 React + TypeScript + Vite로 마이그레이션', '공통 페이지 레이아웃 컴포넌트화', '메인 슬라이더, 공지 탭, 역사관 갤러리/모달 구현', 'GitHub Pages 자동 배포 구성'],
     stack: ['React', 'TypeScript', 'Vite', 'React Router', 'CSS', 'GitHub Actions'], image: 'img/pro01.png',
     detailImages: ['img/pol03.jpg', 'img/pol04.jpg'], period: '2024.03 - 2024.04', role: 'Publishing',
-    liveUrl: 'https://hyeon924.github.io/police-website/', subUrl: '#', githubUrl: '#',
+    liveUrl: 'https://hyeon924.github.io/police-website/', githubUrl: 'https://github.com/hyeon924/police-website',
   },
   {
     id: 'molly', category: 'publishing', title: "Molly's PET SHOP",
