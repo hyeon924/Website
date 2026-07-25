@@ -69,7 +69,7 @@ export const projects: Project[] = [
     id: 'maxim', category: 'publishing', title: '맥심 브랜드',
     summary: '브랜드의 이야기를 풀페이지 스크롤 경험으로 재해석한 프로모션 웹페이지',
     scope: 'React Migration · 풀페이지 인터랙션 · 반응형 UI · GitHub Pages 배포',
-    points: ['React · TypeScript · Vite 기반 전환', '공통 레이아웃과 페이지 컴포넌트 설계', 'CSS Scroll Snap 기반 풀페이지 인터랙션', '모바일 메뉴 및 반응형 UI 구현', 'GitHub Pages 자동 배포 구성'],
+    points: ['React · TypeScript · Vite 기반 전환', 'CSS Scroll Snap 기반 풀페이지 인터랙션', '모바일 메뉴 및 반응형 UI 구현', 'GitHub Pages 자동 배포 구성'],
     stack: ['React', 'TypeScript', 'Vite', 'CSS', 'GitHub Actions'], image: 'img/pro02.png',
     detailImages: ['img/max01.png', 'img/max02.png'], period: '2024.07', role: 'Publishing',
     liveUrl: 'https://hyeon924.github.io/maxim-brand/', githubUrl: 'https://github.com/hyeon924/maxim-brand',
