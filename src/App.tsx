@@ -186,7 +186,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
       </div>}
       {tab === 'troubleshooting' && (currentTroubleshooting ? <section className={'troubleshooting-viewer ' + (showTroubleshootingMedia ? 'has-media' : '')}>
         {currentTroubleshooting.image && <button className="troubleshooting-media-toggle" onClick={() => setShowTroubleshootingMedia((show) => !show)} aria-pressed={showTroubleshootingMedia}>{showTroubleshootingMedia ? '이미지 자료 접기' : '이미지 자료 보기'}</button>}
-        <div className="troubleshooting-copy"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3><p>{currentTroubleshooting.description}</p></div>
+        <div className="troubleshooting-copy"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3>{currentTroubleshooting.details ? <dl className="troubleshooting-details">{currentTroubleshooting.details.map((detail) => <div key={detail.label}><dt>{detail.label}</dt><dd>{detail.text}</dd></div>)}</dl> : <p>{currentTroubleshooting.description}</p>}</div>
         {showTroubleshootingMedia && currentTroubleshooting.image && <figure><img src={asset(currentTroubleshooting.image)} alt={currentTroubleshooting.title + ' 자료 이미지'} /></figure>}
         <div className="troubleshooting-controls"><button onClick={previousTroubleshooting} aria-label="이전 트러블슈팅">‹</button><span>{troubleshootingIndex + 1} / {troubleshooting.length}</span><button onClick={nextTroubleshooting} aria-label="다음 트러블슈팅">›</button></div>
       </section> : <div className="troubleshooting-empty">트러블슈팅 내용을 정리 중입니다.</div>)}

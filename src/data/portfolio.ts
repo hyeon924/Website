@@ -19,6 +19,7 @@ export type Project = {
   troubleshooting?: {
     title: string;
     description: string;
+    details?: { label: string; text: string }[];
     image?: string;
   }[];
 };
@@ -85,9 +86,28 @@ export const projects: Project[] = [
     period: '2025.01 - 2025.02', role: 'Frontend',
     liveUrl: 'https://hyeon924.github.io/Eat-Map/', githubUrl: 'https://github.com/hyeon924/Eat-Map',
     troubleshooting: [
-      { title: '랜드마크 데이터 집계', description: 'API 응답의 인근 랜드마크를 집계해 실제 식당 데이터가 존재하는 항목만 빠른 탐색 조건으로 제공했습니다.', image: 'img/eat-layout-main.png' },
-      { title: '복수 필터와 페이지 상태 관리', description: '25개 구와 편의시설 조건을 함께 적용하고, 결과 수에 맞춰 10개 단위의 페이지 묶음을 일관되게 이동하도록 구성했습니다.', image: 'img/eat-layout-sub-preview.png' },
-      { title: '운영 정보의 상태 표기', description: '미제공 값은 -로 통일하고 실제 이용 불가 정보는 별도 상태로 구분해 여행 중 빠르게 판단할 수 있도록 했습니다.', image: 'img/eat-layout-main.png' },
+      {
+        title: 'GitHub Pages 배포 환경 변수 설정',
+        description: '로컬 환경 파일과 배포 환경 변수는 별도로 관리해야 합니다.',
+        details: [
+          { label: '문제', text: '로컬에서는 .env.local을 읽어 정상 동작했지만, 배포 환경에서는 API 키가 설정되지 않았습니다 오류가 발생했습니다.' },
+          { label: '원인', text: '.env.local은 Git에 포함되지 않아 GitHub Actions 빌드 환경에 API 키가 없었습니다.' },
+          { label: '해결', text: 'GitHub Actions Secret에 SEOUL_TOURISM_API_KEY를 등록하고, 워크플로의 빌드 단계에서 VITE_SEOUL_TOURISM_API_KEY 환경 변수로 주입했습니다.' },
+          { label: '배운 점', text: 'Vite의 VITE_ 환경 변수는 빌드 시점에 주입되며, 로컬 환경 파일과 배포 환경 변수는 별도로 관리해야 합니다.' },
+        ],
+        image: 'img/eat-layout-main.png',
+      },
+      {
+        title: '편의시설 필터 응답 경합',
+        description: '화면 필터는 로컬 상태에서 처리해 응답 경합을 줄이고 UX를 개선했습니다.',
+        details: [
+          { label: '문제', text: 'API 데이터에 주차가능여부: "Y"가 있어도 주차 가능 필터 결과가 비정상적으로 비거나 갱신이 불안정했습니다.' },
+          { label: '원인', text: '필터를 변경할 때마다 API를 다시 요청해 응답 도착 순서에 따라 이전 요청 결과가 최신 필터 결과를 덮어쓸 수 있었습니다.' },
+          { label: '해결', text: 'API 원본 데이터 1,000건을 최초 한 번만 받아 상태에 저장하고, 지역·랜드마크·편의시설 조건은 useMemo 기반 클라이언트 필터링으로 처리했습니다.' },
+          { label: '배운 점', text: '동일한 원본 데이터를 반복 조회하기보다 화면 필터를 로컬 상태에서 처리하면 응답 경합을 줄이고 UX도 빨라집니다.' },
+        ],
+        image: 'img/eat-layout-sub-preview.png',
+      },
     ],
   },
   {
