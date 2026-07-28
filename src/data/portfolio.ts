@@ -95,7 +95,6 @@ export const projects: Project[] = [
           { label: '해결', items: ['Secret에 SEOUL_TOURISM_API_KEY 등록', '빌드 단계에서 VITE_SEOUL_TOURISM_API_KEY로 주입'] },
           { label: '배운 점', items: ['VITE_ 변수는 빌드 시점에 주입', '로컬·배포 환경 변수 분리 관리'] },
         ],
-        image: 'img/eat-layout-main.png',
       },
       {
         title: '편의시설 필터 응답 경합',
@@ -106,7 +105,7 @@ export const projects: Project[] = [
           { label: '해결', items: ['원본 데이터 1,000건을 최초 한 번만 저장', 'useMemo 기반 클라이언트 필터링 적용'] },
           { label: '배운 점', items: ['로컬 필터링으로 응답 경합 완화', '필터 반응 속도와 UX 개선'] },
         ],
-        image: 'img/eat-layout-sub-preview.png',
+        image: 'img/eat-map-ts-01.png',
       },
     ],
   },

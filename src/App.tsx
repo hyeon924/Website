@@ -117,6 +117,8 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
   const detailImage = project.detailImages[imageIndex];
   const troubleshooting = project.troubleshooting ?? [];
   const currentTroubleshooting = troubleshooting[troubleshootingIndex];
+  const hasTroubleshootingMedia = Boolean(showTroubleshootingMedia && currentTroubleshooting?.image);
+  useEffect(() => setShowTroubleshootingMedia(false), [troubleshootingIndex]);
   const next = () => setImageIndex((index) => (index + 1) % project.detailImages.length);
   const previous = () => setImageIndex((index) => (index - 1 + project.detailImages.length) % project.detailImages.length);
   const nextTroubleshooting = () => setTroubleshootingIndex((index) => (index + 1) % troubleshooting.length);
@@ -184,10 +186,10 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <img src={asset(detailImage)} alt={project.title + ' 주요 화면 ' + (imageIndex + 1)} />
         <div className="viewer-controls"><button onClick={previous} aria-label="이전 화면">‹</button><span>{imageIndex + 1} / {project.detailImages.length}</span><button onClick={next} aria-label="다음 화면">›</button></div>
       </div>}
-      {tab === 'troubleshooting' && (currentTroubleshooting ? <section className={'troubleshooting-viewer ' + (showTroubleshootingMedia ? 'has-media' : '')}>
-        <header className="troubleshooting-heading"><div className="troubleshooting-heading__title"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3></div>{currentTroubleshooting.image && <button className="troubleshooting-media-toggle" onClick={() => setShowTroubleshootingMedia((show) => !show)} aria-pressed={showTroubleshootingMedia}>{showTroubleshootingMedia ? '이미지 자료 접기' : '이미지 자료 보기'}</button>}</header>
+      {tab === 'troubleshooting' && (currentTroubleshooting ? <section className={'troubleshooting-viewer ' + (hasTroubleshootingMedia ? 'has-media' : '')}>
+        <header className="troubleshooting-heading"><div className="troubleshooting-heading__title"><p className="modal-label">0{troubleshootingIndex + 1}</p><h3>{currentTroubleshooting.title}</h3></div><button className="troubleshooting-media-toggle" onClick={() => setShowTroubleshootingMedia((show) => !show)} aria-pressed={hasTroubleshootingMedia} disabled={!currentTroubleshooting.image} title={currentTroubleshooting.image ? undefined : '이미지 자료가 없습니다.'}>{currentTroubleshooting.image ? (hasTroubleshootingMedia ? '이미지 자료 접기' : '이미지 자료 보기') : '이미지 자료 없음'}</button></header>
         <div className="troubleshooting-copy">{currentTroubleshooting.details ? <dl className="troubleshooting-details">{currentTroubleshooting.details.map((detail) => <div key={detail.label}><dt>{detail.label}</dt><dd><ul>{detail.items.map((item) => <li key={item}>{item}</li>)}</ul></dd></div>)}</dl> : <p>{currentTroubleshooting.description}</p>}</div>
-        {showTroubleshootingMedia && currentTroubleshooting.image && <figure><img src={asset(currentTroubleshooting.image)} alt={currentTroubleshooting.title + ' 자료 이미지'} /></figure>}
+        {hasTroubleshootingMedia && currentTroubleshooting.image && <figure><img src={asset(currentTroubleshooting.image)} alt={currentTroubleshooting.title + ' 자료 이미지'} /></figure>}
         <div className="troubleshooting-controls"><button onClick={previousTroubleshooting} aria-label="이전 트러블슈팅">‹</button><span>{troubleshootingIndex + 1} / {troubleshooting.length}</span><button onClick={nextTroubleshooting} aria-label="다음 트러블슈팅">›</button></div>
       </section> : <div className="troubleshooting-empty">트러블슈팅 내용을 정리 중입니다.</div>)}
       </>}
