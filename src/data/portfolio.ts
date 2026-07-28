@@ -83,7 +83,7 @@ export const projects: Project[] = [
     image: 'img/character-thumb.png',
     detailImages: ['img/eat-layout-main.png', 'img/eat-layout-sub-preview.png'],
     period: '2025.01 - 2025.02', role: 'Frontend',
-    liveUrl: '#', githubUrl: '#',
+    liveUrl: 'https://hyeon924.github.io/Eat-Map/', githubUrl: 'https://github.com/hyeon924/Eat-Map',
     troubleshooting: [
       { title: '랜드마크 데이터 집계', description: 'API 응답의 인근 랜드마크를 집계해 실제 식당 데이터가 존재하는 항목만 빠른 탐색 조건으로 제공했습니다.', image: 'img/eat-layout-main.png' },
       { title: '복수 필터와 페이지 상태 관리', description: '25개 구와 편의시설 조건을 함께 적용하고, 결과 수에 맞춰 10개 단위의 페이지 묶음을 일관되게 이동하도록 구성했습니다.', image: 'img/eat-layout-sub-preview.png' },
