@@ -83,6 +83,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .project-card-copy { display: grid; gap: clamp(8px, 1.25vh, 14px); }
 .project-card-copy > p:not(.project-category) { margin: 0; min-height: 0; color: #c4c9e8; font-size: clamp(14px, .85vw, 17px); line-height: 1.55; }
 .scope { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 0; padding: 9px; border-left: 2px solid #ef93c6; background: #2b2d41; font-size: clamp(14px, .85vw, 16px); color: #c4c9e8; }
+.scope span { word-break: keep-all; }
 .scope strong { color: #fff; }
 .project-card ul { margin-top: 0; font-size: clamp(14px, .8vw, 16px); }
 .stack-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 0; }
