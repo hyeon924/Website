@@ -264,7 +264,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .troubleshooting-heading .modal-label { flex: none; margin: 0; }
 .troubleshooting-heading h3 { min-width: 0; margin: 0; color: #fff; font-size: clamp(26px, 2.25vw, 38px); letter-spacing: -.04em; }
 .troubleshooting-media-toggle { flex: none; min-height: 40px; padding: 9px 13px; border: 1px solid #f7f7ff; border-radius: 9px; color: #17182a; background: #f7f7ff; font-size: 13px; font-weight: 800; }
-.troubleshooting-copy { grid-row: 2; align-self: stretch; min-height: 0; max-width: 760px; padding-right: 10px; overflow: auto; scrollbar-color: #f095c7 #20233b; scrollbar-width: thin; }
+.troubleshooting-copy { grid-row: 2; align-self: stretch; min-height: 0; width: 100%; padding-right: 10px; overflow: auto; scrollbar-color: #f095c7 #20233b; scrollbar-width: thin; }
 .troubleshooting-copy > p:last-child { margin: 0; color: #dbe4ff; font-size: clamp(16px, 1.15vw, 19px); line-height: 1.75; word-break: keep-all; }
 .troubleshooting-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; }
 .troubleshooting-details div { display: grid; gap: 5px; padding: 10px 13px; border-left: 2px solid #f095c7; background: #ffffff08; }
