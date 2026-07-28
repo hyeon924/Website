@@ -19,7 +19,7 @@ export type Project = {
   troubleshooting?: {
     title: string;
     description: string;
-    details?: { label: string; text: string }[];
+    details?: { label: string; items: string[] }[];
     image?: string;
   }[];
 };
@@ -90,10 +90,10 @@ export const projects: Project[] = [
         title: 'GitHub Pages 배포 환경 변수 설정',
         description: '로컬 환경 파일과 배포 환경 변수는 별도로 관리해야 합니다.',
         details: [
-          { label: '문제', text: '로컬에서는 .env.local을 읽어 정상 동작했지만, 배포 환경에서는 API 키가 설정되지 않았습니다 오류가 발생했습니다.' },
-          { label: '원인', text: '.env.local은 Git에 포함되지 않아 GitHub Actions 빌드 환경에 API 키가 없었습니다.' },
-          { label: '해결', text: 'GitHub Actions Secret에 SEOUL_TOURISM_API_KEY를 등록하고, 워크플로의 빌드 단계에서 VITE_SEOUL_TOURISM_API_KEY 환경 변수로 주입했습니다.' },
-          { label: '배운 점', text: 'Vite의 VITE_ 환경 변수는 빌드 시점에 주입되며, 로컬 환경 파일과 배포 환경 변수는 별도로 관리해야 합니다.' },
+          { label: '문제', items: ['배포 환경에서 API 키 미설정 오류 발생'] },
+          { label: '원인', items: ['.env.local은 Git 제외', 'GitHub Actions 빌드 환경에 키 미주입'] },
+          { label: '해결', items: ['Secret에 SEOUL_TOURISM_API_KEY 등록', '빌드 단계에서 VITE_SEOUL_TOURISM_API_KEY로 주입'] },
+          { label: '배운 점', items: ['VITE_ 변수는 빌드 시점에 주입', '로컬·배포 환경 변수 분리 관리'] },
         ],
         image: 'img/eat-layout-main.png',
       },
@@ -101,10 +101,10 @@ export const projects: Project[] = [
         title: '편의시설 필터 응답 경합',
         description: '화면 필터는 로컬 상태에서 처리해 응답 경합을 줄이고 UX를 개선했습니다.',
         details: [
-          { label: '문제', text: 'API 데이터에 주차가능여부: "Y"가 있어도 주차 가능 필터 결과가 비정상적으로 비거나 갱신이 불안정했습니다.' },
-          { label: '원인', text: '필터를 변경할 때마다 API를 다시 요청해 응답 도착 순서에 따라 이전 요청 결과가 최신 필터 결과를 덮어쓸 수 있었습니다.' },
-          { label: '해결', text: 'API 원본 데이터 1,000건을 최초 한 번만 받아 상태에 저장하고, 지역·랜드마크·편의시설 조건은 useMemo 기반 클라이언트 필터링으로 처리했습니다.' },
-          { label: '배운 점', text: '동일한 원본 데이터를 반복 조회하기보다 화면 필터를 로컬 상태에서 처리하면 응답 경합을 줄이고 UX도 빨라집니다.' },
+          { label: '문제', items: ['주차 필터 결과가 비거나 갱신이 불안정'] },
+          { label: '원인', items: ['필터 변경마다 API 재요청', '이전 응답이 최신 필터 결과를 덮어씀'] },
+          { label: '해결', items: ['원본 데이터 1,000건을 최초 한 번만 저장', 'useMemo 기반 클라이언트 필터링 적용'] },
+          { label: '배운 점', items: ['로컬 필터링으로 응답 경합 완화', '필터 반응 속도와 UX 개선'] },
         ],
         image: 'img/eat-layout-sub-preview.png',
       },
