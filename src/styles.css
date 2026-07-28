@@ -293,7 +293,8 @@ h1, h2, p { overflow-wrap: break-word; }
   .project-overview__media { height: clamp(200px, 34vw, 280px); flex: none; }
   .project-overview__content { min-height: auto; overflow: visible; }
   .troubleshooting-viewer, .troubleshooting-viewer.has-media { display: flex; flex-direction: column; align-items: stretch; min-height: 0; height: 100%; overflow: auto; }
-  .troubleshooting-copy { align-self: auto; padding-right: 0; overflow: visible; }
+  .troubleshooting-heading, .troubleshooting-copy, .troubleshooting-viewer figure, .troubleshooting-controls { flex: 0 0 auto; }
+  .troubleshooting-copy { align-self: auto; min-height: auto; padding-right: 0; overflow: visible; }
   .troubleshooting-viewer figure, .troubleshooting-viewer.has-media figure { min-height: 240px; }
 }
 
