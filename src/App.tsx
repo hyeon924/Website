@@ -179,7 +179,14 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         <div className="project-overview__content"><p className="modal-label">PROJECT OVERVIEW</p><h3>{project.title}</h3><p className="project-overview__summary">{project.summary}</p>
           <p className="modal-label">핵심 구현</p><ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>
           <dl><div><dt>제작 기간</dt><dd>{project.period}</dd></div><div><dt>작업 범위</dt><dd>{project.scope}</dd></div></dl>
-          <div className="modal-links">{project.liveUrl && <button type="button" onClick={showUnavailable}>배포 사이트 ↗</button>}{project.githubUrl && <button type="button" onClick={showUnavailable}>GitHub ↗</button>}</div>
+          <div className="modal-links">
+            {project.liveUrl && (project.liveUrl === '#'
+              ? <button type="button" onClick={showUnavailable}>배포 사이트 ↗</button>
+              : <a href={project.liveUrl} target="_blank" rel="noreferrer">배포 사이트 ↗</a>)}
+            {project.githubUrl && (project.githubUrl === '#'
+              ? <button type="button" onClick={showUnavailable}>GitHub ↗</button>
+              : <a href={project.githubUrl} target="_blank" rel="noreferrer">GitHub ↗</a>)}
+          </div>
         </div>
       </div>}
       {tab === 'screens' && <div className="screen-viewer">
