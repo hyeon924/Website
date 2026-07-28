@@ -75,19 +75,19 @@ export const projects: Project[] = [
     liveUrl: 'https://hyeon924.github.io/maxim-brand/', githubUrl: 'https://github.com/hyeon924/maxim-brand',
   },
   {
-    id: 'eat', category: 'frontend', title: '맛콩맛집',
+    id: 'eat', category: 'frontend', title: 'EatMap',
     summary: '여행 중 필요한 운영·편의 정보를 빠르게 찾는 서울 식당 탐색 서비스',
     scope: '랜드마크 탐색 · 복수 필터 · 운영 정보 모달 · 페이지네이션',
     points: ['실제 데이터 기반 랜드마크·지역 탐색', '주차·배달 등 편의시설 복수 필터', '운영 정보 모달과 10개 단위 페이지네이션'],
     stack: ['React 19', 'Vite', 'Tailwind CSS 4', '서울관광재단 Open API', 'GitHub Pages'],
-    image: 'img/character-thumb.png',
+    image: 'img/eat-map-logo.png',
     detailImages: ['img/eat-layout-main.png', 'img/eat-layout-sub-preview.png'],
     period: '2025.01 - 2025.02', role: 'Frontend',
     liveUrl: 'https://hyeon924.github.io/Eat-Map/', githubUrl: 'https://github.com/hyeon924/Eat-Map',
     troubleshooting: [
       { title: '랜드마크 데이터 집계', description: 'API 응답의 인근 랜드마크를 집계해 실제 식당 데이터가 존재하는 항목만 빠른 탐색 조건으로 제공했습니다.', image: 'img/eat-layout-main.png' },
       { title: '복수 필터와 페이지 상태 관리', description: '25개 구와 편의시설 조건을 함께 적용하고, 결과 수에 맞춰 10개 단위의 페이지 묶음을 일관되게 이동하도록 구성했습니다.', image: 'img/eat-layout-sub-preview.png' },
-      { title: '운영 정보의 상태 표기', description: '미제공 값은 -로 통일하고 실제 이용 불가 정보는 별도 상태로 구분해 여행 중 빠르게 판단할 수 있도록 했습니다.', image: 'img/character-preview.png' },
+      { title: '운영 정보의 상태 표기', description: '미제공 값은 -로 통일하고 실제 이용 불가 정보는 별도 상태로 구분해 여행 중 빠르게 판단할 수 있도록 했습니다.', image: 'img/eat-layout-main.png' },
     ],
   },
   {
