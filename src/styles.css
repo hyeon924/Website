@@ -95,7 +95,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .private-card h2 { margin: 0; font-size: clamp(26px, 1.55vw, 34px); }
 .private-card small { margin-top: 15px; padding-top: 15px; border-top: 1px solid #34354d; color: #aeb3d1; }
 .modal-backdrop { position: fixed; z-index: 20; inset: 0; display: grid; place-items: center; padding: 24px; background: #04050ddd; }
-.project-modal { position: relative; box-sizing: border-box; width: min(1100px, calc(100vw - 48px)); height: min(740px, calc(100dvh - 48px)); max-height: calc(100dvh - 48px); overflow: hidden; padding: 26px; border: 1px solid #413a69; border-radius: 18px; background: #0e1124; box-shadow: 0 30px 90px #0009; }
+.project-modal { position: relative; box-sizing: border-box; width: min(clamp(1100px, 72vw, 1320px), calc(100vw - 48px)); height: min(740px, calc(100dvh - 48px)); max-height: calc(100dvh - 48px); overflow: hidden; padding: 26px; border: 1px solid #413a69; border-radius: 18px; background: #0e1124; box-shadow: 0 30px 90px #0009; }
 .project-modal:not(.publishing-modal) { display: grid; grid-template-rows: auto auto minmax(0, 1fr); gap: 0; }
 .modal-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
 .modal-header p, .modal-label { margin: 0; color: #f095c7; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
