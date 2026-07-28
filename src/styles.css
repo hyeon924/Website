@@ -264,12 +264,12 @@ h1, h2, p { overflow-wrap: break-word; }
 .troubleshooting-heading .modal-label { flex: none; margin: 0; }
 .troubleshooting-heading h3 { min-width: 0; margin: 0; color: #fff; font-size: clamp(26px, 2.25vw, 38px); letter-spacing: -.04em; }
 .troubleshooting-media-toggle { flex: none; min-height: 40px; padding: 9px 13px; border: 1px solid #f7f7ff; border-radius: 9px; color: #17182a; background: #f7f7ff; font-size: 13px; font-weight: 800; }
-.troubleshooting-copy { grid-row: 2; align-self: stretch; min-height: 0; width: 100%; padding-right: 10px; overflow: auto; scrollbar-color: #f095c7 #20233b; scrollbar-width: thin; }
+.troubleshooting-copy { display: grid; grid-row: 2; align-content: center; align-self: stretch; min-height: 0; width: 100%; padding-right: 10px; overflow: auto; scrollbar-color: #f095c7 #20233b; scrollbar-width: thin; }
 .troubleshooting-copy > p:last-child { margin: 0; color: #dbe4ff; font-size: clamp(16px, 1.15vw, 19px); line-height: 1.75; word-break: keep-all; }
 .troubleshooting-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; }
 .troubleshooting-details div { display: grid; gap: 5px; padding: 10px 13px; border-left: 2px solid #f095c7; background: #ffffff08; }
-.troubleshooting-details dt { color: #f4a5d0; font-size: 13px; font-weight: 800; letter-spacing: .06em; }
-.troubleshooting-details dd { margin: 0; color: #dbe4ff; font-size: clamp(16px, 1.1vw, 18px); line-height: 1.6; word-break: keep-all; }
+.troubleshooting-details dt { color: #f4a5d0; font-size: clamp(14px, 1vw, 16px); font-weight: 800; letter-spacing: .06em; }
+.troubleshooting-details dd { margin: 0; color: #dbe4ff; font-size: clamp(17px, 1.2vw, 19px); line-height: 1.6; word-break: keep-all; }
 .troubleshooting-details ul { display: grid; gap: 3px; margin: 0; padding: 0; list-style: none; }
 .troubleshooting-details li { position: relative; padding-left: 10px; }
 .troubleshooting-details li::before { position: absolute; top: .75em; left: 0; width: 4px; aspect-ratio: 1; border-radius: 50%; background: #f095c7; content: ''; }
@@ -316,7 +316,7 @@ h1, h2, p { overflow-wrap: break-word; }
   .troubleshooting-viewer { height: 100%; overflow: auto; }
   .troubleshooting-copy { max-width: none; padding-right: 6px; }
   .troubleshooting-details { grid-template-columns: 1fr; }
-  .troubleshooting-details dd { font-size: 16px; }
+  .troubleshooting-details dd { font-size: 17px; }
   .troubleshooting-heading { align-items: flex-start; }
   .troubleshooting-heading__title { align-items: flex-start; }
   .troubleshooting-heading h3 { font-size: clamp(22px, 6.5vw, 30px); }
