@@ -118,9 +118,39 @@ export const projects: Project[] = [
     detailImages: ['img/emotion-login-preview.png', 'img/emotion-post-preview.png', 'img/emotion-my-preview.png'],
     period: '2025.03 - 2025.05', role: 'Full Stack', githubUrl: 'https://github.com/hyeon924/d-emotion-blog-main',
     troubleshooting: [
-      { title: '이메일 인증 회원가입 흐름', description: '6자리 인증 코드를 발송하고, 5분 이내 인증이 완료된 이메일만 회원가입할 수 있도록 인증 상태와 만료 시간을 분리해 처리했습니다.', image: 'img/emotion-login-preview.png' },
-      { title: 'JWT 기반 개인 기록 보호', description: 'Spring Security JWT 필터로 인증 주체를 확인하고, 게시글 작성자와 비교해 본인 기록만 조회·수정·삭제할 수 있도록 접근을 제한했습니다.', image: 'img/emotion-post-preview.png' },
-      { title: '기록 탐색과 마이페이지 분리', description: '제목·내용 검색과 감정별 클라이언트 필터를 목록 흐름에 분리하고, 사용자 정보·게시글 수·계정 관리는 마이페이지로 구성했습니다.', image: 'img/emotion-my-preview.png' },
+      {
+        title: 'JWT 인증 API의 CORS 처리',
+        description: '인증 헤더가 포함된 교차 출처 API 요청을 Spring Security 단계에서 처리했습니다.',
+        details: [
+          { label: '문제', items: ['프론트엔드·백엔드 도메인 분리', 'Authorization: Bearer 헤더로 preflight 요청 발생'] },
+          { label: '원인', items: ['CORS 정책이 Spring Security 필터 체인보다 앞서 처리되지 않음'] },
+          { label: '해결', items: ['Authorization·Content-Type 헤더와 OPTIONS 메서드 허용', '개발 환경·Vercel 도메인 패턴을 허용 목록에 추가'] },
+          { label: '배운 점', items: ['CORS는 컨트롤러 설정이 아닌 Spring Security 필터 체인과 함께 설계'] },
+        ],
+        image: 'img/emotion-login-preview.png',
+      },
+      {
+        title: '이메일 인증코드 라이프사이클 관리',
+        description: '인증코드의 만료·재발송·재사용을 제어하도록 인증 상태를 관리했습니다.',
+        details: [
+          { label: '문제', items: ['재발송 시 이전 코드가 남음', '인증 완료 코드가 다시 사용될 수 있음'] },
+          { label: '원인', items: ['인증코드를 단순 저장하고 상태 변화와 만료를 관리하지 않음'] },
+          { label: '해결', items: ['이메일 기준으로 인증 정보 관리', '재발송 시 코드·만료 시간 갱신, 성공 시 인증 정보 삭제', '코드 유효 시간을 5분으로 제한'] },
+          { label: '배운 점', items: ['인증코드는 발급보다 만료·재발송·1회성 사용의 라이프사이클 관리가 중요'] },
+        ],
+        image: 'img/emotion-post-preview.png',
+      },
+      {
+        title: '게시글 리소스 소유권 검증',
+        description: 'URL의 게시글 ID와 별개로 서버에서 작성자 권한을 검증했습니다.',
+        details: [
+          { label: '문제', items: ['URL의 게시글 ID 변경으로 다른 사용자 기록 접근·수정·삭제 시도 가능'] },
+          { label: '원인', items: ['게시글 ID만으로는 요청 사용자의 리소스 소유권을 보장할 수 없음'] },
+          { label: '해결', items: ['JWT 로그인 사용자와 게시글 작성자를 서비스 계층에서 비교', '작성자가 다르면 조회·수정·삭제 요청 거부'] },
+          { label: '배운 점', items: ['버튼 숨김만으로는 보안 불가', '리소스 소유권은 서버 비즈니스 로직에서 검증'] },
+        ],
+        image: 'img/emotion-my-preview.png',
+      },
     ],
   },
   {
