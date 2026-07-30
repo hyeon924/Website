@@ -66,7 +66,7 @@ h1, h2, p { overflow-wrap: break-word; }
 .collaboration-card__title { display: flex; align-items: center; gap: 12px; margin-top: 22px; }
 .collaboration-tool-icon { display: grid; width: 38px; aspect-ratio: 1; place-items: center; border: 1px solid #8b78e6; border-radius: 10px; color: #fff; background: #302956; font-size: 15px; font-weight: 900; letter-spacing: 0; }
 .collaboration-card h2 { color: #fff; font-weight: 800; }
-.collaboration-card p { max-width: none; margin: 16px 0 0; color: #cfd3ee; font-size: clamp(16px, .95vw, 19px); font-weight: 500; line-height: 1.7; }
+.collaboration-card p { max-width: none; margin: 16px 0 0; color: #cfd3ee; font-size: clamp(16px, .95vw, 19px); font-weight: 500; line-height: 1.7; white-space: pre-line; }
 .project-grid { width: 100%; display: grid; gap: clamp(18px, 1.2vw, 32px); margin-top: 52px; }
 .project-page .project-grid { min-height: 0; margin-top: 0; grid-auto-rows: minmax(0, 1fr); }
 .project-grid.publishing, .project-grid.frontend { grid-template-columns: repeat(3, minmax(0, 1fr)); }

@@ -41,10 +41,10 @@ export const skills = [
 ];
 
 export const collaboration = [
-  { icon: 'N', title: 'Notion', text: '요구사항, 화면 정책, 회의 내용을 한 문서 흐름으로 정리합니다. 작업 기준과 변경 이력을 남겨 팀이 같은 정보를 확인할 수 있게 관리합니다.' },
-  { icon: 'S', title: 'Slack', text: '진행 상황과 확인이 필요한 이슈를 채널 단위로 공유합니다. 관련 링크와 후속 작업을 함께 남겨 업무 맥락이 이어지도록 관리합니다.' },
-  { icon: 'G', title: 'Git · GitHub', text: '기능 단위 브랜치와 명확한 커밋 메시지로 변경 이력을 관리합니다. Pull Request 기준으로 리뷰와 병합 흐름을 정리합니다.' },
-  { icon: 'J', title: 'Jira', text: '작업 우선순위와 상태를 티켓으로 관리해 다음 할 일을 맞춥니다. 요구사항 변경과 진행 상황을 팀이 함께 확인할 수 있게 합니다.' },
+  { icon: 'N', title: 'Notion', text: '요구사항, 화면 정책, 회의 내용을 한 문서 흐름으로 정리합니다.\n작업 기준과 변경 이력을 남겨 팀이 같은 정보를 확인할 수 있게 관리합니다.' },
+  { icon: 'S', title: 'Slack', text: '진행 상황과 확인이 필요한 이슈를 채널 단위로 공유합니다.\n관련 링크와 후속 작업을 함께 남겨 업무 맥락이 이어지도록 관리합니다.' },
+  { icon: 'G', title: 'Git · GitHub', text: '기능 단위 브랜치와 명확한 커밋 메시지로 변경 이력을 관리합니다.\nPull Request 기준으로 리뷰와 병합 흐름을 정리합니다.' },
+  { icon: 'J', title: 'Jira', text: '작업 우선순위와 상태를 티켓으로 관리해 다음 할 일을 맞춥니다.\n요구사항 변경과 진행 상황을 팀이 함께 확인할 수 있게 합니다.' },
 ];
 
 export const projects: Project[] = [
