@@ -127,7 +127,6 @@ export const projects: Project[] = [
           { label: '해결', items: ['Authorization·Content-Type 헤더와 OPTIONS 메서드 허용', '개발 환경·Vercel 도메인 패턴을 허용 목록에 추가'] },
           { label: '배운 점', items: ['CORS는 컨트롤러 설정이 아닌 Spring Security 필터 체인과 함께 설계'] },
         ],
-        image: 'img/emotion-login-preview.png',
       },
       {
         title: '이메일 인증코드 라이프사이클 관리',
@@ -138,7 +137,6 @@ export const projects: Project[] = [
           { label: '해결', items: ['이메일 기준으로 인증 정보 관리', '재발송 시 코드·만료 시간 갱신, 성공 시 인증 정보 삭제', '코드 유효 시간을 5분으로 제한'] },
           { label: '배운 점', items: ['인증코드는 발급보다 만료·재발송·1회성 사용의 라이프사이클 관리가 중요'] },
         ],
-        image: 'img/emotion-post-preview.png',
       },
       {
         title: '게시글 리소스 소유권 검증',
@@ -149,7 +147,6 @@ export const projects: Project[] = [
           { label: '해결', items: ['JWT 로그인 사용자와 게시글 작성자를 서비스 계층에서 비교', '작성자가 다르면 조회·수정·삭제 요청 거부'] },
           { label: '배운 점', items: ['버튼 숨김만으로는 보안 불가', '리소스 소유권은 서버 비즈니스 로직에서 검증'] },
         ],
-        image: 'img/emotion-my-preview.png',
       },
     ],
   },
